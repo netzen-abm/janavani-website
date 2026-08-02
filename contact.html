@@ -1,66 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janavani - Contact</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        nav {
-            background: rgba(0,0,0,0.2);
-            padding: 20px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.1em;
-            font-weight: bold;
-        }
-        nav a:hover { text-decoration: underline; }
-        .container {
-            background: rgba(255,255,255,0.1);
-            padding: 40px;
-            border-radius: 20px;
-            max-width: 700px;
-            margin: 50px auto;
-            text-align: center;
-            flex: 1;
-        }
-        h1 { font-size: 2.5em; }
-        iframe {
-            border-radius: 10px;
-            max-width: 100%;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact Janavani</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:Arial,Helvetica,sans-serif;
+
+background:#f5f7fb;
+
+color:#222;
+
+line-height:1.6;
+
+}
+
+nav{
+
+background:#0d3b66;
+
+padding:18px;
+
+text-align:center;
+
+}
+
+nav a{
+
+color:white;
+
+text-decoration:none;
+
+margin:0 20px;
+
+font-weight:bold;
+
+}
+
+nav a:hover{
+
+color:#ffd166;
+
+}
+
+.hero{
+
+background:white;
+
+padding:70px 20px;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+color:#0d3b66;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+max-width:750px;
+
+margin:auto;
+
+font-size:20px;
+
+color:#555;
+
+line-height:1.8;
+
+}
+
+.container{
+
+max-width:900px;
+
+margin:50px auto;
+
+padding:20px;
+
+}
+
+.form-box{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:0 8px 30px rgba(0,0,0,.08);
+
+}
+
+iframe{
+
+width:100%;
+
+height:1050px;
+
+border:none;
+
+border-radius:10px;
+
+}
+
+footer{
+
+margin-top:60px;
+
+background:#0d3b66;
+
+color:white;
+
+padding:25px;
+
+text-align:center;
+
+}
+
+</style>
+
 </head>
+
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
 
-    <div class="container">
-        <h1>Contact Us</h1>
-        <p>Have questions or feedback? Send us a message!</p>
-        
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5y__YS8S-0UZlIAMJiDScRkI9xGiR7X4VGek5ih-0KO_GWA/viewform?embedded=true" width="100%" height="1021" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        
-    </div>
+<nav>
 
-    <footer style="background: rgba(0,0,0,0.3); text-align: center; padding: 20px;">
-        <p>© 2026 Janavani. Built by Netzen ABM</p>
-    </footer>
+<a href="index.html">Home</a>
+
+<a href="about.html">About</a>
+
+<a href="contact.html">Contact</a>
+
+</nav>
+
+<section class="hero">
+
+<h1>Contact Janavani</h1>
+
+<p>
+
+Janavani is building a citizen-first platform that helps people hold public institutions accountable.
+
+Whether you have questions, suggestions, partnership ideas, found a bug,
+
+or simply want to support the project,
+
+we would love to hear from you.
+
+</p>
+
+</section>
+
+<div class="container">
+
+<div class="form-box">
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5y__YS8S-0UZlIAMJiDScRkI9xGiR7X4VGek5ih-0KO_GWA/viewform?embedded=true">
+
+Loading...
+
+</iframe>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+
+© 2026 Janavani
+
+<br><br>
+
+Making Public Services More Transparent, Accountable and Citizen-Centric.
+
+</p>
+
+</footer>
+
 </body>
+
 </html>
