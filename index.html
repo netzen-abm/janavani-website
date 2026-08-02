@@ -3,58 +3,350 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janavani - Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        nav {
-            background: rgba(0,0,0,0.2);
-            padding: 20px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.1em;
-            font-weight: bold;
-        }
-        nav a:hover { text-decoration: underline; }
-        .container {
-            background: rgba(255,255,255,0.1);
-            padding: 40px;
-            border-radius: 20px;
-            max-width: 800px;
-            margin: 50px auto;
-            text-align: center;
-            flex: 1;
-        }
-        h1 { font-size: 3em; margin-top: 10px; }
-        p { font-size: 1.2em; }
-        .logo { margin-bottom: 20px; }
-    </style>
+    <meta name="description" content="Janavani - Rate Government Offices and Get Instant Legal Complaint Letters in India">
+    <meta name="keywords" content="government complaint, legal letter, india, citizen rights, janavani">
+    <meta name="author" content="Civic Privacy Lab">
+    <title>Janavani - Rate Government Offices & Get Legal Complaints</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-gavel"></i>
+                <span>Janavani</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#howitworks">How It Works</a></li>
+                <li><a href="#laws">Laws</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
 
-    <div class="container">
-        <!-- VECTOR LOGO - SVG -->
-        <svg class="logo" width="120" height="120" viewBox="0 0 100 100">
-            <circle cx="50" cy="50" r="45" fill="white"/>
-            <path d="M30 50 L45 65 L70 35" stroke="#667eea" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        
-        <h1>Welcome to Janavani</h1>
-        
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Make Government Accountable</h1>
+                <p class="subtitle">Rate any government office and instantly get a legal complaint letter citing Indian Constitution & Laws</p>
+                <div class="cta-buttons">
+                    <a href="#howitworks" class="btn btn-primary">Get Started</a>
+                    <a href="https://github.com/netzen-abm/janavani" class="btn btn-secondary">View on GitHub</a>
+                </div>
+                <div class="highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>100% Anonymous</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>Auto PDF Download</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-gavel"></i>
+                        <span>Legally Sound</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="illustration">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <h2>The Problem</h2>
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <i class="fas fa-hospital"></i>
+                    <h3>Hospital Delays</h3>
+                    <p>Long waiting times and poor service quality</p>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-ban"></i>
+                    <h3>Denial of Service</h3>
+                    <p>Citizens denied rightful services without reason</p>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-user-slash"></i>
+                    <h3>Misbehavior</h3>
+                    <p>Rude treatment and disrespect from officials</p>
+                </div>
+                <div class="problem-card">
+                    <i class="fas fa-question-circle"></i>
+                    <h3>Legal Confusion</h3>
+                    <p>Citizens don't know which law applies to their issue</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <h2>Our Solution</h2>
+            <p class="section-subtitle">Janavani empowers citizens with legal tools to hold government accountable</p>
+            <div class="solution-grid">
+                <div class="solution-item">
+                    <div class="solution-number">01</div>
+                    <h3>Rate & Report</h3>
+                    <p>Report your experience at any government office. Rate from 1-5 stars and describe what happened.</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-number">02</div>
+                    <h3>Legal Brain</h3>
+                    <p>Our system identifies which law applies to your problem and auto-generates a complaint draft.</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-number">03</div>
+                    <h3>Download PDF</h3>
+                    <p>Get a professionally formatted legal complaint letter with correct addresses and CC recipients.</p>
+                </div>
+                <div class="solution-item">
+                    <div class="solution-number">04</div>
+                    <h3>Send & Resolve</h3>
+                    <p>Print and mail, or email your complaint. Track your grievance and get results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2>Supported Government Offices</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-hospital"></i>
+                    <h3>Hospitals</h3>
+                    <p>Report poor healthcare, long queues, and medical negligence</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Panchayat</h3>
+                    <p>Address local governance issues and community complaints</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Motor Vehicle Department</h3>
+                    <p>Report delays, misbehavior, and procedural violations</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-traffic-light"></i>
+                    <h3>Traffic Police</h3>
+                    <p>Report rude behavior and unfair traffic violations</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Ration Shop</h3>
+                    <p>Report shortage of supplies and unfair distribution</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield"></i>
+                    <h3>Police Station</h3>
+                    <p>Report misconduct, delays, and denial of FIR</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="howitworks" class="howitworks-section">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Tell Your Story</h3>
+                    <p>Describe which office you visited and what went wrong</p>
+                </div>
+                <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Rate the Service</h3>
+                    <p>Give a 1-5 star rating based on your experience</p>
+                </div>
+                <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Get Legal Letter</h3>
+                    <p>Janavani generates a legal complaint citing applicable laws</p>
+                </div>
+                <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Download PDF</h3>
+                    <p>Print or email your formal complaint with signatures</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Laws Section -->
+    <section id="laws" class="laws-section">
+        <div class="container">
+            <h2>Laws We Use</h2>
+            <p class="section-subtitle">Your complaints are backed by Indian law</p>
+            <div class="laws-grid">
+                <div class="law-card">
+                    <h3>Constitution of India</h3>
+                    <p>Fundamental rights and duties of citizens and the state</p>
+                </div>
+                <div class="law-card">
+                    <h3>Bhartiya Sakshya Adhiniyam (BSA)</h3>
+                    <p>Evidence Act for documenting your complaint legally</p>
+                </div>
+                <div class="law-card">
+                    <h3>Information Technology Act, 2000</h3>
+                    <p>Protection against cyber harassment and digital records</p>
+                </div>
+                <div class="law-card">
+                    <h3>Consumer Protection Act, 2019</h3>
+                    <p>Rights when government services are treated as public services</p>
+                </div>
+                <div class="law-card">
+                    <h3>Indian Contract Act, 1872</h3>
+                    <p>Legal obligations of government agencies to citizens</p>
+                </div>
+                <div class="law-card">
+                    <h3>Right to Information Act, 2005</h3>
+                    <p>Your right to ask for information and transparency</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Details Section -->
+    <section class="features-details">
+        <div class="container">
+            <h2>Key Features v1.0</h2>
+            <div class="features-list">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Rate + Report System</h3>
+                        <p>Simple 5-star rating system for 6 types of government offices with detailed reporting fields</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Legal Brain AI</h3>
+                        <p>Intelligent system that auto-suggests applicable laws based on your complaint type</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Auto PDF Generation</h3>
+                        <p>Download complaint letters with correct authority addresses and proper CC recipients</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-incognito"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>100% Anonymous</h3>
+                        <p>No login required. Powered by Freenet + Nostr for complete privacy</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Privacy Focused</h3>
+                        <p>Your data is not stored on centralized servers. Complete control over your information</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="feature-content">
+                        <h3>Open Source</h3>
+                        <p>Built with Python, LangChain, and Docker. Contribute and improve at GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Make a Difference?</h2>
+            <p>Help us hold government accountable. Start using Janavani today.</p>
+            <div class="cta-buttons">
+                <a href="#howitworks" class="btn btn-primary">Get Started</a>
+                <a href="https://github.com/netzen-abm/janavani" class="btn btn-secondary">Contribute</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Janavani</h4>
+                    <p>Making government accountable, one complaint at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#howitworks">How It Works</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/netzen-abm/janavani" target="_blank">GitHub</a></li>
+                        <li><a href="https://github.com/netzen-abm/janavani/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></li>
+                        <li><a href="https://github.com/netzen-abm/janavani/blob/main/LICENSE" target="_blank">License</a></li>
+                        <li><a href="https://github.com/netzen-abm/janavani/blob/main/SECURITY.md" target="_blank">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/netzen-abm" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Janavani. Built with ❤️ by Civic Privacy Lab. Licensed under MIT.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
