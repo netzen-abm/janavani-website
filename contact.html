@@ -1,138 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Contact Janavani - A citizen-first platform for public accountability, transparency and civic participation in India.">
 
 <title>Contact Janavani</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+    line-height: 1.6;
+}
 
-font-family:Arial,Helvetica,sans-serif;
 
-background:#f5f7fb;
+/* NAVIGATION */
 
-color:#222;
+nav {
+    background: #0d3b66;
+    padding: 18px;
+    text-align: center;
+}
 
-line-height:1.6;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+
+/* HERO */
+
+.hero {
+    background: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #0d3b66;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 20px;
+    color: #555;
+    line-height: 1.8;
+}
+
+
+/* CONTACT OPTIONS */
+
+.help-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.help-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.help-title h2 {
+    color: #0d3b66;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.help-title p {
+    color: #666;
+}
+
+.help-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.help-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.help-card:hover {
+    transform: translateY(-5px);
+}
+
+.help-icon {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.help-card h3 {
+    color: #0d3b66;
+    margin-bottom: 12px;
+}
+
+.help-card p {
+    color: #666;
+    font-size: 15px;
+}
+
+
+/* FORM */
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-heading h2 {
+    color: #0d3b66;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.form-heading p {
+    color: #666;
+}
+
+.form-box {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+iframe {
+    width: 100%;
+    height: 1050px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin-top: 60px;
+    background: #0d3b66;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .help-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
 }
 
-nav{
 
-background:#0d3b66;
+@media (max-width: 600px) {
 
-padding:18px;
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
 
-text-align:center;
+    .hero {
+        padding: 50px 20px;
+    }
 
-}
+    .hero h1 {
+        font-size: 36px;
+    }
 
-nav a{
+    .hero p {
+        font-size: 17px;
+    }
 
-color:white;
+    .help-grid {
+        grid-template-columns: 1fr;
+    }
 
-text-decoration:none;
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
 
-margin:0 20px;
-
-font-weight:bold;
-
-}
-
-nav a:hover{
-
-color:#ffd166;
-
-}
-
-.hero{
-
-background:white;
-
-padding:70px 20px;
-
-text-align:center;
-
-}
-
-.hero h1{
-
-font-size:48px;
-
-color:#0d3b66;
-
-margin-bottom:20px;
-
-}
-
-.hero p{
-
-max-width:750px;
-
-margin:auto;
-
-font-size:20px;
-
-color:#555;
-
-line-height:1.8;
-
-}
-
-.container{
-
-max-width:900px;
-
-margin:50px auto;
-
-padding:20px;
-
-}
-
-.form-box{
-
-background:white;
-
-padding:25px;
-
-border-radius:12px;
-
-box-shadow:0 8px 30px rgba(0,0,0,.08);
-
-}
-
-iframe{
-
-width:100%;
-
-height:1050px;
-
-border:none;
-
-border-radius:10px;
-
-}
-
-footer{
-
-margin-top:60px;
-
-background:#0d3b66;
-
-color:white;
-
-padding:25px;
-
-text-align:center;
+    .form-box {
+        padding: 10px;
+    }
 
 }
 
@@ -140,7 +226,11 @@ text-align:center;
 
 </head>
 
+
 <body>
+
+
+<!-- NAVIGATION -->
 
 <nav>
 
@@ -152,6 +242,10 @@ text-align:center;
 
 </nav>
 
+
+
+<!-- HERO -->
+
 <section class="hero">
 
 <h1>Contact Janavani</h1>
@@ -160,43 +254,168 @@ text-align:center;
 
 Janavani is building a citizen-first platform that helps people hold public institutions accountable.
 
-Whether you have questions, suggestions, partnership ideas, found a bug,
+Whether you have a question, suggestion, partnership idea, found a bug,
 
-or simply want to support the project,
-
-we would love to hear from you.
+or simply want to support the project, we would love to hear from you.
 
 </p>
 
 </section>
 
+
+
+<!-- CONTACT OPTIONS -->
+
+<section class="help-section">
+
+<div class="help-title">
+
+<h2>How Can We Help?</h2>
+
+<p>Choose the reason that best describes why you're contacting Janavani.</p>
+
+</div>
+
+
+<div class="help-grid">
+
+
+<div class="help-card">
+
+<div class="help-icon">💬</div>
+
+<h3>General Questions</h3>
+
+<p>
+
+Have questions about Janavani or how the platform works?
+
+We're happy to help.
+
+</p>
+
+</div>
+
+
+
+<div class="help-card">
+
+<div class="help-icon">🐞</div>
+
+<h3>Report a Bug</h3>
+
+<p>
+
+Found something that isn't working?
+
+Let us know so we can improve the platform.
+
+</p>
+
+</div>
+
+
+
+<div class="help-card">
+
+<div class="help-icon">🤝</div>
+
+<h3>Partnerships</h3>
+
+<p>
+
+Interested in collaborating with Janavani?
+
+We welcome partnership ideas.
+
+</p>
+
+</div>
+
+
+
+<div class="help-card">
+
+<div class="help-icon">⚖️</div>
+
+<h3>Legal Research</h3>
+
+<p>
+
+Contribute legal knowledge, constitutional research,
+
+or civic resources.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- CONTACT FORM -->
+
 <div class="container">
+
+
+<div class="form-heading">
+
+<h2>Send Us a Message</h2>
+
+<p>
+
+Use the form below and tell us how we can help.
+
+</p>
+
+</div>
+
 
 <div class="form-box">
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd5y__YS8S-0UZlIAMJiDScRkI9xGiR7X4VGek5ih-0KO_GWA/viewform?embedded=true">
+
+<iframe
+
+src="https://docs.google.com/forms/d/e/1FAIpQLSd5y__YS8S-0UZlIAMJiDScRkI9xGiR7X4VGek5ih-0KO_GWA/viewform?embedded=true"
+
+title="Janavani Contact Form">
 
 Loading...
 
 </iframe>
 
-</div>
 
 </div>
+
+
+</div>
+
+
+
+<!-- FOOTER -->
 
 <footer>
 
 <p>
 
-© 2026 Janavani
+<strong>Janavani</strong>
 
 <br><br>
 
 Making Public Services More Transparent, Accountable and Citizen-Centric.
 
+<br><br>
+
+© 2026 Janavani. Built by Netzen ABM.
+
 </p>
 
 </footer>
+
 
 </body>
 
