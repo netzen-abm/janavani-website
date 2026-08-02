@@ -3,59 +3,684 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Janavani - About</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        nav {
-            background: rgba(0,0,0,0.2);
-            padding: 20px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 1.1em;
-            font-weight: bold;
-        }
-        nav a:hover { text-decoration: underline; }
-        .container {
-            background: rgba(255,255,255,0.1);
-            padding: 40px;
-            border-radius: 20px;
-            max-width: 800px;
-            margin: 50px auto;
-            text-align: center;
-            flex: 1;
-        }
-        h1 { font-size: 2.5em; }
-        p { font-size: 1.2em; line-height: 1.6; }
-    </style>
+    <meta name="description" content="About Janavani - Rate Government Offices and Get Instant Legal Complaint Letters">
+    <meta name="keywords" content="about janavani, civic tech, india, government accountability">
+    <meta name="author" content="Civic Privacy Lab">
+    <title>About Janavani - Our Mission & Vision</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-gavel"></i>
+                <span>Janavani</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#howitworks">How It Works</a></li>
+                <li><a href="index.html#laws">Laws</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </nav>
 
-    <div class="container">
-        <h1>About Janavani</h1>
-        <p>Janavani means "Voice of the People". We are dedicated to building technology that amplifies community voices and solves real problems.</p>
-        <p>Founded by Netzen ABM, our mission is to create accessible, impactful digital solutions.</p>
-    </div>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>About Janavani</h1>
+            <p>Making Government Accountable. One Complaint at a Time.</p>
+        </div>
+    </section>
 
-    <footer style="background: rgba(0,0,0,0.3); text-align: center; padding: 20px;">
-        <p>© 2026 Janavani. Built by Netzen ABM</p>
+    <!-- Mission & Vision -->
+    <section class="mission-vision">
+        <div class="container">
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-target"></i>
+                    </div>
+                    <h3>Our Mission</h3>
+                    <p>Empower every citizen in India with the tools and knowledge to hold government accountable through legally sound complaints backed by the Constitution and applicable laws.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>A India where every citizen can easily report government misconduct, access their rights, and get instant legal support without fear, cost, or complexity.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <p>Transparency, Privacy, Justice, Accessibility, and Empowerment. We believe in open-source solutions and decentralized technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2>The Story Behind Janavani</h2>
+                    <p><strong>Janavani</strong> means "Voice of the People" in Sanskrit. The idea was born from a simple observation:</p>
+                    <p>Millions of citizens visit government offices daily - hospitals, police stations, panchayats, MVD - and face delays, misbehavior, and denial of services. Yet most don't know:</p>
+                    <ul class="story-list">
+                        <li>Which law applies to their situation</li>
+                        <li>How to file a formal complaint</li>
+                        <li>What compensation they deserve</li>
+                        <li>Whom to address their complaint to</li>
+                    </ul>
+                    <p>Janavani solves this by combining:</p>
+                    <ul class="story-list">
+                        <li>🇮🇳 <strong>Constitutional Knowledge</strong> - Backed by Constitution of India and 5 major laws</li>
+                        <li>🤖 <strong>AI Technology</strong> - Instant legal complaint generation using LangChain & SLMs</li>
+                        <li>🔒 <strong>Privacy First</strong> - Decentralized (Freenet + Nostr), 100% anonymous, no tracking</li>
+                        <li>🆓 <strong>Free & Open</strong> - No login, no fees, fully open-source</li>
+                    </ul>
+                </div>
+                <div class="story-image">
+                    <div class="story-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why It Matters -->
+    <section class="why-matters">
+        <div class="container">
+            <h2>Why This Matters</h2>
+            <div class="matters-grid">
+                <div class="matter-item">
+                    <h3>For Citizens</h3>
+                    <p>Take action against government misconduct. Get instant legal support without hiring a lawyer.</p>
+                </div>
+                <div class="matter-item">
+                    <h3>For India</h3>
+                    <p>Create accountability in public services. Improve government performance through citizen feedback.</p>
+                </div>
+                <div class="matter-item">
+                    <h3>For Justice</h3>
+                    <p>Make legal rights accessible to all. Democracy works when citizens can demand accountability.</p>
+                </div>
+                <div class="matter-item">
+                    <h3>For Technology</h3>
+                    <p>Demonstrate AI can be used for civic good. Build privacy-first, open-source alternatives to corporate platforms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="features-overview">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-showcase">
+                <div class="feature-showcase-item">
+                    <div class="feature-number">01</div>
+                    <h3>Rate & Report</h3>
+                    <p>Simple, intuitive interface to report your experience at any government office. Rate 1-5 stars and describe what happened.</p>
+                </div>
+                <div class="feature-showcase-item">
+                    <div class="feature-number">02</div>
+                    <h3>Legal Brain</h3>
+                    <p>AI-powered system that analyzes your complaint and automatically suggests the applicable laws from Indian Constitution and statutory acts.</p>
+                </div>
+                <div class="feature-showcase-item">
+                    <div class="feature-number">03</div>
+                    <h3>Auto PDF</h3>
+                    <p>Download a professionally formatted legal complaint letter with correct authority addresses, proper CC recipients, and signatures.</p>
+                </div>
+                <div class="feature-showcase-item">
+                    <div class="feature-number">04</div>
+                    <h3>100% Anonymous</h3>
+                    <p>No login required. Your data is not stored on centralized servers. Powered by Freenet + Nostr protocol for complete privacy.</p>
+                </div>
+                <div class="feature-showcase-item">
+                    <div class="feature-number">05</div>
+                    <h3>Open Source</h3>
+                    <p>MIT Licensed. Built with Python, LangChain, Docker. Contribute, fork, and improve at GitHub.</p>
+                </div>
+                <div class="feature-showcase-item">
+                    <div class="feature-number">06</div>
+                    <h3>Free Forever</h3>
+                    <p>No cost. No hidden fees. No premium features. Justice shouldn't be behind a paywall.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Laws We Use -->
+    <section class="laws-used">
+        <div class="container">
+            <h2>Laws We Reference</h2>
+            <p class="section-subtitle">Your complaints are backed by these Indian laws:</p>
+            <div class="laws-reference-grid">
+                <div class="law-ref">
+                    <h4>Constitution of India</h4>
+                    <p>Articles 14, 16, 19, 21 - Right to Equality, Liberty, and Life</p>
+                </div>
+                <div class="law-ref">
+                    <h4>Bhartiya Sakshya Adhiniyam (BSA)</h4>
+                    <p>Evidence Act for documenting complaints and establishing facts legally</p>
+                </div>
+                <div class="law-ref">
+                    <h4>Information Technology Act, 2000</h4>
+                    <p>Sections 66, 67 - Protection against harassment and cyber offenses</p>
+                </div>
+                <div class="law-ref">
+                    <h4>Consumer Protection Act, 2019</h4>
+                    <p>Rights when government services are treated as consumer services</p>
+                </div>
+                <div class="law-ref">
+                    <h4>Indian Contract Act, 1872</h4>
+                    <p>Section 43 - Government obligations to citizens</p>
+                </div>
+                <div class="law-ref">
+                    <h4>Right to Information Act, 2005</h4>
+                    <p>Your right to ask for information and government transparency</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <h2>Built With Modern Technology</h2>
+            <div class="tech-stack-grid">
+                <div class="tech-stack-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h4>Python</h4>
+                    <p>Fast, powerful backend logic and AI processing</p>
+                </div>
+                <div class="tech-stack-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-link-chain"></i>
+                    </div>
+                    <h4>LangChain</h4>
+                    <p>Orchestrating language models and RAG systems</p>
+                </div>
+                <div class="tech-stack-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-docker"></i>
+                    </div>
+                    <h4>Docker</h4>
+                    <p>Containerized deployment for easy scaling</p>
+                </div>
+                <div class="tech-stack-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h4>Freenet</h4>
+                    <p>Decentralized peer-to-peer network for privacy</p>
+                </div>
+                <div class="tech-stack-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>Nostr Protocol</h4>
+                    <p>Distributed messaging without central authority</p>
+                </div>
+                <div class="tech-stack-item">
+                    <div class="tech-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h4>Open Source</h4>
+                    <p>MIT License - Community-driven development</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <h2>Built By Civic Privacy Lab</h2>
+            <p class="section-subtitle">A group of developers, lawyers, and activists building civic technology for India</p>
+            <div class="team-info">
+                <div class="team-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Our Team</h4>
+                    <p>Developers, legal experts, and civic technologists committed to making government accountable through technology.</p>
+                </div>
+                <div class="team-item">
+                    <i class="fas fa-globe"></i>
+                    <h4>Our Focus</h4>
+                    <p>Building tools for civic participation, digital rights, and government accountability in India.</p>
+                </div>
+                <div class="team-item">
+                    <i class="fas fa-handshake"></i>
+                    <h4>Our Community</h4>
+                    <p>Open to contributions from developers, lawyers, designers, and citizens who share our mission.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Is Janavani really anonymous?</h4>
+                    <p>Yes! We don't require login, don't store personal data on central servers, and use Freenet + Nostr for privacy. Your complaint is yours alone.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do I need a lawyer?</h4>
+                    <p>No. Janavani generates legal complaints based on actual Indian laws. The complaint is formatted professionally and ready to send.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is it free?</h4>
+                    <p>Completely free. No hidden fees, no premium features. We believe justice shouldn't be behind a paywall.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Which government offices are supported?</h4>
+                    <p>Currently: Hospitals, Panchayat, Motor Vehicle Department, Traffic Police, Ration Shops, Police Stations. More offices coming soon.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Can I contribute?</h4>
+                    <p>Yes! Check our GitHub repository: github.com/netzen-abm/janavani. We welcome developers, lawyers, and designers.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How is this different from other complaint platforms?</h4>
+                    <p>We combine legal AI, constitutional backing, privacy-first design, and open-source code. No corporate tracking, no centralized databases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-final">
+        <div class="container">
+            <h2>Join the Movement</h2>
+            <p>Help us make government accountable. Whether you're a citizen, developer, lawyer, or activist - there's a role for you.</p>
+            <div class="cta-buttons">
+                <a href="index.html#howitworks" class="btn btn-primary">Start Using Janavani</a>
+                <a href="https://github.com/netzen-abm/janavani" class="btn btn-secondary" target="_blank">Contribute on GitHub</a>
+                <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Janavani</h4>
+                    <p>Making government accountable, one complaint at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#features">Features</a></li>
+                        <li><a href="index.html#howitworks">How It Works</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://github.com/netzen-abm/janavani" target="_blank">GitHub</a></li>
+                        <li><a href="https://github.com/netzen-abm/janavani/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></li>
+                        <li><a href="https://github.com/netzen-abm/janavani/blob/main/LICENSE" target="_blank">License</a></li>
+                        <li><a href="https://github.com/netzen-abm/janavani/blob/main/SECURITY.md" target="_blank">Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/netzen-abm" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Janavani. Built with ❤️ by Civic Privacy Lab. Licensed under MIT.</p>
+            </div>
+        </div>
     </footer>
+
+    <style>
+        /* Additional styles for About page */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .page-header h1 {
+            color: var(--white);
+            margin-bottom: 0.5rem;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            color: #ecf0f1;
+        }
+
+        .mission-vision {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        .mission-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .mission-card {
+            background-color: var(--white);
+            padding: 2.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .mission-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .mission-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .mission-card h3 {
+            color: var(--dark-text);
+            margin-bottom: 1rem;
+        }
+
+        .story-section {
+            padding: 80px 0;
+        }
+
+        .story-content {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .story-text h2 {
+            text-align: left;
+        }
+
+        .story-text p {
+            text-align: left;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .story-list {
+            list-style: none;
+            margin: 1.5rem 0;
+        }
+
+        .story-list li {
+            margin-bottom: 0.8rem;
+            color: var(--light-text);
+            font-size: 0.95rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .story-list li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+            font-weight: bold;
+        }
+
+        .story-image {
+            text-align: center;
+        }
+
+        .story-icon {
+            font-size: 10rem;
+            color: var(--secondary-color);
+            opacity: 0.8;
+        }
+
+        .why-matters {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        .matters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .matter-item {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 5px solid var(--secondary-color);
+            box-shadow: var(--shadow);
+        }
+
+        .matter-item h3 {
+            color: var(--dark-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .features-overview {
+            padding: 80px 0;
+        }
+
+        .features-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-showcase-item {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            border-top: 4px solid var(--secondary-color);
+        }
+
+        .feature-number {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .laws-used {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        .laws-reference-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .law-ref {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            border-top: 3px solid var(--accent-color);
+        }
+
+        .law-ref h4 {
+            color: var(--dark-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .law-ref p {
+            font-size: 0.9rem;
+            color: var(--light-text);
+        }
+
+        .tech-stack {
+            padding: 80px 0;
+        }
+
+        .tech-stack-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+
+        .tech-stack-item {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+        }
+
+        .tech-stack-item:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .tech-icon {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .tech-stack-item h4 {
+            color: var(--dark-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-section {
+            padding: 80px 0;
+            background-color: var(--light-bg);
+        }
+
+        .team-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .team-item {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: var(--shadow);
+        }
+
+        .team-item i {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        .team-item h4 {
+            color: var(--dark-text);
+            margin-bottom: 0.5rem;
+        }
+
+        .faq-section {
+            padding: 80px 0;
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .faq-item {
+            background-color: var(--light-bg);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+        }
+
+        .faq-item h4 {
+            color: var(--dark-text);
+            margin-bottom: 1rem;
+        }
+
+        .faq-item p {
+            font-size: 0.95rem;
+        }
+
+        .cta-final {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+            color: var(--white);
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-final h2 {
+            color: var(--white);
+        }
+
+        .cta-final p {
+            color: #ecf0f1;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .story-content {
+                grid-template-columns: 1fr;
+            }
+
+            .story-text h2 {
+                text-align: center;
+            }
+
+            .story-text p {
+                text-align: center;
+            }
+
+            .story-list li {
+                text-align: center;
+                padding-left: 0;
+            }
+
+            .story-list li:before {
+                display: none;
+            }
+        }
+    </style>
+
+    <script src="script.js"></script>
 </body>
 </html>
