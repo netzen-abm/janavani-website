@@ -1,357 +1,999 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Janavani - Rate Government Offices and Get Instant Legal Complaint Letters in India">
-    <meta name="keywords" content="government complaint, legal letter, india, citizen rights, janavani">
-    <meta name="author" content="Civic Privacy Lab">
-    <title>Janavani - Rate Government Offices & Get Legal Complaints</title>
+
+    <meta name="description"
+        content="Janavani is a privacy-first citizen governance platform helping people understand government processes, exercise civic rights, prepare lawful documents and participate in accountable governance.">
+
+    <meta name="keywords"
+        content="Janavani, citizen governance, civic technology, government accountability, citizen rights, India, democracy, public participation">
+
+    <meta name="author" content="Janavani">
+
+    <title>Janavani — Citizen Governance Platform</title>
+
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- Navigation -->
+
+    <!-- =========================
+         LANGUAGE TRANSLATION
+         ========================= -->
+
+    <div class="gtranslate_wrapper"></div>
+
+
+    <!-- =========================
+         NAVIGATION
+         ========================= -->
+
     <nav class="navbar">
+
         <div class="container">
+
             <div class="logo">
-                <i class="fas fa-gavel"></i>
-                <span>Janavani</span>
+                <a href="index.html">Janavani</a>
             </div>
+
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#howitworks">How It Works</a></li>
-                <li><a href="#laws">Laws</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="#how-it-works">How It Works</a>
+                </li>
+
+                <li>
+                    <a href="#participation">Participation</a>
+                </li>
+
+                <li>
+                    <a href="#future">Future</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Get Involved</a>
+                </li>
+
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+
         </div>
+
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Make Government Accountable</h1>
-                <p class="subtitle">Rate any government office and instantly get a legal complaint letter citing Indian Constitution & Laws</p>
-                <div class="cta-buttons">
-                    <a href="#howitworks" class="btn btn-primary">Get Started</a>
-                    <a href="https://github.com/netzen-abm/janavani" class="btn btn-secondary">View on GitHub</a>
-                </div>
-                <div class="highlights">
-                    <div class="highlight-item">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>100% Anonymous</span>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="fas fa-file-pdf"></i>
-                        <span>Auto PDF Download</span>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="fas fa-gavel"></i>
-                        <span>Legally Sound</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="illustration">
-                    <i class="fas fa-balance-scale"></i>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Problem Section -->
-    <section class="problem-section">
-        <div class="container">
-            <h2>The Problem</h2>
-            <div class="problem-grid">
-                <div class="problem-card">
-                    <i class="fas fa-hospital"></i>
-                    <h3>Panchayat Office Hospital Delays</h3>
-                    <p>Long waiting times and poor service quality</p>
-                </div>
-                <div class="problem-card">
-                    <i class="fas fa-ban"></i>
-                    <h3>Any Goverment Office</h3>
-                    <p>Citizens denied rightful services without reason</p>
-                </div>
-                <div class="problem-card">
-                    <i class="fas fa-ban"></i>
-                    <h3>Denial of Service</h3>
-                    <p>Citizens denied rightful services without reason</p>
-                </div>
-                <div class="problem-card">
-                    <i class="fas fa-user-slash"></i>
-                    <h3>Misbehavior</h3>
-                    <p>Rude treatment and disrespect from officials</p>
-                </div>
-                <div class="problem-card">
-                    <i class="fas fa-question-circle"></i>
-                    <h3>Legal Confusion</h3>
-                    <p>Citizens don't know which law applies to their issue</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- =========================
+         HERO
+         ========================= -->
 
-    <!-- Solution Section -->
-    <section class="solution-section">
-        <div class="container">
-            <h2>Our Solution</h2>
-            <p class="section-subtitle">Janavani empowers citizens with legal tools to hold government accountable</p>
-            <div class="solution-grid">
-                <div class="solution-item">
-                    <div class="solution-number">01</div>
-                    <h3>Rate & Report</h3>
-                    <p>Report your experience at any government office. Rate from 1-5 stars and describe what happened.</p>
-                </div>
-                <div class="solution-item">
-                    <div class="solution-number">02</div>
-                    <h3>Legal Brain</h3>
-                    <p>Our system identifies which law applies to your problem and auto-generates a complaint draft.</p>
-                </div>
-                <div class="solution-item">
-                    <div class="solution-number">03</div>
-                    <h3>Download PDF</h3>
-                    <p>Get a professionally formatted legal complaint letter with correct addresses and CC recipients.</p>
-                </div>
-                <div class="solution-item">
-                    <div class="solution-number">04</div>
-                    <h3>Send & Resolve</h3>
-                    <p>Print and mail, or email your complaint. Track your grievance and get results.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="hero">
 
-    <!-- Features Section -->
-    <section id="features" class="features-section">
         <div class="container">
-            <h2>Supported Government Offices</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <i class="fas fa-hospital"></i>
-                    <h3>Hospitals</h3>
-                    <p>Report poor healthcare, long queues, and medical negligence</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-building"></i>
-                    <h3>Panchayat</h3>
-                    <p>Address local governance issues and community complaints</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-car"></i>
-                    <h3>Motor Vehicle Department</h3>
-                    <p>Report delays, misbehavior, and procedural violations</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-traffic-light"></i>
-                    <h3>Traffic Police</h3>
-                    <p>Report rude behavior and unfair traffic violations</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-shopping-bag"></i>
-                    <h3>Ration Shop</h3>
-                    <p>Report shortage of supplies and unfair distribution</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-shield"></i>
-                    <h3>Police Station</h3>
-                    <p>Report misconduct, delays, and denial of FIR</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- How It Works Section -->
-    <section id="howitworks" class="howitworks-section">
-        <div class="container">
-            <h2>How It Works</h2>
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Tell Your Story</h3>
-                    <p>Describe which office you visited and what went wrong</p>
-                </div>
-                <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Rate the Service</h3>
-                    <p>Give a 1-5 star rating based on your experience</p>
-                </div>
-                <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Get Legal Letter</h3>
-                    <p>Janavani generates a legal complaint citing applicable laws</p>
-                </div>
-                <div class="step-arrow"><i class="fas fa-arrow-right"></i></div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Download PDF</h3>
-                    <p>Print or email your formal complaint with signatures</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <h1>
+                Government Should Work for the People.
+            </h1>
 
-    <!-- Laws Section -->
-    <section id="laws" class="laws-section">
-        <div class="container">
-            <h2>Laws We Use</h2>
-            <p class="section-subtitle">Your complaints are backed by Indian law</p>
-            <div class="laws-grid">
-                <div class="law-card">
-                    <h3>Constitution of India</h3>
-                    <p>Fundamental rights and duties of citizens and the state</p>
-                </div>
-                <div class="law-card">
-                    <h3>Bhartiya Sakshya Adhiniyam (BSA)</h3>
-                    <p>Evidence Act for documenting your complaint legally</p>
-                </div>
-                <div class="law-card">
-                    <h3>Information Technology Act, 2000</h3>
-                    <p>Protection against cyber harassment and digital records</p>
-                </div>
-                <div class="law-card">
-                    <h3>Consumer Protection Act, 2019</h3>
-                    <p>Rights when government services are treated as public services</p>
-                </div>
-                <div class="law-card">
-                    <h3>Indian Contract Act, 1872</h3>
-                    <p>Legal obligations of government agencies to citizens</p>
-                </div>
-                <div class="law-card">
-                    <h3>Right to Information Act, 2005</h3>
-                    <p>Your right to ask for information and transparency</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <p>
+                Janavani is a privacy-first citizen governance platform
+                being built to help people understand government systems,
+                exercise their rights, take informed civic action and
+                participate in accountable governance.
+            </p>
 
-    <!-- Features Details Section -->
-    <section class="features-details">
-        <div class="container">
-            <h2>Key Features v1.0</h2>
-            <div class="features-list">
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Rate + Report System</h3>
-                        <p>Simple 5-star rating system for 6 types of government offices with detailed reporting fields</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Legal Brain AI</h3>
-                        <p>Intelligent system that auto-suggests applicable laws based on your complaint type</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Auto PDF Generation</h3>
-                        <p>Download complaint letters with correct authority addresses and proper CC recipients</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-incognito"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h3>100% Anonymous</h3>
-                        <p>No login required. Powered by Freenet + Nostr for complete privacy</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Privacy Focused</h3>
-                        <p>Your data is not stored on centralized servers. Complete control over your information</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <div class="feature-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="feature-content">
-                        <h3>Open Source</h3>
-                        <p>Built with Python, LangChain, and Docker. Contribute and improve at GitHub</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Make a Difference?</h2>
-            <p>Help us hold government accountable. Start using Janavani today.</p>
             <div class="cta-buttons">
-                <a href="#howitworks" class="btn btn-primary">Get Started</a>
-                <a href="https://github.com/netzen-abm/janavani" class="btn btn-secondary">Contribute</a>
+
+                <a href="#how-it-works" class="btn btn-primary">
+                    Explore Janavani
+                </a>
+
+                <a href="contact.html" class="btn btn-secondary">
+                    Get Involved
+                </a>
+
             </div>
+
         </div>
+
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+
+    <!-- =========================
+         WHAT IS JANAVANI
+         ========================= -->
+
+    <section class="solution-section">
+
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Janavani</h4>
-                    <p>Making government accountable, one complaint at a time.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#howitworks">How It Works</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="https://github.com/netzen-abm/janavani" target="_blank">GitHub</a></li>
-                        <li><a href="https://github.com/netzen-abm/janavani/blob/main/CONTRIBUTING.md" target="_blank">Contributing</a></li>
-                        <li><a href="https://github.com/netzen-abm/janavani/blob/main/LICENSE" target="_blank">License</a></li>
-                        <li><a href="https://github.com/netzen-abm/janavani/blob/main/SECURITY.md" target="_blank">Security</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="https://github.com/netzen-abm" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Janavani. Built with ❤️ by Civic Privacy Lab. Licensed under MIT.</p>
-            </div>
+
+            <h2>
+                What is Janavani?
+            </h2>
+
+            <p class="section-subtitle">
+                Janavani means the voice of the people.
+            </p>
+
+            <p>
+                Janavani is being developed as a citizen-governance
+                platform that helps people move from a government-related
+                problem to informed, documented and lawful civic action.
+            </p>
+
+            <p>
+                Government systems can be complicated. Citizens should not
+                be expected to understand every department, office,
+                procedure, document or escalation pathway before they can
+                exercise their rights.
+            </p>
+
+            <p>
+                Janavani aims to carry that complexity while keeping the
+                citizen at the centre of the process.
+            </p>
+
         </div>
+
+    </section>
+
+
+    <!-- =========================
+         CURRENT CAPABILITY
+         ========================= -->
+
+    <section class="features-section">
+
+        <div class="container">
+
+            <h2>
+                What Janavani Is Building
+            </h2>
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+
+                    <h3>
+                        Describe a Problem
+                    </h3>
+
+                    <p>
+                        Explain a government-related problem in simple
+                        language without needing to understand the
+                        entire administrative structure.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Understand the Pathway
+                    </h3>
+
+                    <p>
+                        Structure the issue and identify the relevant
+                        authority, document or civic pathway.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Prepare Documents
+                    </h3>
+
+                    <p>
+                        Generate structured government-facing documents
+                        that citizens can review before using them.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Preserve Evidence
+                    </h3>
+
+                    <p>
+                        Build toward evidence-based civic action through
+                        documents, records, photographs and other relevant
+                        information.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Follow Up
+                    </h3>
+
+                    <p>
+                        Future workflows can help citizens track responses,
+                        follow up appropriately and understand possible
+                        escalation pathways.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Privacy First
+                    </h3>
+
+                    <p>
+                        Janavani is designed around privacy, data
+                        minimisation, security and citizen control.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         HOW IT WORKS
+         ========================= -->
+
+    <section id="how-it-works" class="howitworks-section">
+
+        <div class="container">
+
+            <h2>
+                From Problem to Civic Action
+            </h2>
+
+            <div class="steps-container">
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        1
+                    </div>
+
+                    <h3>
+                        Describe
+                    </h3>
+
+                    <p>
+                        Tell Janavani what happened.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        2
+                    </div>
+
+                    <h3>
+                        Understand
+                    </h3>
+
+                    <p>
+                        Identify the relevant authority,
+                        procedure and possible civic pathway.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        3
+                    </div>
+
+                    <h3>
+                        Prepare
+                    </h3>
+
+                    <p>
+                        Create the appropriate document or
+                        representation for review.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        4
+                    </div>
+
+                    <h3>
+                        Act
+                    </h3>
+
+                    <p>
+                        Submit, follow up and escalate through
+                        appropriate lawful channels when necessary.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         DEMOCRACY AND PARTICIPATION
+         ========================= -->
+
+    <section id="participation" class="problem-section">
+
+        <div class="container">
+
+            <h2>
+                Democracy Is More Than Protest
+            </h2>
+
+            <p>
+                In a democracy and republic, citizens have many ways to
+                express disagreement, demand accountability and participate
+                in public affairs.
+            </p>
+
+            <p>
+                Protest is one form of democratic participation.
+                It is not the only form.
+            </p>
+
+            <p>
+                Citizens can also communicate through properly structured
+                representations, petitions, requests for information,
+                complaints, objections, legal notices and other lawful
+                procedures available to them.
+            </p>
+
+            <p>
+                Where appropriate, citizens may also pursue matters
+                personally through available legal mechanisms, including
+                <strong>party-in-person</strong> proceedings, without
+                necessarily depending on a lawyer for every stage.
+            </p>
+
+            <p>
+                Janavani aims to make these pathways easier to understand
+                and navigate while encouraging citizens to use lawful,
+                evidence-based and responsible methods of participation.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CITIZEN ACTION
+         ========================= -->
+
+    <section class="solution-section">
+
+        <div class="container">
+
+            <h2>
+                A Citizen Has More Than One Path
+            </h2>
+
+            <div class="features-grid">
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Representation
+                    </h3>
+
+                    <p>
+                        Communicate a problem, request or concern to the
+                        appropriate government authority in a structured
+                        written form.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        RTI
+                    </h3>
+
+                    <p>
+                        Where appropriate, seek information through the
+                        Right to Information framework and understand
+                        subsequent response and appeal pathways.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Objection & Opinion
+                    </h3>
+
+                    <p>
+                        Respond to proposed policies, laws and public
+                        decisions through reasoned opinions, objections
+                        and representations.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Legal Notice
+                    </h3>
+
+                    <p>
+                        Where appropriate, citizens may communicate legal
+                        concerns formally before considering further
+                        legal action.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Party-in-Person
+                    </h3>
+
+                    <p>
+                        Citizens may explore available party-in-person
+                        legal procedures where permitted and appropriate.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Community Support
+                    </h3>
+
+                    <p>
+                        Citizens may seek assistance from civil-society,
+                        legal-aid and other organisations working in
+                        relevant areas.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ACCOUNTABILITY
+         ========================= -->
+
+    <section id="future" class="features-section">
+
+        <div class="container">
+
+            <h2>
+                Toward Participatory Governance
+            </h2>
+
+            <p class="section-subtitle">
+                These are long-term directions for Janavani,
+                not claims about current availability.
+            </p>
+
+            <div class="features-grid">
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Government Performance
+                    </h3>
+
+                    <p>
+                        Help citizens understand government commitments,
+                        public programmes, budgets, implementation and
+                        measurable outcomes.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Manifesto & Performance
+                    </h3>
+
+                    <p>
+                        Explore ways to compare publicly available
+                        election commitments with government performance
+                        at appropriate levels of government.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Elected Representatives
+                    </h3>
+
+                    <p>
+                        Help citizens understand publicly available
+                        information about MPs, MLAs and local representatives,
+                        including participation and legislative activity.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Government Offices
+                    </h3>
+
+                    <p>
+                        Develop structured citizen feedback about service
+                        experience, accessibility, responsiveness and
+                        public-office conditions.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Budget & Outcomes
+                    </h3>
+
+                    <p>
+                        Help citizens understand public allocations and,
+                        where reliable data is available, compare spending
+                        with implementation and outcomes.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Citizen Ratings
+                    </h3>
+
+                    <p>
+                        Explore evidence-based citizen feedback and rating
+                        systems designed with safeguards against abuse,
+                        manipulation and unverified allegations.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Good Governance
+                    </h3>
+
+                    <p>
+                        Create ways for citizens to recognise public
+                        servants who demonstrate professionalism,
+                        responsiveness and public service.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Public Accountability
+                    </h3>
+
+                    <p>
+                        Build reliable public information from verified
+                        sources, documented evidence and transparent
+                        verification processes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONSTITUTIONAL PARTICIPATION
+         ========================= -->
+
+    <section class="solution-section">
+
+        <div class="container">
+
+            <h2>
+                Constitutional Awareness
+            </h2>
+
+            <p>
+                Janavani aims to help citizens better understand the
+                constitutional framework within which government power
+                operates.
+            </p>
+
+            <p>
+                Among the important constitutional principles relevant to
+                individual liberty and state action is the interrelationship
+                of Articles 14, 19 and 21, recognised by the Supreme Court
+                of India in the development of the jurisprudence commonly
+                described as the constitutional "Golden Triangle".
+            </p>
+
+            <p>
+                Janavani may use such constitutional principles as part of
+                future educational and civic-information tools, while making
+                clear that constitutional analysis is informational and
+                does not replace professional legal advice or judicial
+                determination.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PRIVACY
+         ========================= -->
+
+    <section class="problem-section">
+
+        <div class="container">
+
+            <h2>
+                Privacy Is Not an Afterthought
+            </h2>
+
+            <p>
+                Citizens should not have to surrender unnecessary personal
+                information simply to participate in civic life.
+            </p>
+
+            <p>
+                Janavani is therefore being designed around privacy,
+                security, data minimisation and citizen control.
+            </p>
+
+            <p>
+                The long-term vision includes stronger privacy-preserving
+                technologies, decentralised infrastructure and mechanisms
+                that can improve the integrity and resilience of citizen
+                records.
+            </p>
+
+            <p>
+                These advanced capabilities are part of the long-term
+                research and development direction and are not represented
+                as current production features.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         GET INVOLVED
+         ========================= -->
+
+    <section class="cta-section">
+
+        <div class="container">
+
+            <h2>
+                Janavani Needs Citizens
+            </h2>
+
+            <p>
+                Janavani is not intended to be built by technology
+                professionals alone.
+            </p>
+
+            <p>
+                Citizens, developers, designers, researchers, lawyers,
+                governance experts, journalists, students, civil-society
+                organisations and volunteers can all contribute in
+                different ways.
+            </p>
+
+            <div class="features-grid">
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Citizens
+                    </h3>
+
+                    <p>
+                        Share real-world civic problems, experiences and
+                        ideas that can help improve the platform.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Developers
+                    </h3>
+
+                    <p>
+                        Contribute code, testing, security research,
+                        architecture and open-source development.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Researchers
+                    </h3>
+
+                    <p>
+                        Contribute research in governance, law, public
+                        administration, technology, privacy and democracy.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Legal Professionals
+                    </h3>
+
+                    <p>
+                        Help improve legal accuracy, document structures,
+                        procedural information and civic legal resources.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Designers & Communicators
+                    </h3>
+
+                    <p>
+                        Help make complex government processes easier
+                        for ordinary citizens to understand.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <h3>
+                        Organisations
+                    </h3>
+
+                    <p>
+                        Civil-society organisations and community groups
+                        can explore research, awareness and collaboration.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="cta-buttons">
+
+                <a href="contact.html" class="btn btn-primary">
+                    Get Involved
+                </a>
+
+                <a href="about.html" class="btn btn-secondary">
+                    Learn About Janavani
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         REFERENCE & SUPPORT
+         ========================= -->
+
+    <section class="solution-section">
+
+        <div class="container">
+
+            <h2>
+                Learn, Participate, Seek Help
+            </h2>
+
+            <p>
+                Janavani does not endorse any particular organisation merely
+                by listing it as a reference.
+            </p>
+
+            <p>
+                Citizens may encounter organisations, legal-aid groups,
+                researchers and civil-society initiatives that provide
+                assistance with matters such as party-in-person procedures,
+                constitutional challenges, public-interest litigation or
+                other civic and legal pathways.
+            </p>
+
+            <p>
+                Such organisations should be independently evaluated by
+                citizens before relying on their services.
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="contact.html" class="btn btn-primary">
+                    Contact Janavani
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         IMPORTANT NOTICE
+         ========================= -->
+
+    <section class="problem-section">
+
+        <div class="container">
+
+            <h2>
+                Important Notice
+            </h2>
+
+            <p>
+                Janavani is a civic-technology initiative.
+                Information provided through the project is intended to
+                support citizen understanding and participation.
+            </p>
+
+            <p>
+                Janavani does not replace a lawyer, court, government
+                authority or other competent professional.
+            </p>
+
+            <p>
+                Citizens should independently verify applicable laws,
+                procedures, deadlines and official requirements before
+                taking legal or administrative action.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <h3>
+                Janavani
+            </h3>
+
+            <p>
+                A privacy-first citizen governance platform.
+            </p>
+
+            <p>
+                From citizen voice to informed civic participation.
+            </p>
+
+            <p>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                |
+
+                <a href="about.html">
+                    About
+                </a>
+
+                |
+
+                <a href="contact.html">
+                    Get Involved
+                </a>
+
+            </p>
+
+            <p>
+                © 2026 Janavani
+            </p>
+
+        </div>
+
     </footer>
 
-    <script src="script.js"></script>
+
+    <!-- =========================
+         TRANSLATION
+         ========================= -->
+
+    <script src="gtranslation.js"></script>
+
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js"
+        defer></script>
+
+
 </body>
+
 </html>
