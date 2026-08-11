@@ -1,23 +1,68 @@
-# janavani-website
-Official website for Janavani
 # Janavani Website
 
-Official website for **Janavani** - A community platform for news, events, and support.
+Official public-facing website for **Janavani — a Privacy-First Citizen Governance Platform**.
 
-## About
-Janavani connects people with local news, government services, and community updates.
+Janavani is being developed to help citizens understand government systems, exercise civic rights, prepare appropriate documents, participate in public affairs, and pursue lawful civic action.
 
-## Tech Stack
-- HTML5
-- CSS3
-- JavaScript
+This repository contains the **Janavani brochure / public information website**.
 
-## How to Run Locally
-1. Clone this repo
-2. Open `index.html` in your browser
+It is separate from the main Janavani application and platform repository.
 
-## Status
-🚧 Website is under development
+---
 
-## Contact
-Maintained by Netzen ABM
+## 1. What This Website Is
+
+The website acts as the public-facing introduction to Janavani.
+
+It explains:
+
+- What Janavani is
+- Why Janavani is being developed
+- How citizens can participate
+- The principles behind the project
+- Current capabilities
+- Long-term direction
+- Ways people can contribute
+- How citizens and organisations can get involved
+
+The website is intentionally simple so that it can be maintained easily.
+
+---
+
+## 2. What This Website Is Not
+
+This repository is **not** the Janavani application.
+
+It does not contain the main:
+
+- Citizen workflows
+- Government-office database
+- Document-generation engine
+- RTI workflows
+- Complaint-processing system
+- Governance intelligence platform
+- Citizen accounts
+- Future accountability infrastructure
+
+Those capabilities belong to the main Janavani platform.
+
+The website is the public information and introduction layer.
+
+---
+
+## 3. Relationship to the Janavani Platform
+
+The long-term architecture is:
+
+```text
+Citizen
+   ↓
+Janavani Website / Web App / Other Interfaces
+   ↓
+Janavani Platform
+   ↓
+Workflows
+   ↓
+Services
+   ↓
+Government / Civic Action
