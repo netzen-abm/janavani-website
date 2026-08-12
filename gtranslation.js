@@ -21,10 +21,19 @@
 
 (function () {
 
-<div class="gtranslate_wrapper"></div>
-<script>window.gtranslateSettings = {"default_language":"en","languages":["en","ml","hi","kn","te","ta","mr","bn","gu","pa","sd","ur","ne"],"wrapper_selector":".gtranslate_wrapper"}</script>
-<script src="https://cdn.gtranslate.net/widgets/latest/uswds.js" defer></script>
+  <!-- PLACE THIS ANYWHERE INSIDE YOUR <body> TAG -->
+<div style="position: absolute; top: 20px; right: 20px; z-index: 99999;">
+    <div class="gtranslate_wrapper"></div>
+</div>
 
+<script>
+    window.gtranslateSettings = {
+        "default_language": "en",
+        "languages": ["en", "ml", "hi", "kn", "te", "ta", "mr", "bn", "gu", "pa", "sd", "ur", "ne"],
+        "wrapper_selector": ".gtranslate_wrapper"
+    }
+</script>
+<script src="https://gtranslate.net" defer></script>
 
 ;
 
