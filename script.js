@@ -214,6 +214,46 @@ document.addEventListener("DOMContentLoaded", function () {
             "auto";
     }
 
+
+    /* =========================================
+       TRANSLATION REVEAL ENGINE
+       ========================================= */
+
+    // Initialization buffer ensures external gtranslate DOM engine handles creation securely
+    setTimeout(() => {
+        const wrapper = document.querySelector('.gtranslate_wrapper');
+        if (!wrapper) return;
+
+        // Toggle drop-down interactive state on button wrapper interaction
+        wrapper.addEventListener('click', (e) => {
+            if (e.target.tagName === 'SELECT') return; 
+            e.stopPropagation();
+            wrapper.classList.toggle('active');
+        });
+
+        // Clear UI states instantly if client clicks outside the element frame
+        document.addEventListener('click', () => {
+            wrapper.classList.remove('active');
+        });
+    }, 1000);
+
+
+    /* =========================================
+       INSTANT NATIVE LANGUAGE RESET
+       ========================================= */
+
+    const resetBtn = document.getElementById('reset-language');
+    if (resetBtn) {
+        resetBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            // Erase underlying cookie storage scopes
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
+            // Hot reload application pipeline to clear views instantly
+            window.location.reload();
+        });
+    }
+
 });
 
 
@@ -278,6 +318,7 @@ janavaniDynamicStyles.textContent = `
             opacity 0.25s ease,
             visibility 0.25s ease,
             transform 0.25s ease;
+        z-index: 9998; /* Keeps it directly beneath the translation layer level */
     }
 
     .scroll-top.visible {
@@ -288,6 +329,17 @@ janavaniDynamicStyles.textContent = `
 
     .scroll-top:hover {
         background: #164f89;
+    }
+
+    @media (max-width: 600px) {
+        /* Pushes scroll-to-top button upward on phones to keep it clear of the translation bar ribbon */
+        .scroll-top {
+            bottom: 70px;
+            right: 16px;
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+        }
     }
 
     @media (prefers-reduced-motion: reduce) {
