@@ -136,3 +136,18 @@
         transform: none;
     }
 }
+
+// 4. Instant Language Reset Handler
+document.addEventListener("DOMContentLoaded", () => {
+    const resetBtn = document.getElementById('reset-language');
+    if (resetBtn) {
+        resetBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            // Clear the GTranslate cookies across all path variations
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+            document.cookie = "googtrans=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; domain=" + window.location.hostname;
+            // Reload the portal fresh in native default English
+            window.location.reload();
+        });
+    }
+});
