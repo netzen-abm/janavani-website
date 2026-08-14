@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "aria-label",
         "Scroll to top"
     );
-    scrollTopButton.innerHTML = "↑";
+    scrollTopButton.innerHTML = "â†‘";
 
     document.body.appendChild(scrollTopButton);
 
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /* =========================================
-       ACCESSIBILITY — REDUCE MOTION
+       ACCESSIBILITY â€” REDUCE MOTION
        ========================================= */
 
     const prefersReducedMotion =
@@ -213,29 +213,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.documentElement.style.scrollBehavior =
             "auto";
     }
-
-
-    /* =========================================
-       TRANSLATION REVEAL ENGINE
-       ========================================= */
-
-    // Initialization buffer ensures external gtranslate DOM engine handles creation securely
-    setTimeout(() => {
-        const wrapper = document.querySelector('.gtranslate_wrapper');
-        if (!wrapper) return;
-
-        // Toggle drop-down interactive state on button wrapper interaction
-        wrapper.addEventListener('click', (e) => {
-            if (e.target.tagName === 'SELECT') return; 
-            e.stopPropagation();
-            wrapper.classList.toggle('active');
-        });
-
-        // Clear UI states instantly if client clicks outside the element frame
-        document.addEventListener('click', () => {
-            wrapper.classList.remove('active');
-        });
-    }, 1000);
 
 
     /* =========================================
