@@ -28,6 +28,65 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="How Janavani Works â€” Citizen Governance Platform">
 <meta name="twitter:description" content="Understand how Janavani is being developed to help citizens move from a government-related problem to informed, documented and lawful civic action.">
+<style id="janavani-how-it-works-visual">
+
+/* ============================================================
+   JANAVANI — HOW IT WORKS PAGE VISUAL LAYER
+   STEP 5C-6
+   ============================================================ */
+
+.page-hero-title {
+    max-width: 900px;
+    margin-inline: auto;
+    text-wrap: balance;
+}
+
+.workflow-anchor {
+    position: relative;
+}
+
+.workflow-anchor::before {
+    content: "";
+    display: block;
+    width: 56px;
+    height: 4px;
+    margin: 0 auto 1.5rem;
+    background: var(--jv-gold, #d9a441);
+    border-radius: 999px;
+}
+
+.workflow-anchor .steps-container {
+    margin-top: 3rem;
+}
+
+.workflow-anchor .step {
+    transition:
+        transform 180ms ease,
+        box-shadow 180ms ease;
+}
+
+.workflow-anchor .step:hover {
+    transform: translateY(-4px);
+}
+
+.howitworks-section .section-subtitle,
+.solution-section .section-subtitle {
+    max-width: 760px;
+    margin-inline: auto;
+}
+
+@media (max-width: 768px) {
+
+    .workflow-anchor .steps-container {
+        margin-top: 2rem;
+    }
+
+    .workflow-anchor .step:hover {
+        transform: none;
+    }
+}
+
+</style>
 </head>
 
 <body>
@@ -44,7 +103,14 @@
         <div class="container">
 
             <div class="logo">
-                <a href="index.html">Janavani</a>
+                <a href="index.html" aria-label="Janavani home">
+                    <img
+                        src="assets/JanaVani Profile Pictures.png"
+                        alt="Janavani"
+                        class="jv-logo-image"
+                        width="64"
+                        height="64">
+                </a>
             </div>
 
             <ul class="nav-links">
@@ -96,7 +162,7 @@
 
         <div class="container">
 
-            <h1>How Janavani Works</h1>
+            <h1 class="page-hero-title">How Janavani Works</h1>
 
             <p>
                 Janavani is being built to help citizens move from
