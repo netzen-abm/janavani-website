@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
 
     <meta name="description"
         content="Learn about Janavani, a privacy-first citizen governance platform designed to help people understand government systems, prepare lawful civic documents and participate in accountable governance.">
@@ -13,24 +14,1240 @@
 
     <meta name="author" content="Janavani">
 
-    <title>About Janavani â€” Citizen Governance Platform</title>
+    <title>About Janavani — Citizen Governance Platform</title>
 
     <link rel="stylesheet" href="styles.css">
 
 <link rel="canonical" href="https://netzen-abm.github.io/janavani-website/about.html">
 <meta name="theme-color" content="#0d3b66">
 
-<meta property="og:title" content="About Janavani â€” Citizen Governance Platform">
+<meta property="og:title" content="About Janavani Citizen Governance Platform">
 <meta property="og:description" content="Learn what Janavani is, why it is being developed, its citizen-governance philosophy, privacy approach and long-term direction.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://netzen-abm.github.io/janavani-website/about.html">
 
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="About Janavani â€” Citizen Governance Platform">
+<meta name="twitter:title" content="About Janavani Citizen Governance Platform">
 <meta name="twitter:description" content="Learn about Janavani's purpose, citizen-governance approach, privacy principles and future direction.">
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Janavani",
+    "url": "https://netzen-abm.github.io/janavani-website/about.html",
+    "description": "Learn why Janavani exists, what it stands for, and how it helps citizens understand and participate in public governance.",
+    "isPartOf": {
+        "@type": "WebSite",
+        "name": "Janavani",
+        "url": "https://netzen-abm.github.io/janavani-website/"
+    }
+}
+</script>
+<style id="janavani-about-consolidated-visual-system">
+
+/* ============================================================
+   JANAVANI — ABOUT IDENTITY VISUAL SYSTEM
+   STEP 28-21O-7E-34
+   ============================================================ */
+
+.jv-about-identity-section {
+    position: relative;
+}
+
+.jv-about-identity-grid {
+    display: grid;
+    grid-template-columns: minmax(250px, 0.78fr) minmax(0, 1.45fr);
+    align-items: center;
+    gap: clamp(2.5rem, 6vw, 5.5rem);
+    max-width: 1120px;
+    margin-inline: auto;
+}
+
+.jv-about-identity-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jv-about-logo-frame {
+    display: grid;
+    place-items: center;
+    width: clamp(220px, 24vw, 310px);
+    aspect-ratio: 1 / 1;
+    padding: clamp(1rem, 2vw, 1.5rem);
+    border: 1px solid rgba(13, 59, 102, 0.12);
+    border-radius: 50%;
+    background:
+        radial-gradient(
+            circle at 50% 42%,
+            #ffffff 0%,
+            #f5f8fb 58%,
+            #e8f0f7 100%
+        );
+    box-shadow:
+        0 18px 45px rgba(13, 59, 102, 0.10),
+        inset 0 0 0 10px rgba(255, 255, 255, 0.62);
+}
+
+.jv-about-logo-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: contain;
+}
+
+.jv-about-identity-visual .about-profile-caption {
+    max-width: 330px;
+    margin: 1rem auto 0;
+    text-align: center;
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: #536b82;
+}
+
+.jv-about-identity-content {
+    max-width: 720px;
+}
+
+.jv-about-eyebrow {
+    margin: 0 0 0.9rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.16em;
+    color: #8a6a24;
+}
+
+.jv-about-identity-content h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 3.4vw, 3rem);
+    line-height: 1.08;
+    text-wrap: balance;
+}
+
+.jv-about-lead {
+    max-width: 700px;
+    margin-bottom: 1.4rem;
+    font-size: clamp(1.08rem, 1.45vw, 1.28rem);
+    line-height: 1.72;
+    color: #163f67;
+}
+
+.jv-about-identity-content .section-subtitle {
+    margin: 1.4rem 0 1.5rem;
+    font-size: clamp(1.05rem, 1.5vw, 1.25rem);
+    line-height: 1.6;
+    color: #536b82;
+}
+
+.jv-about-identity-copy {
+    max-width: 700px;
+}
+
+.jv-about-identity-copy p {
+    margin: 0 0 1.15rem;
+    line-height: 1.78;
+}
+
+.jv-about-identity-copy p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ------------------------------------------------------------
+   RESPONSIVE
+   ------------------------------------------------------------ */
+
+@media (max-width: 820px) {
+
+    .jv-about-identity-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        text-align: center;
+    }
+
+    .jv-about-identity-content {
+        max-width: 720px;
+        margin-inline: auto;
+    }
+
+    .jv-about-lead,
+    .jv-about-identity-copy {
+        margin-inline: auto;
+    }
+
+    .jv-about-identity-copy {
+        text-align: left;
+    }
+
+    .jv-about-eyebrow {
+        letter-spacing: 0.12em;
+    }
+}
+
+@media (max-width: 520px) {
+
+    .jv-about-logo-frame {
+        width: 210px;
+    }
+
+    .jv-about-logo-frame img {
+        max-width: 175px;
+        max-height: 175px;
+    }
+
+    .jv-about-identity-content h2 {
+        font-size: 2rem;
+    }
+
+    .jv-about-identity-copy {
+        text-align: left;
+    }
+}
+
+
+/* ============================================================
+   JANAVANI ABOUT — MISSION PREMIUM ALIGNMENT
+   ============================================================ */
+
+.jv-about-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1.25rem, 2vw, 1.5rem);
+    width: 100%;
+    max-width: 1120px;
+    margin: 2rem auto 0;
+    align-items: stretch;
+}
+
+.jv-about-mission-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 166px;
+    box-sizing: border-box;
+    padding: clamp(1.35rem, 2vw, 1.7rem);
+    text-align: left;
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius-md);
+    background: var(--jv-white);
+    box-shadow: var(--jv-shadow-sm);
+    transition:
+        transform var(--jv-transition-slow),
+        box-shadow var(--jv-transition-slow),
+        border-color var(--jv-transition);
+}
+
+.jv-about-mission-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--jv-border-strong);
+    box-shadow: var(--jv-shadow-md);
+}
+
+.jv-about-mission-card h3 {
+    margin: 0 0 0.8rem;
+    color: var(--jv-heading);
+    font-size: clamp(1.15rem, 1.5vw, 1.35rem);
+    line-height: 1.25;
+}
+
+.jv-about-mission-card p {
+    margin: 0;
+    color: var(--jv-text);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 820px) {
+
+    .jv-about-mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jv-about-mission-card {
+        min-height: auto;
+    }
+}
+</style>
+<style id="janavani-about-step35-header-logo-social">
+
+/* ============================================================
+   JANAVANI ABOUT — STEP 28-21O-7E-35
+   HEADER / LOGO / SOCIAL VISUAL CORRECTION
+   about.html ONLY
+   ============================================================ */
+
+
+/* ------------------------------------------------------------
+   STICKY PRIMARY NAVIGATION
+   ------------------------------------------------------------ */
+
+header nav,
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 0.8rem 1.25rem;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-bottom: 1px solid rgba(13, 59, 102, 0.10);
+
+    box-shadow:
+        0 4px 18px rgba(13, 59, 102, 0.06);
+
+    backdrop-filter: blur(12px);
+}
+
+
+/* ------------------------------------------------------------
+   NAVIGATION LINKS
+   ------------------------------------------------------------ */
+
+header nav a,
+nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 0.45rem;
+
+    padding: 0.5rem 0.7rem;
+
+    white-space: nowrap;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    color: #0d3b66;
+
+    border-radius: 999px;
+
+    transition:
+        color 0.2s ease,
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+header nav a:hover,
+nav a:hover {
+    color: #8a6a24;
+
+    background: rgba(13, 59, 102, 0.06);
+
+    transform: translateY(-1px);
+}
+
+
+/* ------------------------------------------------------------
+   JANAVANI LOGO — ENLARGE INSIDE CIRCLE
+   ------------------------------------------------------------ */
+
+.jv-about-logo-frame {
+    overflow: hidden;
+}
+
+.jv-about-logo-frame img {
+    width: 138% !important;
+    height: 138% !important;
+
+    max-width: none !important;
+    max-height: none !important;
+
+    object-fit: contain;
+
+    transform: scale(1.02);
+
+    transform-origin: center center;
+}
+
+
+/* ------------------------------------------------------------
+   LOGO FRAME — KEEP CIRCLE ELEGANT
+   ------------------------------------------------------------ */
+
+.jv-about-logo-frame {
+    width: clamp(230px, 25vw, 315px);
+
+    aspect-ratio: 1 / 1;
+
+    padding: 0;
+
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            #ffffff 0%,
+            #f7fafc 55%,
+            #e8f0f7 100%
+        );
+
+    border: 1px solid rgba(13, 59, 102, 0.13);
+
+    box-shadow:
+        0 20px 50px rgba(13, 59, 102, 0.11),
+        inset 0 0 0 9px rgba(255, 255, 255, 0.72);
+}
+
+
+/* ------------------------------------------------------------
+   FOOTER SOCIAL GROUP — HORIZONTAL
+   ------------------------------------------------------------ */
+
+.jv-footer-social,
+footer .jv-footer-social {
+    display: flex !important;
+
+    flex-direction: row !important;
+
+    flex-wrap: wrap !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    gap: 0.7rem !important;
+
+    width: auto !important;
+
+    max-width: 100% !important;
+
+    margin-inline: auto !important;
+}
+
+
+/* ------------------------------------------------------------
+   SOCIAL LINKS — COMPACT ICON BUTTONS
+   ------------------------------------------------------------ */
+
+.jv-social-link,
+.jv-footer-social .jv-social-link {
+    display: inline-flex !important;
+
+    flex: 0 0 auto !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 46px !important;
+    height: 46px !important;
+
+    min-width: 46px !important;
+    min-height: 46px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border-radius: 50% !important;
+
+    border: 1px solid rgba(13, 59, 102, 0.14) !important;
+
+    background: #ffffff !important;
+
+    color: #0d3b66 !important;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        0 5px 16px rgba(13, 59, 102, 0.08) !important;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease !important;
+}
+
+.jv-social-link:hover {
+    transform: translateY(-3px);
+
+    background: #0d3b66 !important;
+
+    color: #ffffff !important;
+
+    box-shadow:
+        0 10px 24px rgba(13, 59, 102, 0.16) !important;
+}
+
+
+/* ------------------------------------------------------------
+   SOCIAL ICON SIZE
+   ------------------------------------------------------------ */
+
+.jv-social-link svg,
+.jv-social-link i,
+.jv-social-link img {
+    width: 20px !important;
+    height: 20px !important;
+
+    max-width: 20px !important;
+    max-height: 20px !important;
+
+    display: block !important;
+}
+
+
+/* ------------------------------------------------------------
+   PREVENT SOCIAL LINKS FROM BECOMING FULL-WIDTH ROWS
+   ------------------------------------------------------------ */
+
+.jv-footer-social a {
+    width: 46px !important;
+    min-width: 46px !important;
+    max-width: 46px !important;
+
+    height: 46px !important;
+    min-height: 46px !important;
+    max-height: 46px !important;
+}
+
+
+/* ------------------------------------------------------------
+   MOBILE
+   ------------------------------------------------------------ */
+
+@media (max-width: 760px) {
+
+    nav {
+        justify-content: flex-start;
+
+        overflow-x: auto;
+
+        scrollbar-width: none;
+
+        white-space: nowrap;
+
+        padding-inline: 0.75rem;
+    }
+
+    nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav a {
+        flex: 0 0 auto;
+
+        margin-inline: 0.15rem;
+    }
+
+    .jv-about-logo-frame {
+        width: 230px;
+    }
+
+    .jv-about-logo-frame img {
+        width: 135% !important;
+        height: 135% !important;
+    }
+
+    .jv-footer-social,
+    footer .jv-footer-social {
+        gap: 0.55rem !important;
+    }
+
+    .jv-social-link,
+    .jv-footer-social a {
+        width: 42px !important;
+        min-width: 42px !important;
+        max-width: 42px !important;
+
+        height: 42px !important;
+        min-height: 42px !important;
+        max-height: 42px !important;
+    }
+}
+
+
+/* ============================================================
+   JANAVANI ABOUT — MISSION PREMIUM ALIGNMENT
+   ============================================================ */
+
+.jv-about-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1.25rem, 2vw, 1.5rem);
+    width: 100%;
+    max-width: 1120px;
+    margin: 2rem auto 0;
+    align-items: stretch;
+}
+
+.jv-about-mission-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 166px;
+    box-sizing: border-box;
+    padding: clamp(1.35rem, 2vw, 1.7rem);
+    text-align: left;
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius-md);
+    background: var(--jv-white);
+    box-shadow: var(--jv-shadow-sm);
+    transition:
+        transform var(--jv-transition-slow),
+        box-shadow var(--jv-transition-slow),
+        border-color var(--jv-transition);
+}
+
+.jv-about-mission-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--jv-border-strong);
+    box-shadow: var(--jv-shadow-md);
+}
+
+.jv-about-mission-card h3 {
+    margin: 0 0 0.8rem;
+    color: var(--jv-heading);
+    font-size: clamp(1.15rem, 1.5vw, 1.35rem);
+    line-height: 1.25;
+}
+
+.jv-about-mission-card p {
+    margin: 0;
+    color: var(--jv-text);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 820px) {
+
+    .jv-about-mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jv-about-mission-card {
+        min-height: auto;
+    }
+}
+</style>
+<style id="janavani-about-step36-logo-social-submenu">
+
+/* ============================================================
+   JANAVANI — STEP 28-21O-7E-36
+   LOGO / SOCIAL / ABOUT SUBMENU
+   ABOUT.HTML ONLY
+   ============================================================ */
+
+
+/* ------------------------------------------------------------
+   LOGO
+   Keep the complete Janavani logo visible inside the circle.
+   ------------------------------------------------------------ */
+
+.jv-about-logo-frame {
+    overflow: hidden !important;
+    display: grid !important;
+    place-items: center !important;
+}
+
+.jv-about-logo-frame img {
+    width: 92% !important;
+    height: 92% !important;
+
+    max-width: 92% !important;
+    max-height: 92% !important;
+
+    object-fit: contain !important;
+
+    transform: none !important;
+}
+
+
+/* ------------------------------------------------------------
+   ABOUT SUBMENU
+   ------------------------------------------------------------ */
+
+.navbar .nav-links {
+    align-items: center;
+}
+
+.navbar .nav-links > li.jv-has-submenu {
+    position: relative;
+}
+
+.navbar .nav-links > li.jv-has-submenu > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.jv-submenu-arrow {
+    font-size: 0.72em;
+    line-height: 1;
+    color: #8a6a24;
+}
+
+
+/* Desktop dropdown */
+
+.jv-about-submenu {
+    position: absolute;
+
+    top: calc(100% + 0.55rem);
+    left: 50%;
+    transform: translateX(-50%) translateY(-6px);
+
+    width: 245px;
+
+    margin: 0;
+    padding: 0.45rem;
+
+    list-style: none;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(13, 59, 102, 0.12);
+    border-radius: 14px;
+
+    box-shadow:
+        0 18px 45px rgba(13, 59, 102, 0.14);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity 0.18s ease,
+        transform 0.18s ease,
+        visibility 0.18s ease;
+
+    z-index: 2000;
+}
+
+.navbar .nav-links > li.jv-has-submenu:hover .jv-about-submenu,
+.navbar .nav-links > li.jv-has-submenu:focus-within .jv-about-submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: translateX(-50%) translateY(0);
+}
+
+.jv-about-submenu li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.jv-about-submenu a {
+    display: flex !important;
+    align-items: center;
+
+    width: 100% !important;
+
+    min-height: 40px !important;
+
+    padding: 0.65rem 0.8rem !important;
+
+    border: 0 !important;
+    border-radius: 9px;
+
+    color: #0d3b66 !important;
+
+    font-size: 0.86rem !important;
+    font-weight: 600 !important;
+
+    text-decoration: none !important;
+
+    white-space: normal !important;
+}
+
+.jv-about-submenu a:hover,
+.jv-about-submenu a:focus-visible {
+    background: rgba(13, 59, 102, 0.07) !important;
+    color: #8a6a24 !important;
+}
+
+
+/* ------------------------------------------------------------
+   SOCIAL ICON ROW
+   ------------------------------------------------------------ */
+
+.jv-footer-social {
+    display: flex !important;
+
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 0.75rem !important;
+
+    width: auto !important;
+}
+
+
+/* ------------------------------------------------------------
+   REAL BRAND ICON BUTTON
+   ------------------------------------------------------------ */
+
+.jv-social-link {
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex: 0 0 auto !important;
+
+    width: 46px !important;
+    height: 46px !important;
+
+    min-width: 46px !important;
+    min-height: 46px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border-radius: 50% !important;
+
+    background: #0d3b66 !important;
+
+    border: 1px solid rgba(13, 59, 102, 0.18) !important;
+
+    color: #ffffff !important;
+
+    text-decoration: none !important;
+
+    box-shadow:
+        0 6px 18px rgba(13, 59, 102, 0.12) !important;
+
+    transition:
+        transform 0.18s ease,
+        box-shadow 0.18s ease,
+        background 0.18s ease !important;
+}
+
+.jv-social-link:hover,
+.jv-social-link:focus-visible {
+    transform: translateY(-3px);
+
+    background: #174f7f !important;
+
+    box-shadow:
+        0 10px 25px rgba(13, 59, 102, 0.20) !important;
+}
+
+
+/* Actual brand SVG */
+
+.jv-social-link img {
+    display: block !important;
+
+    width: 21px !important;
+    height: 21px !important;
+
+    max-width: 21px !important;
+    max-height: 21px !important;
+
+    object-fit: contain !important;
+}
+
+
+/* ------------------------------------------------------------
+   MOBILE
+   ------------------------------------------------------------ */
+
+@media (max-width: 760px) {
+
+    .jv-about-submenu {
+        position: static;
+
+        width: 100%;
+
+        margin-top: 0.25rem;
+
+        transform: none !important;
+
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+
+        box-shadow: none;
+
+        border-radius: 10px;
+
+        display: none;
+    }
+
+    .navbar .nav-links > li.jv-has-submenu:hover .jv-about-submenu,
+    .navbar .nav-links > li.jv-has-submenu:focus-within .jv-about-submenu {
+        display: block;
+    }
+
+    .jv-footer-social {
+        gap: 0.55rem !important;
+    }
+
+    .jv-social-link {
+        width: 42px !important;
+        height: 42px !important;
+
+        min-width: 42px !important;
+        min-height: 42px !important;
+    }
+
+    .jv-social-link img {
+        width: 19px !important;
+        height: 19px !important;
+    }
+}
+
+
+/* ============================================================
+   JANAVANI ABOUT — MISSION PREMIUM ALIGNMENT
+   ============================================================ */
+
+.jv-about-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1.25rem, 2vw, 1.5rem);
+    width: 100%;
+    max-width: 1120px;
+    margin: 2rem auto 0;
+    align-items: stretch;
+}
+
+.jv-about-mission-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 166px;
+    box-sizing: border-box;
+    padding: clamp(1.35rem, 2vw, 1.7rem);
+    text-align: left;
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius-md);
+    background: var(--jv-white);
+    box-shadow: var(--jv-shadow-sm);
+    transition:
+        transform var(--jv-transition-slow),
+        box-shadow var(--jv-transition-slow),
+        border-color var(--jv-transition);
+}
+
+.jv-about-mission-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--jv-border-strong);
+    box-shadow: var(--jv-shadow-md);
+}
+
+.jv-about-mission-card h3 {
+    margin: 0 0 0.8rem;
+    color: var(--jv-heading);
+    font-size: clamp(1.15rem, 1.5vw, 1.35rem);
+    line-height: 1.25;
+}
+
+.jv-about-mission-card p {
+    margin: 0;
+    color: var(--jv-text);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 820px) {
+
+    .jv-about-mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jv-about-mission-card {
+        min-height: auto;
+    }
+}
+</style>
+<style id="janavani-about-step37-final-fix">
+
+/* ------------------------------------------------------------
+   ABOUT PAGE ALIGNMENT
+   ------------------------------------------------------------ */
+
+.about-profile-visual {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+}
+
+.about-profile-visual img {
+    width: 210px !important;
+    height: 210px !important;
+    max-width: 210px !important;
+    max-height: 210px !important;
+    object-fit: contain !important;
+    margin: 0 auto 1.25rem auto !important;
+}
+
+/* ------------------------------------------------------------
+   MISSION / FEATURE CARDS
+   ------------------------------------------------------------ */
+
+.features-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: clamp(1.25rem, 2vw, 1.5rem) !important;
+    width: 100% !important;
+    max-width: 1120px !important;
+    margin: 2rem auto 0 !important;
+    align-items: stretch !important;
+}
+
+.features-grid .feature-card {
+    width: auto !important;
+    min-width: 0 !important;
+    min-height: 150px !important;
+    box-sizing: border-box !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+
+    padding: clamp(1.35rem, 2vw, 1.7rem) !important;
+
+    text-align: left !important;
+}
+
+.features-grid .feature-card h3 {
+    margin: 0 0 0.8rem !important;
+    color: var(--jv-heading) !important;
+    font-size: clamp(1.15rem, 1.5vw, 1.35rem) !important;
+    line-height: 1.3 !important;
+}
+
+.features-grid .feature-card p {
+    margin: 0 !important;
+    color: var(--jv-text) !important;
+    font-size: 1rem !important;
+    line-height: 1.7 !important;
+}
+
+/* ------------------------------------------------------------
+   SOCIAL ICONS
+   ------------------------------------------------------------ */
+
+.jv-footer-social {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0.75rem !important;
+}
+
+.jv-social-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+    min-height: 46px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 50% !important;
+    background: #0d3b66 !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+.jv-social-link img {
+    display: block !important;
+    width: 21px !important;
+    height: 21px !important;
+    max-width: 21px !important;
+    max-height: 21px !important;
+    object-fit: contain !important;
+}
+
+/* ------------------------------------------------------------
+   ABOUT SUBMENU
+   ------------------------------------------------------------ */
+
+.jv-about-submenu {
+    z-index: 9999 !important;
+}
+
+.jv-about-submenu a {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* ------------------------------------------------------------
+   SCROLL TO TOP
+   ------------------------------------------------------------ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+.jv-scroll-top {
+    position: fixed !important;
+    right: 22px !important;
+    bottom: 22px !important;
+    z-index: 9998 !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: 46px !important;
+    height: 46px !important;
+
+    border-radius: 50% !important;
+
+    background: #0d3b66 !important;
+    color: #ffffff !important;
+
+    border: 1px solid rgba(13, 59, 102, 0.18) !important;
+
+    text-decoration: none !important;
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+
+    box-shadow: 0 8px 22px rgba(13, 59, 102, 0.20) !important;
+
+    transition:
+        transform 0.18s ease,
+        background 0.18s ease !important;
+}
+
+.jv-scroll-top:hover,
+.jv-scroll-top:focus-visible {
+    transform: translateY(-3px) !important;
+    background: #174f7f !important;
+}
+
+/* ------------------------------------------------------------
+   MOBILE
+   ------------------------------------------------------------ */
+
+@media (max-width: 760px) {
+
+    .about-profile-visual img {
+        width: 220px !important;
+        height: 220px !important;
+        max-width: 220px !important;
+        max-height: 220px !important;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .features-grid .feature-card {
+        min-height: auto !important;
+    }
+
+    .jv-social-link {
+        width: 42px !important;
+        height: 42px !important;
+        min-width: 42px !important;
+        min-height: 42px !important;
+    }
+
+    .jv-social-link img {
+        width: 19px !important;
+        height: 19px !important;
+    }
+
+    .jv-scroll-top {
+        right: 16px !important;
+        bottom: 16px !important;
+        width: 42px !important;
+        height: 42px !important;
+    }
+}
+
+
+/* ============================================================
+   JANAVANI ABOUT — MISSION PREMIUM ALIGNMENT
+   ============================================================ */
+
+.jv-about-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(1.25rem, 2vw, 1.5rem);
+    width: 100%;
+    max-width: 1120px;
+    margin: 2rem auto 0;
+    align-items: stretch;
+}
+
+.jv-about-mission-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 166px;
+    box-sizing: border-box;
+    padding: clamp(1.35rem, 2vw, 1.7rem);
+    text-align: left;
+    border: 1px solid var(--jv-border);
+    border-radius: var(--jv-radius-md);
+    background: var(--jv-white);
+    box-shadow: var(--jv-shadow-sm);
+    transition:
+        transform var(--jv-transition-slow),
+        box-shadow var(--jv-transition-slow),
+        border-color var(--jv-transition);
+}
+
+.jv-about-mission-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--jv-border-strong);
+    box-shadow: var(--jv-shadow-md);
+}
+
+.jv-about-mission-card h3 {
+    margin: 0 0 0.8rem;
+    color: var(--jv-heading);
+    font-size: clamp(1.15rem, 1.5vw, 1.35rem);
+    line-height: 1.25;
+}
+
+.jv-about-mission-card p {
+    margin: 0;
+    color: var(--jv-text);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+@media (max-width: 820px) {
+
+    .jv-about-mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jv-about-mission-card {
+        min-height: auto;
+    }
+}
+</style>
+
+
 </head>
 
-<body>
+<body id="top">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <!-- LANGUAGE TRANSLATION -->
 
@@ -39,38 +1256,122 @@
 
     <!-- NAVIGATION -->
 
+    <header class="site-header">
+
+
     <nav class="navbar">
 
         <div class="container">
 
             <div class="logo">
-                <a href="index.html">Janavani</a>
+
+                <a href="index.html"
+                   aria-label="Janavani Home">
+
+                    <img
+                        src="assets/JanaVani Profile Pictures.png"
+                        alt="Janavani"
+                        class="jv-logo-image">
+
+                    <span>Janavani</span>
+
+                </a>
+
             </div>
+
+
+            <button
+                class="hamburger"
+                type="button"
+                aria-label="Open navigation"
+                aria-expanded="false">
+
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </button>
+
 
             <ul class="nav-links">
 
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html">
+                        Home
+                    </a>
                 </li>
 
                 <li>
-                    <a href="index.html#how-it-works">How It Works</a>
+                    <a href="how-it-works.html">
+                        How It Works
+                    </a>
                 </li>
 
                 <li>
-                    <a href="index.html#participation">Participation</a>
+                    <a href="resources.html">
+                        Resources
+                    </a>
                 </li>
 
                 <li>
-                    <a href="index.html#future">Future</a>
+                    <a href="vision.html">
+                        Vision
+                    </a>
                 </li>
 
-                <li>
-                    <a href="about.html" class="active">About</a>
-                </li>
+                <li class="jv-has-submenu">
+
+    <a href="about.html" aria-haspopup="true">
+        About
+        <span class="jv-submenu-arrow" aria-hidden="true">▾</span>
+    </a>
+
+    <ul class="jv-about-submenu">
+
+        <li>
+            <a href="about.html">
+                What Is Janavani?
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html#our-mission">
+                Our Mission
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html#core-philosophy">
+                Our Philosophy
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html#privacy-by-design">
+                Privacy by Design
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html#open-project">
+                An Open Project
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html#where-janavani-is-going">
+                Where Janavani Is Going
+            </a>
+        </li>
+
+    </ul>
+
+</li>
 
                 <li>
-                    <a href="contact.html">Get Involved</a>
+                    <a href="contact.html">
+                        Get Involved
+                    </a>
                 </li>
 
             </ul>
@@ -78,20 +1379,18 @@
         </div>
 
     </nav>
+</header>
 
+<main id="main-content">
+<!-- PAGE HEADER -->
 
-    <!-- PAGE HEADER -->
-
-    <section class="hero">
+    <section id="where-janavani-is-going" id="open-project" id="core-philosophy" id="our-mission" id="privacy-by-design" class="hero">
 
         <div class="container">
 
-            <h1>About Janavani</h1>
+            <h1>Why Janavani Exists</h1>
 
-            <p>
-                Building practical tools for informed,
-                lawful and participatory citizenship.
-            </p>
+            <p>Citizens already have a voice. Janavani is being built to provide accessible infrastructure through which that voice can become informed civic participation.</p>
 
         </div>
 
@@ -100,57 +1399,83 @@
 
     <!-- WHAT JANAVANI IS -->
 
-    <section class="solution-section">
+    <section class="solution-section jv-about-identity-section">
 
-        <div class="container">
+    <div class="container">
 
-            <h2>What Is Janavani?</h2>
+        <div class="jv-about-identity-grid">
 
+            <div class="jv-about-identity-visual">
 
-            <div class="about-profile-visual">
+                <div class="jv-about-logo-frame">
 
-                <img
-                    src="assets/JanaVani Profile Pictures - svg.svg"
-                    alt="JanaVani — citizen governance platform"
-                    loading="lazy">
+                    <img
+                        src="assets/JanaVani Profile Pictures re-size svg.svg"
+                        alt="Janavani — citizen governance platform"
+                        loading="lazy">
+
+                </div>
 
                 <p class="about-profile-caption">
-                    JanaVani — citizen voice, civic knowledge and accountable governance
+                    Janavani — citizen voice, civic knowledge and accountable governance
                 </p>
 
             </div>
 
 
-            <p class="section-subtitle">
-                Janavani means the voice of the people.
-            </p>
+            <div class="jv-about-identity-content">
 
-            <p>
-                Janavani is being developed as a privacy-first
-                citizen governance platform.
-            </p>
+                <p class="jv-about-eyebrow">
+                    CITIZEN VOICE · CIVIC KNOWLEDGE · ACCOUNTABLE GOVERNANCE
+                </p>
 
-            <p>
-                Its purpose is to help citizens move from a
-                government-related problem to informed,
-                documented and lawful civic action.
-            </p>
+                <h2>What Is Janavani?</h2>
 
-            <p>
-                Government systems can be complex. Citizens should
-                not need to become experts in departments, offices,
-                procedures and documentation before they can
-                participate effectively.
-            </p>
+                <p class="jv-about-lead">
+                    Janavani is civic infrastructure designed to help citizens
+                    understand government systems, identify appropriate civic
+                    pathways, prepare information and documents, and participate
+                    in public affairs more effectively.
+                </p>
 
-            <p>
-                Janavani aims to carry that complexity while keeping
-                the citizen at the centre of the process.
-            </p>
+                <p class="section-subtitle">
+                    Janavani means the voice of the people.
+                </p>
+
+                <div class="jv-about-identity-copy">
+
+                    <p>
+                        Janavani is being developed as a privacy-first
+                        citizen governance platform.
+                    </p>
+
+                    <p>
+                        Its purpose is to help citizens move from a
+                        government-related problem to informed,
+                        documented and lawful civic action.
+                    </p>
+
+                    <p>
+                        Government systems can be complex. Citizens should
+                        not need to become experts in departments, offices,
+                        procedures and documentation before they can
+                        participate effectively.
+                    </p>
+
+                    <p>
+                        Janavani aims to carry that complexity while keeping
+                        the citizen at the centre of the process.
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
 
     <!-- MISSION -->
@@ -159,15 +1484,19 @@
 
         <div class="container">
 
-            <h2>Our Mission</h2>
+            <section class="jv-about-question" aria-labelledby="jv-about-why-title">
+    <h2 id="jv-about-why-title">Why does Janavani exist?</h2>
+    <p>Citizens may know that something is wrong without knowing which institution, process, document or accountability pathway applies. Janavani is being developed to help turn that uncertainty into clearer civic understanding and informed participation.</p>
+</section>
+<h2>Our Mission</h2>
 
             <p class="section-subtitle">
                 Make meaningful civic participation easier.
             </p>
 
-            <div class="features-grid">
+            <div class="jv-about-mission-grid">
 
-                <div class="feature-card">
+                <div class="jv-about-mission-card">
                     <h3>Understand</h3>
                     <p>
                         Help citizens understand government processes,
@@ -176,7 +1505,7 @@
                     </p>
                 </div>
 
-                <div class="feature-card">
+                <div class="jv-about-mission-card">
                     <h3>Prepare</h3>
                     <p>
                         Help citizens prepare structured documents,
@@ -185,7 +1514,7 @@
                     </p>
                 </div>
 
-                <div class="feature-card">
+                <div class="jv-about-mission-card">
                     <h3>Participate</h3>
                     <p>
                         Make it easier for citizens to participate in
@@ -194,7 +1523,7 @@
                     </p>
                 </div>
 
-                <div class="feature-card">
+                <div class="jv-about-mission-card">
                     <h3>Follow Up</h3>
                     <p>
                         Build toward systems that help citizens track
@@ -216,7 +1545,62 @@
 
         <div class="container">
 
-            <h2>Our Core Philosophy</h2>
+            <section class="jv-about-question" aria-labelledby="jv-about-who-title">
+    <h2 id="jv-about-who-title">Who is Janavani for?</h2>
+    <p>Janavani is intended for citizens who want to better understand public systems, prepare for civic action, access reliable information and participate more effectively in governance.</p>
+</section>
+<h2>Our Core Philosophy</h2>
+<p class="core-principle">
+    <strong>Citizen Agency Principle:</strong>
+    Janavani should increase citizen capability, not create citizen dependency.
+    The platform should help citizens understand systems, make informed decisions
+    and act for themselves while remaining free to choose their own course of action.
+</p>
+<section class="jv-about-values" aria-labelledby="jv-about-values-title">
+    <h2 id="jv-about-values-title">Our Core Values</h2>
+
+    <div class="jv-about-values-grid">
+        <div>
+            <h3>Citizen Agency</h3>
+            <p>Citizens remain the decision-makers.</p>
+        </div>
+
+        <div>
+            <h3>Constitutional Awareness</h3>
+            <p>Civic participation should be grounded in constitutional principles.</p>
+        </div>
+
+        <div>
+            <h3>Evidence &amp; Source Integrity</h3>
+            <p>Information should be traceable, distinguishable and responsibly presented.</p>
+        </div>
+
+        <div>
+            <h3>Privacy</h3>
+            <p>Citizen information should be handled with care and purpose limitation.</p>
+        </div>
+
+        <div>
+            <h3>Transparency</h3>
+            <p>What Janavani can and cannot do should remain clear.</p>
+        </div>
+
+        <div>
+            <h3>Political Neutrality</h3>
+            <p>Janavani is designed as civic infrastructure, not partisan machinery.</p>
+        </div>
+
+        <div>
+            <h3>Accessibility &amp; Inclusion</h3>
+            <p>Civic knowledge should be understandable and usable by ordinary citizens.</p>
+        </div>
+
+        <div>
+            <h3>Open Collaboration</h3>
+            <p>The project can improve through responsible participation and contribution.</p>
+        </div>
+    </div>
+</section>
 
             <p>
                 Janavani begins with a simple principle:
@@ -298,7 +1682,7 @@
 
         <div class="container">
 
-            <h2>Citizen Agency</h2>
+            <h2>How does Janavani protect citizen agency?</h2>
 
             <p class="section-subtitle">
                 The objective is not to speak for citizens.
@@ -573,6 +1957,12 @@
         <div class="container">
 
             <h2>Where Janavani Is Going</h2>
+<div class="jv-about-maturity" aria-labelledby="jv-about-maturity-title">
+    <h3 id="jv-about-maturity-title">Now, Building and Future</h3>
+    <p><strong>Now:</strong> Janavani provides public information, civic education and the current citizen-to-document workflow.</p>
+    <p><strong>Building:</strong> stronger evidence, tracking, follow-up and citizen-support capabilities are being developed.</p>
+    <p><strong>Future:</strong> broader civic infrastructure and privacy-preserving participation capabilities may become possible through responsible research and testing.</p>
+</div>
 
             <p class="section-subtitle">
                 Build the product first. Grow the ecosystem responsibly.
@@ -676,6 +2066,9 @@
         <div class="container">
 
             <h2>Help Build Janavani</h2>
+<p class="jv-home-action-link">
+    <a href="how-it-works.html">Take Action — See How Janavani Works</a>
+</p>
 
             <p>
                 A citizen-governance platform becomes stronger when
@@ -706,9 +2099,15 @@
 
     <!-- FOOTER -->
 
-    <footer class="footer">
+<!-- JANAVANI ABOUT — PART 2 -->
 
-        <div class="container">
+</main>
+
+<footer class="footer jv-about-footer">
+
+    <div class="container">
+
+        <div class="jv-footer-brand">
 
             <h3>Janavani</h3>
 
@@ -720,71 +2119,41 @@
                 From citizen voice to informed civic participation.
             </p>
 
-            <p>
-                <a href="index.html">Home</a> |
-                <a href="about.html">About</a> |
-                <a href="how-it-works.html">How It Works</a> |
-                <a href="resources.html">Resources</a> |
-                <a href="vision.html">Vision</a> |
-                <a href="contact.html">Get Involved</a>
-            </p>
+        </div>
 
-            <p>
-                <a href="mailto:janavani@atomicmail.io">
-                    Email
-                </a>
-                |
-                <a href="https://github.com/netzen-abm/janavani"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub
-                </a>
-                |
-                <a href="https://www.instagram.com/janavani700"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Instagram
-                </a>
-                |
-                <a href="https://www.facebook.com/janavani700/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Facebook
-                </a>
-            </p>
 
-            <p>
-                <a href="https://bsky.app/profile/janavani.bsky.social"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Bluesky
-                </a>
-                |
-                <a href="https://primal.net/p/nprofile1qqsf02lveuv8h34awnk5n5jh9jcfqfz45ul8mnphhnh4cp8d5zgrkgsuzu7jh"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Primal
-                </a>
-                |
-                <a href="https://njump.me/janavani@zaps.lol"
-                   target="_blank"
-                   rel="noopener noreferrer">Njump.Me
-                </a>
-                |
-                <a href="https://nostria.app/invite/nprofile1qyg8wumn8ghj7mn0wd68ytnddakj7qg4waehxw309aex2mrp0yhxgctdw4eju6t09uq3zamnwvaz7tmwdaehgu3wwa5kuef0qqsf02lveuv8h34awnk5n5jh9jcfqfz45ul8mnphhnh4cp8d5zgrkgsx4kxau"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Nostria
-                </a>
-            </p>
+        <nav class="jv-footer-nav" aria-label="Footer navigation">
 
-            <p>
-                Â© 2026 Janavani
-            </p>
+            <a href="index.html">Home</a>
+            <a href="about.html" aria-current="page">About</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="resources.html">Resources</a>
+            <a href="vision.html">Vision</a>
+            <a href="contact.html">Get Involved</a>
+
+        </nav>
+
+
+        <div class="jv-footer-social" aria-label="Janavani social and contact links">
+
+            <a
+                href="mailto:janavani@atomicmail.io"
+                class="jv-social-link"
+                aria-label="Email Janavani"
+                title="Email Janavani">
+        <img src="https://cdn.simpleicons.org/nostr/ffffff" alt="" aria-hidden="true" width="21" height="21">
+        </a>
 
         </div>
 
-    </footer>
+
+        <p class="jv-footer-copy">
+            © 2026 Janavani
+        </p>
+
+    </div>
+
+</footer>
 
 
     <!-- TRANSLATION -->
@@ -793,6 +2162,48 @@
 
 <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
 
+
+<!-- JANAVANI ABOUT — BACK TO TOP -->
+<a
+    href="#main-content"
+    id="jv-about-back-to-top"
+    class="jv-about-back-to-top"
+    aria-label="Back to top"
+    title="Back to top">
+    <span aria-hidden="true">↑</span>
+</a>
+
+<script id="janavani-about-back-to-top-script">
+(function () {
+    "use strict";
+
+    const button = document.getElementById("jv-about-back-to-top");
+
+    if (!button) {
+        return;
+    }
+
+    function updateButton() {
+        if (window.scrollY > 400) {
+            button.classList.add("visible");
+        } else {
+            button.classList.remove("visible");
+        }
+    }
+
+    window.addEventListener("scroll", updateButton, { passive: true });
+
+    updateButton();
+})();
+</script>
+
+<a
+    href="#top"
+    class="jv-scroll-top"
+    aria-label="Back to top"
+    title="Back to top">
+    ↑
+</a>
 </body>
 
 </html>
