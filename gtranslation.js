@@ -18,7 +18,6 @@ window.gtranslateSettings = {
 
     float_switcher_open_direction: "bottom",
 
-    flag_style: "3d",
 };
 
 
