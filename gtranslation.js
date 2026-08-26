@@ -8,7 +8,7 @@ window.gtranslateSettings = {
     detect_browser_language: true,
 
     languages: [
-       "en","ml","hi","ta","kn","te","bn","gu","mr","ne","pa","sd","ur","ar","as","bodo","brx","doi","ks","ksm","gom","mai","mni-Mtei","or","sa","sat","snthl","awa","bho","trp","mwr","mzo","pa-Arab","tcy",
+       "en","ml","hi","ta","kn","te","gu","mr","pa","as","bodo","brx","doi","ks","ksm","gom","mai","mni-Mtei","or","sa","sat","snthl","awa","bho","trp","mwr","mzo","pa-Arab","tcy","ne","bn","sd","ur","ar",
     ],
 
     wrapper_selector: ".gtranslate_wrapper",
