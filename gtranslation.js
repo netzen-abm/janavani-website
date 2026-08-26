@@ -8,15 +8,7 @@ window.gtranslateSettings = {
     detect_browser_language: true,
 
     languages: [
-        "en",
-        "ml",
-        "hi",
-        "kn",
-        "te",
-        "ta",
-        "mr",
-        "gu",
-        "pa"
+       "en","ml","hi","ta","kn","te","bn","gu","mr","ne","pa","sd","ur","ar","as","bodo","brx","doi","ks","ksm","gom","mai","mni-Mtei","or","sa","sat","snthl","awa","bho","trp","mwr","mzo","pa-Arab","tcy",
     ],
 
     wrapper_selector: ".gtranslate_wrapper",
@@ -27,10 +19,6 @@ window.gtranslateSettings = {
     float_switcher_open_direction: "bottom",
 
     flag_style: "3d",
-
-    alt_flags: {
-        en: "canada"
-    }
 };
 
 
