@@ -95,6 +95,43 @@
         });
     }
 
+    function initFooterSocialLinks() {
+        const containers = document.querySelectorAll(".jv-social-links");
+        if (!containers.length) return;
+
+        const links = [
+            ["Email", "mailto:janavani@atomicmail.io"],
+            ["Telegram", "https://t.me/JanaVaniBot"],
+            ["Primal", "https://primal.net/p/nprofile1qqsf02lveuv8h34awnk5n5jh9jcfqfz45ul8mnphhnh4cp8d5zgrkgsuzu7jh"],
+            ["Nostr", "https://nostria.app/invite/nprofile1qyg8wumn8ghj7mn0wd68ytnddakj7qg4waehxw309aex2mrp0yhxgctdw4eju6t09uq3zamnwvaz7tmwdaehgu3wwa5kuef0qqsf02lveuv8h34awnk5n5jh9jcfqfz45ul8mnphhnh4cp8d5zgrkgsx4kxau"],
+            ["Ditto", "https://ditto.pub/follow/npub1j747encc00rt6a8df8f9wt9sjqj9tfe70hxr0080tszwmgys8v3qaejqgg"],
+            ["BlueSky", "https://bsky.app/profile/janavani.bsky.social"],
+            ["Instagram", "https://www.instagram.com/janavani700"],
+            ["Facebook", "https://www.facebook.com/janavani700/"],
+            ["Njump.Me", "https://njump.me/janavani@zaps.lol"],
+            ["GitHub", "https://github.com/netzen-abm/janavani"]
+        ];
+
+        containers.forEach(function (container) {
+            container.replaceChildren();
+
+            links.forEach(function (item) {
+                const link = document.createElement("a");
+                link.className = "jv-social-link";
+                link.href = item[1];
+                link.textContent = item[0];
+                link.setAttribute("aria-label", "Janavani " + item[0]);
+
+                if (item[1].indexOf("http") === 0) {
+                    link.target = "_blank";
+                    link.rel = "noopener noreferrer";
+                }
+
+                container.appendChild(link);
+            });
+        });
+    }
+
     function initExternalLinks() {
         const links = document.querySelectorAll('a[href^="http://"], a[href^="https://"]');
 
@@ -117,6 +154,7 @@
         initCurrentNavigation();
         initEscapeHandling();
         initFooterYear();
+        initFooterSocialLinks();
         initExternalLinks();
         document.documentElement.classList.add("jv-js-ready");
     }
