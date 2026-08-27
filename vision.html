@@ -1,1482 +1,250 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Janavani's vision for building civic capacity, citizen agency, informed participation, and accountable public systems.">
+<meta name="robots" content="index,follow">
+<title>Janavani Vision â€” Civic Capacity and Citizen Agency</title>
+<link rel="icon" href="assets/brand/favicon/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles-rebuild.css">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+<style>
+/* JANAVANI VISION â€” STEP 4A-19 PAGE LAYER */
+.jvv19{--navy:#071d30;--blue:#123d5b;--paper:#f4f1e8;--paper2:#e8e3d7;--ink:#142938;--muted:#687780;--gold:#d5a044;--line:rgba(20,41,56,.14);background:#fffdf8;color:var(--ink)}
+.jvv19 *{box-sizing:border-box}.jvv19 .wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+.jvv19 .eyebrow{font:800 .65rem/1.2 Arial,sans-serif;letter-spacing:.19em;text-transform:uppercase;color:var(--gold);margin:0 0 16px}
+.jvv19 h1,.jvv19 h2,.jvv19 h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.045em}
+.jvv19 h1{font-size:clamp(3.8rem,8.5vw,8.6rem);line-height:.83;margin:0 0 28px}
+.jvv19 h2{font-size:clamp(2.45rem,5.5vw,5.2rem);line-height:.91;margin:0 0 22px}
+.jvv19 h3{font-size:1.5rem;line-height:1.05;margin:0 0 10px}.jvv19 p{line-height:1.7}
+.jvv19 .lead{font:1.15rem/1.65 Georgia,serif;max-width:760px}.jvv19 .muted{color:var(--muted);max-width:760px}
+.jvv19 .dark{background:var(--navy);color:#fff}.jvv19 .dark .muted{color:rgba(255,255,255,.67)}.jvv19 .dark .eyebrow{color:#ead19a}
 
-    <meta name="description"
-          content="Janavani's vision for citizen-centred governance: strengthening informed citizen participation, evidence-based accountability, privacy, constitutional awareness and democratic engagement in India.">
+.jvv19 .hero{background:var(--paper);padding:clamp(82px,10vw,150px) 0 92px;border-bottom:1px solid var(--line)}
+.jvv19 .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:70px;align-items:end}
+.jvv19 .hero-statement{border-left:3px solid var(--gold);padding:10px 0 10px 27px}
+.jvv19 .hero-statement strong{display:block;font:500 1.6rem/1.25 Georgia,serif}.jvv19 .hero-statement p{font-size:.88rem;color:var(--muted);margin:13px 0 0}
 
-    <meta name="keywords"
-          content="Janavani, citizen governance, citizen participation, civic technology, government accountability, public accountability, democracy, citizen rights, privacy, India">
+.jvv19 .section{padding:clamp(78px,9vw,128px) 0}
+.jvv19 .head{display:flex;justify-content:space-between;gap:60px;align-items:end;margin-bottom:52px}
+.jvv19 .head>div:last-child{max-width:490px}
 
-    <meta name="author"
-          content="Janavani">
+.jvv19 .constitutional{background:#fff}.jvv19 .constitution{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:42px 0 38px}
+.jvv19 .constitution .quote{font:500 clamp(2.2rem,5vw,5rem)/.94 Georgia,serif;letter-spacing:-.05em;max-width:930px}
+.jvv19 .constitution .quote em{font-style:normal;color:var(--blue)}
+.jvv19 .constitution .small{font:800 .66rem Arial,sans-serif;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-top:27px}
 
-    <meta name="robots"
-          content="index, follow">
+.jvv19 .contrast{background:var(--paper)}
+.jvv19 .contrast-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.jvv19 .contrast-card{padding:38px;border-radius:12px;border:1px solid var(--line);min-height:310px}
+.jvv19 .contrast-card:first-child{background:#fff}.jvv19 .contrast-card:last-child{background:var(--navy);color:#fff;border-color:transparent}
+.jvv19 .contrast-card:last-child p{color:rgba(255,255,255,.66)}
+.jvv19 .contrast-card .num{font:800 .65rem Arial,sans-serif;letter-spacing:.15em;color:var(--gold)}
+.jvv19 .contrast-card h3{font-size:2.25rem;margin-top:75px}.jvv19 .contrast-card p{color:var(--muted);max-width:430px}
 
-    <meta name="theme-color"
-          content="#0d3b66">
+.jvv19 .capacity{background:#fff}
+.jvv19 .capacity-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+.jvv19 .principles{border-top:1px solid var(--line)}
+.jvv19 .principle{display:grid;grid-template-columns:75px 1fr;gap:20px;padding:25px 0;border-bottom:1px solid var(--line)}
+.jvv19 .principle>span{font:800 .65rem Arial,sans-serif;letter-spacing:.14em;color:var(--gold)}
+.jvv19 .principle h3{font-size:1.55rem;margin-bottom:7px}.jvv19 .principle p{font-size:.87rem;color:var(--muted);margin:0}
 
-    <title>
-        Janavani Vision â€” Citizen Participation & Accountable Governance
-    </title>
+.jvv19 .model{background:var(--navy);color:#fff}
+.jvv19 .model .model-line{margin-top:50px;border:1px solid rgba(255,255,255,.2);padding:26px 30px;text-align:center;font:500 clamp(1.35rem,3vw,2.6rem)/1.15 Georgia,serif}
+.jvv19 .model .model-line span{color:#ead19a}.jvv19 .model-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:42px;border-left:1px solid rgba(255,255,255,.15);border-top:1px solid rgba(255,255,255,.15)}
+.jvv19 .model-card{padding:28px 20px;min-height:185px;border-right:1px solid rgba(255,255,255,.15);border-bottom:1px solid rgba(255,255,255,.15)}
+.jvv19 .model-card b{font:800 .65rem Arial,sans-serif;color:#ead19a;letter-spacing:.13em}.jvv19 .model-card h3{color:#fff;margin-top:40px}.jvv19 .model-card p{font-size:.82rem;color:rgba(255,255,255,.62);margin:0}
 
-    <!-- Canonical URL -->
-    <link rel="canonical"
-          href="https://netzen-abm.github.io/janavani-website/vision.html">
+.jvv19 .future{background:var(--paper)}
+.jvv19 .future-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.jvv19 .future-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:30px;min-height:270px}
+.jvv19 .future-card b{font:800 .65rem Arial,sans-serif;letter-spacing:.15em;color:var(--gold)}
+.jvv19 .future-card h3{margin-top:45px}.jvv19 .future-card p{font-size:.87rem;color:var(--muted)}
 
-    <!-- Open Graph -->
-    <meta property="og:title"
-          content="Janavani Vision â€” Citizen Participation & Accountable Governance">
+.jvv19 .boundary{background:#fff}
+.jvv19 .boundary-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}
+.jvv19 .boundary-item{border-top:2px solid var(--ink);padding:25px 0}
+.jvv19 .boundary-item h3{font-size:1.65rem}.jvv19 .boundary-item p{color:var(--muted);font-size:.88rem;margin:0}
 
-    <meta property="og:description"
-          content="Janavani's long-term vision for informed citizen participation, evidence-based accountability, privacy and more accessible civic pathways.">
+.jvv19 .cta{text-align:center;background:linear-gradient(145deg,#071d30,#0d3854);color:#fff}
+.jvv19 .cta h2{color:#fff;max-width:900px;margin-inline:auto}.jvv19 .cta .muted{margin-inline:auto;color:rgba(255,255,255,.68)}
+.jvv19 .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+.jvv19 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 23px;border-radius:999px;text-decoration:none;font:800 .74rem Arial,sans-serif}
+.jvv19 .gold{background:var(--gold);color:#091a28}.jvv19 .light{background:#fff;color:#091a28}.jvv19 .outline{border:1px solid rgba(255,255,255,.42);color:#fff}
 
-    <meta property="og:type"
-          content="website">
-
-    <meta property="og:url"
-          content="https://netzen-abm.github.io/janavani-website/vision.html">
-
-    <!-- Twitter -->
-    <meta name="twitter:card"
-          content="summary">
-
-    <meta name="twitter:title"
-          content="Janavani Vision â€” Citizen Participation & Accountable Governance">
-
-    <meta name="twitter:description"
-          content="Exploring a citizen-centred future of informed participation, public accountability, civic technology and privacy.">
-
-    <link rel="stylesheet"
-          href="styles.css">
+@media(max-width:900px){
+ .jvv19 .hero-grid,.jvv19 .capacity-grid{grid-template-columns:1fr}
+ .jvv19 .model-grid{grid-template-columns:1fr 1fr}.jvv19 .future-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+ .jvv19 .wrap{width:calc(100% - 30px)}.jvv19 .head{display:block}
+ .jvv19 .contrast-grid,.jvv19 .future-grid,.jvv19 .boundary-grid,.jvv19 .model-grid{grid-template-columns:1fr}
+ .jvv19 .contrast-card{min-height:250px}.jvv19 .contrast-card h3{margin-top:50px}
+ .jvv19 .principle{grid-template-columns:52px 1fr}.jvv19 .actions{flex-direction:column}.jvv19 .btn{width:100%}
+}
+</style>
 </head>
 
 <body>
+<a class="jv-skip-link" href="#main-content">Skip to content</a>
 
-    <!-- ======================================================
-         LANGUAGE
-         ====================================================== -->
-
-    <div class="gtranslate_wrapper"></div>
-
-
-    <!-- ======================================================
-         NAVIGATION
-         ====================================================== -->
-
-    <nav class="navbar">
-
-        <div class="container">
-
-            <div class="logo">
-                <a href="index.html">Janavani</a>
-            </div>
-
-            <ul class="nav-links">
-
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="how-it-works.html">How It Works</a>
-                </li>
-
-                <li>
-                    <a href="resources.html">Resources</a>
-                </li>
-
-                <li>
-                    <a href="vision.html"
-                       class="active"
-                       aria-current="page">
-                        Vision
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-
-                <li>
-                    <a href="contact.html">Get Involved</a>
-                </li>
-
-            </ul>
-
-        </div>
-
+<header class="jv-site-header">
+  <div class="jv-header-inner jv-container">
+    <a class="jv-brand" href="index.html" aria-label="Janavani home">
+      <img src="assets/brand/logos/JanaVani Profile Pictures re-size.png" alt="Janavani" width="56" height="56">
+    </a>
+    <button class="jv-menu-toggle" type="button" aria-expanded="false" aria-controls="jv-navigation" aria-label="Open navigation"><span aria-hidden="true">â˜°</span></button>
+    <nav id="jv-navigation" class="jv-navigation" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="how-it-works.html">How It Works</a>
+      <a href="resources.html">Resources</a>
+      <a href="vision.html" aria-current="page">Vision</a>
+      <a href="contact.html">Get Involved</a>
     </nav>
+    <div class="gtranslate_wrapper" aria-label="Language selection"></div>
+  </div>
+</header>
 
-
-    <!-- ======================================================
-         HERO
-         ====================================================== -->
-
-    <!-- ======================================================
-     CONSTITUTIONAL FOUNDATION
-     ====================================================== -->
-
-<section class="preamble-section">
-
-    <div class="container">
-
-        <div class="preamble-card">
-
-            <p class="preamble-label">
-                THE CONSTITUTION OF INDIA
-            </p>
-
-            <h2>The Preamble</h2>
-
-
-            <div class="preamble-visual">
-
-                <img
-                    src="assets/Preamble of India.png"
-                    alt="The Preamble to the Constitution of India"
-                    loading="lazy">
-
-                <p class="preamble-visual-caption">
-                    The Preamble to the Constitution of India
-                </p>
-
-            </div>
-
-
-            <div class="preamble-text">
-
-                <p>
-                    <strong>WE, THE PEOPLE OF INDIA</strong>,
-                    having solemnly resolved to constitute India into a
-                    <strong>SOVEREIGN SOCIALIST SECULAR DEMOCRATIC
-                    REPUBLIC</strong> and to secure to all its citizens:
-                </p>
-
-                <p>
-                    <strong>JUSTICE</strong>, social, economic and political;
-                </p>
-
-                <p>
-                    <strong>LIBERTY</strong> of thought, expression,
-                    belief, faith and worship;
-                </p>
-
-                <p>
-                    <strong>EQUALITY</strong> of status and of opportunity;
-                </p>
-
-                <p>
-                    and to promote among them all
-                </p>
-
-                <p>
-                    <strong>FRATERNITY</strong> assuring the dignity of
-                    the individual and the unity and integrity of the Nation;
-                </p>
-
-                <p>
-                    <strong>IN OUR CONSTITUENT ASSEMBLY</strong> this
-                    twenty-sixth day of November, 1949, do
-                    <strong>HEREBY ADOPT, ENACT AND GIVE TO OURSELVES
-                    THIS CONSTITUTION.</strong>
-                </p>
-
-            </div>
-
-            <p class="preamble-source">
-                Source: Constitution of India, Preamble â€”
-                Legislative Department, Ministry of Law and Justice,
-                Government of India.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
+<main id="main-content" class="jvv19">
 
 <section class="hero">
-
-        <div class="container">
-
-            <h1>Government Should Work for the People.</h1>
-
-            <p>
-                Janavani's long-term vision is to help citizens move from
-                being passive recipients of government services toward
-                becoming informed participants in governance.
-            </p>
-
-            <div class="cta-buttons">
-
-                <a href="how-it-works.html"
-                   class="btn btn-primary">
-                    How Janavani Works
-                </a>
-
-                <a href="https://github.com/netzen-abm/janavani"
-                   class="btn btn-secondary"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    View the Project
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-
-<!-- ======================================================
-     JANAVANI AND THE CONSTITUTION
-     ====================================================== -->
-
-<section class="solution-section">
-
-    <div class="container">
-
-        <h2>Why the Preamble Matters to Janavani</h2>
-
-        <p class="section-subtitle">
-            The Constitution provides the civic foundation.
-            Janavani seeks to make participation more understandable
-            and accessible in everyday governance.
-        </p>
-
-        <p>
-            Janavani begins from the constitutional understanding that
-            public governance is ultimately grounded in the people.
-            Citizens are not merely recipients of government services;
-            they are participants in the democratic system.
-        </p>
-
-        <p>
-            The values expressed in the Preamble â€” justice, liberty,
-            equality and fraternity, together with the dignity of the
-            individual and the unity and integrity of the Nation â€”
-            provide an important constitutional context for citizen
-            participation.
-        </p>
-
-        <p>
-            Janavani does not claim to replace constitutional
-            institutions, elected representatives, courts, government
-            authorities or legal professionals. Its purpose is more
-            practical: to help citizens better understand public
-            systems and participate in them through informed and
-            lawful means.
-        </p>
-
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Janavani Vision Â· The larger purpose</p>
+      <h1>A Republic with capable citizens.</h1>
+      <p class="lead">Janavani is not ultimately about building another website. It is about strengthening the everyday capacity of people to understand public systems, participate in them, and hold the relationship between citizen and institution accountable.</p>
     </div>
-
+    <div class="hero-statement">
+      <strong>Build civic capacity, not dependency.</strong>
+      <p>Technology should make the citizen more capable of acting with clarity â€” not make the citizen permanently dependent on the technology.</p>
+    </div>
+  </div>
 </section>
 
-<!-- ======================================================
-         VISION
-         ====================================================== -->
-
-    <section class="solution-section">
-
-        <div class="container">
-
-                    <!-- ==================================================
-             JANAVANI FOUNDATIONAL PHILOSOPHY
-             ================================================== -->
-
-        <section id="janavani-foundation" class="vision-foundation">
-
-    <div class="section-heading">
-        <p class="section-label">JANAVANI FOUNDATION</p>
-
-        <h2>What Guides Janavani</h2>
-
-        <p class="section-subtitle">
-            Janavani is built around a simple principle:
-            citizens should become more capable of understanding,
-            participating in and influencing governance — not more
-            dependent on the systems that assist them.
-        </p>
+<section class="section constitutional" aria-labelledby="constitutional-title">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">01 Â· Constitutional premise</p><h2 id="constitutional-title">The Republic begins with the people.</h2></div>
+      <div><p class="muted">Janavani takes its orientation from the constitutional idea that public authority exists within a Republic constituted by its people. Civic technology should therefore strengthen participation rather than reduce citizens to passive users.</p></div>
     </div>
-
-    <div class="vision-foundation-grid">
-
-        <article class="vision-foundation-card">
-            <h3>Our Mission</h3>
-
-            <p>
-                Janavani exists to make civic participation easier,
-                clearer and more accessible by helping citizens
-                understand government systems, identify appropriate
-                pathways, prepare for action and participate with
-                greater confidence.
-            </p>
-
-            <p>
-                Our mission is to reduce the practical distance between
-                a citizen's concern and meaningful civic action while
-                preserving the citizen's judgment, choice and control.
-            </p>
-        </article>
-
-
-        <article class="vision-foundation-card">
-            <h3>Mission Statement</h3>
-
-            <p>
-                <strong>
-                    Janavani helps citizens turn concerns into
-                    understanding, understanding into informed action,
-                    and individual action into meaningful participation
-                    in governance.
-                </strong>
-            </p>
-
-            <p>
-                Janavani is an assistance and civic infrastructure
-                initiative. It does not replace legal, governmental or
-                democratic institutions, and it does not make civic
-                decisions on behalf of citizens.
-            </p>
-        </article>
-
-
-        <article class="vision-foundation-card">
-            <h3>Our Philosophy</h3>
-
-            <p>
-                Citizens do not lack a voice. They often lack accessible
-                infrastructure through which that voice can be effectively
-                exercised.
-            </p>
-
-            <p>
-                Government systems can be complex, fragmented and difficult
-                to navigate. Janavani treats this not simply as a
-                communication problem, but as an infrastructure challenge.
-            </p>
-
-            <p>
-                Civic technology should therefore reduce unnecessary
-                procedural friction while increasing citizen understanding,
-                agency and participation.
-            </p>
-        </article>
-
-
-        <article class="vision-foundation-card">
-            <h3>Our Core Values</h3>
-
-            <ul>
-                <li>Citizen agency</li>
-                <li>Constitutional awareness</li>
-                <li>Evidence and source integrity</li>
-                <li>Privacy</li>
-                <li>Transparency</li>
-                <li>Political neutrality</li>
-                <li>Accessibility and inclusion</li>
-                <li>Open collaboration</li>
-            </ul>
-        </article>
-
-
-        <article class="vision-foundation-card">
-            <h3>Our Governing Principles</h3>
-
-            <ul>
-                <li>Evidence before assertion</li>
-                <li>Privacy by design</li>
-                <li>Citizen agency over automation</li>
-                <li>Accountability without targeting or harassment</li>
-                <li>Transparent information provenance</li>
-                <li>Known, verified, reported and interpreted information must remain distinguishable</li>
-                <li>Current capability must remain distinct from future possibility</li>
-                <li>Technology must serve public purpose rather than become the purpose</li>
-                <li>Open and responsible collaboration</li>
-            </ul>
-        </article>
-
-
-        <article class="vision-foundation-card">
-            <h3>Citizen Agency</h3>
-
-            <p>
-                Janavani should help citizens understand their options,
-                prepare their own actions and retain meaningful control
-                over what they submit, share and communicate.
-            </p>
-
-            <p>
-                Technology should expand human agency rather than silently
-                make civic decisions on a citizen's behalf.
-            </p>
-
-            <p>
-                The citizen remains the principal actor.
-                Janavani is the assisting infrastructure.
-            </p>
-        </article>
-
-
-        <article class="vision-foundation-card">
-            <h3>Citizen Vigilance</h3>
-
-            <p>
-                Citizen vigilance does not mean confrontation.
-                It means informed observation, documentation, verification,
-                questioning and constructive participation in public life.
-            </p>
-
-            <p>
-                A healthy democracy depends on citizens who can observe
-                institutions, seek evidence, ask questions and participate
-                responsibly in matters that affect the public.
-            </p>
-        </article>
-
-
-        <article class="vision-foundation-card">
-            <h3>The Janavani Manifesto</h3>
-
-            <p>
-                <strong>Citizenship does not end with voting.</strong>
-            </p>
-
-            <p>
-                We believe citizens need accessible pathways through which
-                concerns can become informed civic action.
-            </p>
-
-            <p>
-                We believe government complexity should not become civic
-                exclusion.
-            </p>
-
-            <p>
-                We believe technology should expand human agency, protect
-                privacy and support evidence-based participation.
-            </p>
-
-            <p>
-                We believe accountability requires observation,
-                documentation, verification, questioning and follow-through.
-            </p>
-
-            <p>
-                We believe the purpose of civic infrastructure is not to
-                create dependency, but to increase the capacity of citizens
-                to participate in public life.
-            </p>
-        </article>
-
+    <div class="constitution">
+      <div class="quote">â€œWE, THE PEOPLE OF INDIAâ€ <em>â€” not spectators of governance, but participants in the Republic.</em></div>
+      <div class="small">Sovereign Â· Socialist Â· Secular Â· Democratic Â· Republic</div>
     </div>
-
-
-    <div class="vision-foundation-principle">
-
-        <p class="section-label">CANONICAL JANAVANI PRINCIPLE</p>
-
-        <blockquote>
-            Janavani exists to make citizens more capable of
-            participating in governance — not more dependent
-            on Janavani.
-        </blockquote>
-
-    </div>
-
+  </div>
 </section>
 
-        <h2>Where Janavani Is Going</h2>
-
-            <p class="section-subtitle">
-                From civic assistance to participatory governance.
-            </p>
-
-            <p>
-                Janavani is being developed as more than a
-                document-generation tool or chatbot. The long-term
-                objective is to create a citizen-governance platform
-                that helps people understand government systems,
-                exercise civic rights, document problems, participate
-                in public affairs and contribute to accountable
-                governance.
-            </p>
-
-            <p>
-                The website presents this direction as a public
-                brochure and showcase. The main Janavani platform
-                will progressively provide interactive capabilities
-                through appropriate interfaces.
-            </p>
-
-            <p>
-                The capabilities described on this page represent a
-                combination of the project's present direction and
-                longer-term development goals. Future capabilities
-                should not be understood as currently available
-                production functionality unless explicitly identified
-                elsewhere on the website.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ======================================================
-         DEMOCRACY
-         ====================================================== -->
-
-    <section class="problem-section">
-
-        <div class="container">
-
-            <h2>Democracy Does Not End With Voting</h2>
-
-            <p>
-                Elections provide citizens with an important mechanism
-                for choosing representatives. But democratic
-                participation continues between elections.
-            </p>
-
-            <p>
-                Citizens can ask questions, seek information, submit
-                representations, raise objections, document problems,
-                participate in public decisions, pursue lawful remedies
-                and hold institutions accountable.
-            </p>
-
-            <p>
-                Protest is one legitimate form of democratic
-                participation. It is not the only form. Reasoned
-                writing, evidence, petitions, complaints, legal notices
-                and other lawful mechanisms can also place public
-                concerns on record.
-            </p>
-
-            <p>
-                Janavani's vision is to make these pathways easier to
-                understand and more accessible to ordinary citizens.
-            </p>
-
-            <p>
-                Democracy is therefore not only about choosing representatives.
-                It is also about what happens between elections: how citizens
-                understand public decisions, access information, raise concerns,
-                participate in lawful processes and follow what happens after
-                a concern has been raised.
-            </p>
-            
-
-        </div>
-
-    </section>
-
-
-    <!-- ======================================================
-         ACCOUNTABILITY CHAIN
-         ====================================================== -->
-
-    <section class="howitworks-section">
-
-        <div class="container">
-
-            <h2>From Manifesto to Citizen Experience</h2>
-
-            <p class="section-subtitle">
-                Public accountability can be understood as a chain.
-            </p>
-
-            <div class="steps-container">
-
-                <div class="step">
-
-                    <div class="step-number">1</div>
-
-                    <h3>Manifesto</h3>
-
-                    <p>
-                        Public commitments made before or during
-                        an election.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">2</div>
-
-                    <h3>Policy</h3>
-
-                    <p>
-                        Commitments translated into government
-                        policies, programmes and decisions.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">3</div>
-
-                    <h3>Budget</h3>
-
-                    <p>
-                        Public resources allocated to implement
-                        those policies and programmes.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">4</div>
-
-                    <h3>Implementation</h3>
-
-                    <p>
-                        Programmes and decisions are put into
-                        practice.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="features-grid">
-
-                <div class="feature-card">
-
-                    <h3>Expenditure</h3>
-
-                    <p>
-                        Public money is spent to deliver the
-                        intended programmes and services.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Output</h3>
-
-                    <p>
-                        Activities produce measurable outputs such
-                        as infrastructure, services or completed
-                        projects.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Outcome</h3>
-
-                    <p>
-                        Outputs should contribute to meaningful
-                        public outcomes.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Citizen Experience</h3>
-
-                    <p>
-                        Citizens ultimately experience the quality,
-                        accessibility and effectiveness of public
-                        services.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ======================================================
-         REPRESENTATIVE ACCOUNTABILITY
-         ====================================================== -->
-
-    <section class="features-section">
-
-        <div class="container">
-
-            <h2>Representative Accountability</h2>
-
-            <p class="section-subtitle">
-                Public information can help citizens understand
-                the work of elected representatives.
-            </p>
-
-
-            <div class="features-grid">
-
-                <div class="feature-card">
-
-                    <h3>Attendance</h3>
-
-                    <p>
-                        Publicly available parliamentary or assembly
-                        attendance information.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Questions &amp; Participation</h3>
-
-                    <p>
-                        Questions raised, participation and other
-                        publicly available legislative information.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Committee Work</h3>
-
-                    <p>
-                        Public information relating to committee
-                        participation and activity.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Public Commitments</h3>
-
-                    <p>
-                        Comparison of publicly stated commitments
-                        with available evidence of subsequent
-                        activity.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Constituency Activity</h3>
-
-                    <p>
-                        Where reliable public information exists,
-                        citizens may better understand
-                        constituency-level activity.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Public Data</h3>
-
-                    <p>
-                        Future indicators should rely on
-                        identifiable, documented and appropriately
-                        sourced information.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ======================================================
-         GOVERNMENT ACCOUNTABILITY
-         ====================================================== -->
-
-    <section class="solution-section">
-
-        <div class="container">
-
-            <h2>Government Accountability</h2>
-
-            <p class="section-subtitle">
-                Future Janavani capabilities may help citizens
-                understand public programmes through available
-                evidence.
-            </p>
-
-
-            <div class="features-grid">
-
-                <div class="feature-card">
-
-                    <h3>Budget Allocation</h3>
-
-                    <p>
-                        Understand publicly available allocations
-                        for programmes and projects.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Spending</h3>
-
-                    <p>
-                        Where reliable public data exists, examine
-                        reported expenditure.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Project Progress</h3>
-
-                    <p>
-                        Understand reported progress and
-                        implementation status.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Service Delivery</h3>
-
-                    <p>
-                        Examine how public services are experienced
-                        by citizens.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Delays</h3>
-
-                    <p>
-                        Document reported delays and identify
-                        recurring service problems where evidence
-                        supports them.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Outcomes</h3>
-
-                    <p>
-                        Move beyond expenditure and outputs toward
-                        understanding actual public outcomes.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ======================================================
-         OFFICE ACCOUNTABILITY
-         ====================================================== -->
-
-    <section class="features-section">
-
-        <div class="container">
-
-            <h2>Government Office Accountability</h2>
-
-            <p class="section-subtitle">
-                Public services are ultimately experienced by citizens.
-            </p>
-
-
-            <div class="features-grid">
-
-                <div class="feature-card">
-
-                    <h3>Citizen Treatment</h3>
-
-                    <p>
-                        Capture structured information about service
-                        experience and accessibility.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Waiting Time</h3>
-
-                    <p>
-                        Explore reported waiting times and recurring
-                        service bottlenecks.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Responsiveness</h3>
-
-                    <p>
-                        Understand whether citizens receive
-                        appropriate responses to their requests.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Service Completion</h3>
-
-                    <p>
-                        Track whether requested public services
-                        are completed within applicable processes.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Accessibility</h3>
-
-                    <p>
-                        Identify barriers that may prevent citizens
-                        from accessing public services.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Evidence-Supported Reports</h3>
-
-                    <p>
-                        Future systems should distinguish documented
-                        evidence from individual claims or opinions.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ======================================================
-         CITIZEN RATINGS
-         ====================================================== -->
-
-    <section class="problem-section">
-
-        <div class="container">
-
-            <h2>Citizen Ratings Must Not Become Unverified Facts</h2>
-
-            <p>
-                Citizen feedback can provide valuable information
-                about public-service experiences.
-            </p>
-
-            <p>
-                However, a rating, review or allegation is not
-                automatically an established fact.
-            </p>
-
-            <p>
-                Any future Janavani rating or feedback system should
-                distinguish clearly between citizen opinion, reported
-                experience, verified information and independently
-                established facts.
-            </p>
-
-            <p>
-                Safeguards against manipulation, abuse, defamation,
-                coordinated reporting and unverified allegations will
-                be essential if such systems are developed.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ======================================================
-         CITIZEN PARTICIPATION
-         ====================================================== -->
-
-    <section class="solution-section">
-
-        <div class="container">
-
-            <h2>From Citizen as User to Citizen as Participant</h2>
-
-            <p>
-                A healthy democracy requires more than citizens
-                receiving services from government.
-            </p>
-
-            <p>
-                Citizens should also be able to understand how public
-                decisions are made, examine available evidence,
-                communicate concerns, contribute information and
-                participate in accountability processes.
-            </p>
-
-                
-            <p>
-                Citizen participation can include understanding public
-                decisions, accessing relevant information, examining
-                available evidence, communicating concerns, contributing
-                information and documents, and participating in lawful
-                accountability processes.
-            </p>
-
-            <p>
-                Janavani's long-term direction is to build civic
-                infrastructure that supports a progression from receiving
-                services, to becoming informed, to contributing information,
-                and to participating in accountability and public life.
-            </p>
-
-            <p>
-                Janavani should assist this process without becoming the
-                decision-maker. The citizen remains the principal actor;
-                technology should reduce procedural friction, improve
-                access to information and expand the citizen's capacity
-                to participate.
-            </p>
-
-                
-
-        </div>
-
-    </section>
-
-
-    <!-- ======================================================
-         PRIVACY
-         ====================================================== -->
-
-    <section class="problem-section">
-
-        <div class="container">
-
-            <h2>Privacy Is Part of the Vision</h2>
-
-            <p>
-                Civic participation should not require citizens to
-                surrender unnecessary personal information.
-            </p>
-
-            <p>
-                Janavani is being designed around privacy, security,
-                data minimisation and citizen control.
-            </p>
-
-                <p>
-                    Privacy is not an optional feature of civic
-                    participation. It is part of the trust infrastructure
-                    required for citizens to participate safely and
-                    meaningfully.
-                </p>
-
-                <p>
-                    Janavani should collect only information that is
-                    necessary for a clearly understood purpose, give
-                    citizens meaningful control over what they share,
-                    and make the handling of personal information as
-                    transparent as reasonably possible.
-                </p>
-                
-            <p>
-                Future research may explore stronger
-                privacy-preserving technologies, decentralised
-                infrastructure and secure citizen-controlled records.
-            </p>
-
-            <p>
-                These are long-term directions and should not be
-                interpreted as current production capabilities unless
-                explicitly identified as available.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ======================================================
-         LONG-TERM DIRECTION
-         ====================================================== -->
-
-    <section class="features-section">
-
-        <div class="container">
-
-            <h2>The Long-Term Direction</h2>
-
-            <p class="section-subtitle">
-                Janavani's long-term development follows a progression:
-                from helping citizens navigate government systems,
-                to strengthening evidence and accountability,
-                to enabling informed participation and shared public knowledge.
-            </p>
-
-
-            <div class="features-grid">
-
-                <div class="feature-card">
-
-                    <h3>Civic Assistance</h3>
-
-                    <p>
-                        Help citizens understand problems, identify
-                        appropriate civic pathways and prepare for
-                        informed action without replacing citizen judgment.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Evidence</h3>
-
-                    <p>
-                        Help citizens organise documents, records and
-                        other relevant evidence while keeping sources,
-                        reported information and verified information
-                        distinguishable.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Accountability</h3>
-
-                    <p>
-                        Develop structured ways to understand government
-                        commitments, decisions, performance and service
-                        experience, while helping citizens follow evidence
-                        and documented outcomes over time.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Participation</h3>
-
-                    <p>
-                        Support broader and more informed citizen
-                        participation in public affairs by improving
-                        access to information, civic pathways and
-                        opportunities for lawful public engagement.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Public Knowledge</h3>
-
-                    <p>
-                        Build reliable civic information from documented
-                        and appropriately verified sources, while clearly
-                        distinguishing evidence, reported information and
-                        interpretation.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Open Infrastructure</h3>
-
-                    <p>
-                        Develop the project openly so that citizens,
-                        researchers and contributors can inspect,
-                        understand and, where appropriate, improve
-                        the civic infrastructure and its underlying
-                        information practices.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ======================================================
-         GET INVOLVED
-         ====================================================== -->
-
-    <section class="cta-section">
-
-        <div class="container">
-
-            <h2>Help Build the Vision</h2>
-
-            <p>
-                Janavani is an open civic project and welcomes volunteers,
-                collaborators, partners and contributors who want to help
-                build practical civic infrastructure for citizens.
-            </p>
-
-            <p>
-                We are looking for people who can contribute to website
-                management, social media management, short-form and long-form
-                content creation, writing, editing, visual design,
-                infographics, photography, video production, campaign
-                communication and public awareness initiatives.
-            </p>
-
-            <p>
-                We also welcome domain experts, researchers, legal and
-                governance professionals, journalists, designers, developers,
-                civic practitioners and people with relevant professional or
-                lived experience who can contribute knowledge, review,
-                research or ecosystem development.
-            </p>
-
-            <p>
-                Regional-language translators and language contributors are
-                especially valuable for making Janavani's website, civic
-                information and social media communication accessible beyond
-                English-speaking audiences.
-            </p>
-
-            <p>
-                Janavani is also open to collaboration with organisations,
-                institutions, civil-society groups, researchers, technology
-                communities and other ecosystem partners where there is
-                alignment with the project's civic purpose and principles.
-            </p>
-
-
-            <div class="cta-buttons">
-
-                <a href="https://github.com/netzen-abm/janavani"
-                   class="btn btn-primary"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Contribute on GitHub
-                </a>
-
-                <a href="contact.html"
-                   class="btn btn-secondary">
-                    Get Involved
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ======================================================
-         IMPORTANT NOTICE
-         ====================================================== -->
-
-    <section class="problem-section">
-
-        <div class="container">
-
-            <h2>Important Notice</h2>
-
-            <p>
-                Janavani is a civic-technology initiative.
-                Information published through this website is intended
-                to support citizen understanding and participation.
-            </p>
-
-            <p>
-                Janavani does not replace a lawyer, court, government
-                authority or other competent professional.
-            </p>
-
-            <p>
-                Citizens should independently verify applicable laws,
-                procedures, jurisdiction, deadlines and official
-                requirements before taking legal or administrative
-                action.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- ======================================================
-         FOOTER
-         ====================================================== -->
-
-    <footer class="footer">
-
-        <div class="container">
-
-            <h3>Janavani</h3>
-
-            <p>
-                A privacy-first citizen governance platform.
-            </p>
-
-            <p>
-                From citizen voice to informed civic participation.
-            </p>
-
-
-            <p>
-
-                <a href="index.html">Home</a> |
-
-                <a href="about.html">About</a> |
-
-                <a href="how-it-works.html">
-                    How It Works
-                </a> |
-
-                <a href="resources.html">
-                    Resources
-                </a> |
-
-                <a href="vision.html">
-                    Vision
-                </a> |
-
-                <a href="contact.html">
-                    Get Involved
-                </a>
-
-            </p>
-
-
-            <p style="margin-top:20px;">
-
-                <a href="mailto:janavani@atomicmail.io">
-                    Email
-                </a> |
-
-                <a href="https://github.com/netzen-abm/janavani"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub
-                </a> |
-
-                <a href="https://www.instagram.com/janavani700"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Instagram
-                </a> |
-
-                <a href="https://www.facebook.com/janavani700/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Facebook
-                </a> |
-
-                <a href="https://bsky.app/profile/janavani.bsky.social"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Bluesky
-                </a>
-
-            </p>
-
-
-            <p style="margin-top:10px;">
-
-                <a href="https://primal.net/p/nprofile1qqsf02lveuv8h34awnk5n5jh9jcfqfz45ul8mnphhnh4cp8d5zgrkgsuzu7jh"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Primal
-                </a> |
-
-                <a href="https://njump.me/janavani@zaps.lol"
-                   target="_blank"
-                   rel="noopener noreferrer">Njump.Me
-                </a> |
-
-                <a href="https://nostria.app/invite/nprofile1qyg8wumn8ghj7mn0wd68ytnddakj7qg4waehxw309aex2mrp0yhxgctdw4eju6t09uq3zamnwvaz7tmwdaehgu3wwa5kuef0qqsf02lveuv8h34awnk5n5jh9jcfqfz45ul8mnphhnh4cp8d5zgrkgsx4kxau"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Nostria
-                </a>
-
-            </p>
-
-
-            <p style="margin-top:20px;">
-                Â© 2026 Janavani
-            </p>
-
-        </div>
-
-    </footer>
-
-
-    <!-- ======================================================
-         TRANSLATION
-         ====================================================== -->
-
-    <script src="gtranslation.js"></script>
-
-<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
-
+<section class="section contrast" aria-labelledby="contrast-title">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">02 Â· The distinction</p><h2 id="contrast-title">Assistance must not become authority.</h2></div>
+      <div><p class="muted">A healthy civic system can help a person understand options and prepare action while leaving institutional authority, legal determination, and citizen judgment where they belong.</p></div>
+    </div>
+    <div class="contrast-grid">
+      <article class="contrast-card">
+        <div class="num">WHAT TECHNOLOGY CAN DO</div>
+        <h3>Clarify the pathway.</h3>
+        <p>Organise information, identify likely pathways, surface questions, structure a citizen's concern, and help preserve a useful record of what is known and unknown.</p>
+      </article>
+      <article class="contrast-card">
+        <div class="num">WHAT TECHNOLOGY MUST NOT DO</div>
+        <h3>Replace the citizen or institution.</h3>
+        <p>It should not pretend to possess public authority, manufacture certainty, decide institutional responsibility, or turn an automated answer into a substitute for an official process.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section capacity" aria-labelledby="capacity-title">
+  <div class="wrap capacity-grid">
+    <div>
+      <p class="eyebrow">03 Â· Citizen capacity</p>
+      <h2 id="capacity-title">The measure of success is what the citizen can do next.</h2>
+      <p class="muted">A useful civic infrastructure should leave people with greater understanding, better records, clearer choices, and stronger confidence to participate without it.</p>
+    </div>
+    <div class="principles">
+      <article class="principle"><span>01</span><div><h3>Understand</h3><p>Know the public system, its language, the relevant institution, and the limits of available information.</p></div></article>
+      <article class="principle"><span>02</span><div><h3>Prepare</h3><p>Turn a concern into a clearer factual record, supporting material, objective, and appropriate pathway.</p></div></article>
+      <article class="principle"><span>03</span><div><h3>Participate</h3><p>Take lawful civic action and remain engaged with the process rather than treating submission as the end.</p></div></article>
+      <article class="principle"><span>04</span><div><h3>Verify</h3><p>Distinguish official information, citizen information, interpretation, uncertainty, and decisions requiring human or institutional confirmation.</p></div></article>
+      <article class="principle"><span>05</span><div><h3>Hold accountable</h3><p>Preserve the record of what was asked, what was answered, what remains unresolved, and what responsible next step exists.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section model dark" aria-labelledby="model-title">
+  <div class="wrap">
+    <p class="eyebrow">04 Â· The Janavani model</p>
+    <h2 id="model-title">A civic layer between citizens and public systems.</h2>
+    <p class="muted">The intended relationship is deliberately simple: assistance supports the citizen's journey; the citizen remains the decision-maker; public institutions retain public authority.</p>
+    <div class="model-line"><span>ASSIST</span> â†’ CITIZEN REVIEW â†’ <span>CITIZEN APPROVAL</span> â†’ CITIZEN ACTION â†’ PUBLIC RESPONSE</div>
+    <div class="model-grid">
+      <article class="model-card"><b>01 Â· INFORMATION</b><h3>Make complexity legible.</h3><p>Translate difficult public pathways into usable explanations without hiding uncertainty.</p></article>
+      <article class="model-card"><b>02 Â· AGENCY</b><h3>Keep the citizen in control.</h3><p>Make review and approval explicit before consequential action is taken.</p></article>
+      <article class="model-card"><b>03 Â· ACCOUNTABILITY</b><h3>Preserve the civic record.</h3><p>Keep the pathway, evidence, actions, and responses connected enough to support follow-up.</p></article>
+      <article class="model-card"><b>04 Â· INSTITUTIONS</b><h3>Respect public authority.</h3><p>Point citizens toward the appropriate official process rather than impersonating it.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section future" aria-labelledby="future-title">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">05 Â· Development direction</p><h2 id="future-title">Useful today. More capable tomorrow.</h2></div>
+      <div><p class="muted">Janavani should grow from demonstrated civic usefulness, not from the assumption that more technology automatically means better governance.</p></div>
+    </div>
+    <div class="future-grid">
+      <article class="future-card"><b>NEAR TERM</b><h3>Make difficult pathways understandable.</h3><p>Start with concrete citizen problems where structured information and careful guidance can remove avoidable confusion.</p></article>
+      <article class="future-card"><b>CAPABILITY</b><h3>Deepen civic intelligence responsibly.</h3><p>Improve retrieval, classification, pathway guidance, records, and feedback while keeping source and uncertainty visible.</p></article>
+      <article class="future-card"><b>LARGER DIRECTION</b><h3>Strengthen the civic fabric.</h3><p>Build tools and practices that help people communicate, participate, learn from public processes, and build collective capacity.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section boundary" aria-labelledby="boundary-title">
+  <div class="wrap">
+    <p class="eyebrow">06 Â· What the vision protects</p>
+    <h2 id="boundary-title">The boundaries are part of the vision.</h2>
+    <div class="boundary-grid">
+      <article class="boundary-item"><h3>Citizen judgment</h3><p>People should understand what a system recommends and retain the ability to accept, reject, question, or seek further confirmation.</p></article>
+      <article class="boundary-item"><h3>Institutional responsibility</h3><p>Public bodies remain responsible for public decisions. Janavani can help citizens navigate a process; it cannot become the authority that process belongs to.</p></article>
+      <article class="boundary-item"><h3>Evidence and privacy</h3><p>Civic participation depends on useful records, but the collection and handling of information must remain proportionate, purposeful, and responsible.</p></article>
+      <article class="boundary-item"><h3>Human dignity</h3><p>Every interaction should treat the citizen as a participant in a Republic, not as a case number to be processed.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section cta" aria-labelledby="cta-title">
+  <div class="wrap">
+    <p class="eyebrow">The larger vision</p>
+    <h2 id="cta-title">Strengthen the citizen's capacity to understand, participate, communicate, and act.</h2>
+    <p class="muted">That is the direction: not technology for its own sake, but civic infrastructure that helps the Republic work better for the people who constitute it.</p>
+    <div class="actions">
+      <a class="btn gold" href="how-it-works.html">See How It Works</a>
+      <a class="btn light" href="resources.html">Explore Resources</a>
+      <a class="btn outline" href="contact.html">Get Involved</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="jv-site-footer">
+  <div class="jv-footer-inner jv-container">
+    <div class="jv-footer-grid">
+      <div><strong>Janavani</strong><p>Citizen voice for accountable public systems.</p><div class="jv-social-links" aria-label="Janavani community links"><a class="jv-social-link" href="https://t.me/JanaVaniBot" target="_blank" rel="noopener noreferrer">Telegram</a><a class="jv-social-link" href="https://github.com/netzen-abm/janavani" target="_blank" rel="noopener noreferrer">GitHub</a></div></div>
+      <div><strong>Explore</strong><nav class="jv-footer-navigation" aria-label="Footer navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="how-it-works.html">How It Works</a><a href="resources.html">Resources</a></nav></div>
+      <div><strong>Janavani</strong><nav class="jv-footer-navigation" aria-label="Footer secondary navigation"><a href="vision.html" aria-current="page">Vision</a><a href="contact.html">Get Involved</a></nav></div>
+    </div>
+    <div class="jv-footer-bottom"><span>Citizen voice for accountable public systems.</span><span>Â© <span data-current-year></span> Janavani.</span></div>
+  </div>
+</footer>
+
+<button class="jv-scroll-top" type="button" aria-label="Back to top" title="Back to top" hidden>â†‘</button>
+<script src="gtranslation-new.js"></script>
+<script src="script-rebuild.js"></script>
 </body>
-
 </html>
 

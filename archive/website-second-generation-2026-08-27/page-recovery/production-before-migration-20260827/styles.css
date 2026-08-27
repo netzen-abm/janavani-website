@@ -1,4 +1,4 @@
-﻿/* ============================================================
+/* ============================================================
    JANAVANI DESIGN SYSTEM â€” SURGICALLY CLEANED & CONSOLIDATED
    ============================================================ */
 
@@ -1337,3 +1337,670 @@ button:focus-visible {
     }
 }
 
+
+/*
+
+JANAVANI — HOME CLEAN BUILD — STEP H2
+   STANDARD SHARED SITE SHELL
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. GLOBAL BOX MODEL
+   ------------------------------------------------------------ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* ------------------------------------------------------------
+   2. PAGE FOUNDATION
+   ------------------------------------------------------------ */
+
+html {
+    min-width: 320px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: #ffffff;
+    color: #17212b;
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    line-height: 1.7;
+}
+
+
+/* ------------------------------------------------------------
+   3. STANDARD CONTENT CONTAINER
+   ONE AUTHORITATIVE SHARED WIDTH
+   ------------------------------------------------------------ */
+
+.container {
+    width: min(
+        calc(100% - 2rem),
+        1160px
+    );
+
+    margin-inline: auto;
+}
+
+
+/* ------------------------------------------------------------
+   4. SHARED SITE HEADER
+   ------------------------------------------------------------ */
+
+.site-header {
+    position: relative;
+    z-index: 1000;
+
+    width: 100%;
+
+    background: #ffffff;
+
+    border-bottom:
+        1px solid rgba(13, 59, 102, 0.10);
+}
+
+.site-header-inner {
+    min-height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 2rem;
+}
+
+
+/* ------------------------------------------------------------
+   5. SITE LOGO
+   ------------------------------------------------------------ */
+
+.site-logo {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 0.7rem;
+
+    flex: 0 0 auto;
+
+    color: #0d3b66;
+
+    font-size: 1.05rem;
+    font-weight: 800;
+
+    letter-spacing: 0.01em;
+
+    text-decoration: none;
+}
+
+.site-logo img {
+    width: 48px;
+    height: 48px;
+
+    max-width: 48px;
+    max-height: 48px;
+
+    object-fit: contain;
+
+    flex: 0 0 48px;
+}
+
+.site-logo span {
+    white-space: nowrap;
+}
+
+
+/* ------------------------------------------------------------
+   6. PRIMARY NAVIGATION
+   ------------------------------------------------------------ */
+
+.site-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 1.35rem;
+
+    margin-left: auto;
+}
+
+.site-navigation a {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+
+    min-height: 44px;
+
+    color: #334155;
+
+    font-size: 0.88rem;
+    font-weight: 650;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        color 180ms ease,
+        background-color 180ms ease;
+}
+
+.site-navigation a:hover {
+    color: #0d3b66;
+}
+
+.site-navigation a:focus-visible,
+.site-logo:focus-visible {
+    outline: 3px solid rgba(217, 164, 65, 0.45);
+    outline-offset: 4px;
+    border-radius: 5px;
+}
+
+.site-navigation a[aria-current="page"] {
+    color: #0d3b66;
+    font-weight: 800;
+}
+
+.site-navigation a[aria-current="page"]::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 4px;
+
+    height: 2px;
+
+    background: #d9a441;
+
+    border-radius: 999px;
+}
+
+
+/* ------------------------------------------------------------
+   7. MOBILE MENU BUTTON
+   HIDDEN UNTIL MOBILE NAVIGATION IS IMPLEMENTED
+   ------------------------------------------------------------ */
+
+.site-menu-toggle {
+    display: none;
+
+    width: 44px;
+    height: 44px;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.site-menu-toggle span {
+    display: block;
+
+    width: 22px;
+    height: 2px;
+
+    margin: 5px auto;
+
+    background: #0d3b66;
+
+    border-radius: 999px;
+}
+
+
+/* ------------------------------------------------------------
+   8. MAIN CONTENT BOUNDARY
+   ------------------------------------------------------------ */
+
+#main-content {
+    width: 100%;
+    min-width: 0;
+}
+
+
+/* ------------------------------------------------------------
+   9. TEMPORARY HOME PLACEHOLDER
+   THIS WILL BE REPLACED SESSION BY SESSION
+   ------------------------------------------------------------ */
+
+.page-placeholder {
+    width: 100%;
+
+    padding:
+        clamp(5rem, 10vw, 8rem)
+        0;
+}
+
+.page-placeholder .container {
+    text-align: center;
+}
+
+.page-placeholder .section-kicker {
+    margin: 0 0 1rem;
+
+    color: #d9a441;
+
+    font-size: 0.75rem;
+    font-weight: 800;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+}
+
+.page-placeholder h1 {
+    max-width: 820px;
+
+    margin:
+        0 auto 1.25rem;
+
+    color: #082b4b;
+
+    font-size:
+        clamp(2rem, 5vw, 3.5rem);
+
+    line-height: 1.15;
+}
+
+.page-placeholder p:not(.section-kicker) {
+    max-width: 680px;
+
+    margin:
+        0 auto;
+
+    color: #64748b;
+
+    font-size: 1.05rem;
+}
+
+
+/* ------------------------------------------------------------
+   10. SHARED SITE FOOTER
+   ------------------------------------------------------------ */
+
+.site-footer {
+    width: 100%;
+
+    margin-top: 0;
+
+    padding:
+        4rem 0 2rem;
+
+    background: #082b4b;
+
+    color: #ffffff;
+}
+
+.site-footer-brand {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 1rem;
+
+    max-width: 760px;
+}
+
+.site-footer-brand img {
+    width: 48px;
+    height: 48px;
+
+    max-width: 48px;
+    max-height: 48px;
+
+    object-fit: contain;
+
+    flex: 0 0 48px;
+}
+
+.site-footer-brand h2 {
+    margin: 0 0 0.25rem;
+
+    color: #ffffff;
+
+    font-size: 1.2rem;
+}
+
+.site-footer-brand p {
+    margin: 0 0 0.4rem;
+
+    color: rgba(255,255,255,0.78);
+
+    font-size: 0.9rem;
+}
+
+
+/* ------------------------------------------------------------
+   11. FOOTER NAVIGATION
+   ------------------------------------------------------------ */
+
+.site-footer-navigation {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap:
+        0.5rem 1.25rem;
+
+    margin-top: 2rem;
+}
+
+.site-footer-navigation a {
+    color: rgba(255,255,255,0.86);
+
+    font-size: 0.86rem;
+    font-weight: 650;
+
+    text-decoration: none;
+
+    transition:
+        color 180ms ease;
+}
+
+.site-footer-navigation a:hover {
+    color: #ffffff;
+}
+
+.site-footer-navigation a:focus-visible {
+    outline: 3px solid rgba(217, 164, 65, 0.65);
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+
+/* ------------------------------------------------------------
+   12. FOOTER NOTES
+   ------------------------------------------------------------ */
+
+.site-footer-note {
+    max-width: 760px;
+
+    margin:
+        2rem 0 0;
+
+    padding-top: 1.5rem;
+
+    border-top:
+        1px solid rgba(255,255,255,0.14);
+
+    color: rgba(255,255,255,0.62);
+
+    font-size: 0.78rem;
+
+    line-height: 1.65;
+}
+
+.site-footer-copyright {
+    margin: 1.5rem 0 0;
+
+    color: rgba(255,255,255,0.52);
+
+    font-size: 0.75rem;
+}
+
+
+/* ------------------------------------------------------------
+   13. TABLET
+   ------------------------------------------------------------ */
+
+@media (max-width: 900px) {
+
+    .site-header-inner {
+        min-height: 68px;
+        gap: 1rem;
+    }
+
+    .site-navigation {
+        gap: 0.85rem;
+    }
+
+    .site-navigation a {
+        font-size: 0.82rem;
+    }
+
+}
+
+
+/* ------------------------------------------------------------
+   14. MOBILE
+   ------------------------------------------------------------ */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: min(
+            calc(100% - 1.5rem),
+            680px
+        );
+    }
+
+    .site-header-inner {
+        min-height: 64px;
+    }
+
+    .site-logo img {
+        width: 42px;
+        height: 42px;
+        max-width: 42px;
+        max-height: 42px;
+        flex-basis: 42px;
+    }
+
+    .site-navigation {
+        gap: 0.6rem;
+    }
+
+    .site-navigation a {
+        min-height: 40px;
+        font-size: 0.76rem;
+    }
+
+    .site-menu-toggle {
+        display: none;
+    }
+
+    .site-footer {
+        padding:
+            3rem 0 1.75rem;
+    }
+
+}
+
+
+/* ------------------------------------------------------------
+   15. SMALL MOBILE
+   ------------------------------------------------------------ */
+
+@media (max-width: 520px) {
+
+    .site-header-inner {
+        gap: 0.5rem;
+    }
+
+    .site-logo span {
+        display: none;
+    }
+
+    .site-navigation {
+        gap: 0.45rem;
+    }
+
+    .site-navigation a {
+        font-size: 0.68rem;
+    }
+
+    .site-navigation a[aria-current="page"]::after {
+        bottom: 2px;
+    }
+
+    .site-footer-brand {
+        flex-direction: column;
+    }
+
+    .site-footer-navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.7rem;
+    }
+
+}
+
+
+/* ------------------------------------------------------------
+   16. REDUCED MOTION
+   ------------------------------------------------------------ */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+}
+
+
+/* ============================================================
+   END JANAVANI — HOME CLEAN BUILD — STEP H2
+   ============================================================ */   
+/* ============================================================
+   JANAVANI — STEP H3-C — SHARED STICKY NAVIGATION
+
+   Shared infrastructure:
+   - Header remains accessible during page scrolling
+   - Applies to Home and all future pages
+   - Existing JavaScript scroll-state remains compatible
+   - Does not control Home-specific presentation
+   ============================================================ */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Preserve keyboard visibility and visual separation */
+.site-header:focus-within {
+    z-index: 1001;
+}
+
+/* ============================================================
+   END JANAVANI — STEP H3-C
+   ============================================================ */
+
+/* ============================================================
+   JANAVANI — STEP H3-D — SHARED BACK-TO-TOP CONTROL
+
+   Shared infrastructure:
+   - Available across all pages
+   - Hidden until JavaScript detects sufficient scroll depth
+   - Uses existing .jv-scroll-top JavaScript contract
+   - Keyboard accessible
+   - Respects reduced-motion behavior
+   ============================================================ */
+
+.jv-scroll-top {
+    position: fixed;
+
+    right: 1.25rem;
+    bottom: 1.25rem;
+
+    width: 44px;
+    height: 44px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid rgba(13, 59, 102, 0.18);
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #0d3b66;
+
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1;
+
+    box-shadow: 0 8px 24px rgba(20, 63, 102, 0.16);
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transform: translateY(8px);
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    
+    z-index: 1100;
+}
+
+.jv-scroll-top.visible {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transform: translateY(0);
+}
+
+.jv-scroll-top:hover {
+    box-shadow: 0 10px 28px rgba(20, 63, 102, 0.22);
+}
+
+.jv-scroll-top:focus-visible {
+    outline: 3px solid rgba(217, 164, 65, 0.45);
+    outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+
+    .jv-scroll-top {
+        right: 1rem;
+        bottom: 1rem;
+
+        width: 42px;
+        height: 42px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .jv-scroll-top {
+        transition: none;
+        transform: none;
+    }
+}
+
+/* ============================================================
+   END JANAVANI — STEP H3-D
+   ============================================================ */

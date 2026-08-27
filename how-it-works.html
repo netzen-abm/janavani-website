@@ -1,1203 +1,318 @@
-<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="How Janavani works: from describing a civic concern to understanding the issue, identifying a pathway, preparing, acting, and following up while keeping the citizen in control.">
+<meta name="robots" content="index,follow">
+<title>How Janavani Works â€” From Citizen Voice to Civic Action</title>
+<link rel="icon" href="assets/brand/favicon/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles-rebuild.css">
 
-    <meta name="description"
-        content="Learn how Janavani helps citizens describe a government issue, identify the relevant pathway and prepare a lawful civic document for informed action.'s government-related problem to understanding, documentation and informed civic action.">
-
-    <meta name="keywords"
-        content="Janavani, how Janavani works, citizen governance, civic technology, government accountability, citizen rights, India">
-
-    <meta name="author" content="Janavani">
-
-    <title>How Janavani Works â€” Citizen Governance Platform</title>
-
-    <link rel="stylesheet" href="styles.css">
-
-<link rel="canonical" href="https://netzen-abm.github.io/janavani-website/how-it-works.html">
-<meta name="theme-color" content="#0d3b66">
-
-<meta property="og:title" content="How Janavani Works â€” Citizen Governance Platform">
-<meta property="og:description" content="Understand the current Janavani citizen-governance workflow, from describing a problem to identifying a pathway, preparing a document and taking informed civic action.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://netzen-abm.github.io/janavani-website/how-it-works.html">
-
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="How Janavani Works â€” Citizen Governance Platform">
-<meta name="twitter:description" content="Understand how Janavani is being developed to help citizens move from a government-related problem to informed, documented and lawful civic action.">
-<style id="janavani-how-it-works-visual">
-
-/* ============================================================
-   JANAVANI — HOW IT WORKS PAGE VISUAL LAYER
-   STEP 5C-6
-   ============================================================ */
-
-.page-hero-title {
-    max-width: 900px;
-    margin-inline: auto;
-    text-wrap: balance;
+<style>
+/* JANAVANI HOW-IT-WORKS â€” PAGE-SPECIFIC VISUAL LAYER
+   Step 4A-17. Shared CSS remains unchanged during individual-page work. */
+:root{
+ --w-navy:#071d30;--w-blue:#174666;--w-paper:#f5f2e9;--w-paper2:#e9e5da;
+ --w-ink:#142938;--w-muted:#65747d;--w-gold:#d6a34a;--w-white:#fffdf8;
+ --w-line:rgba(20,41,56,.14);--w-darkline:rgba(255,255,255,.16)
 }
+.hiw17{background:var(--w-white);color:var(--w-ink)}
+.hiw17 *{box-sizing:border-box}
+.hiw17 .ww{width:min(1200px,calc(100% - 48px));margin:auto}
+.hiw17 .ey{font:800 .67rem/1.2 Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--w-gold);margin:0 0 16px}
+.hiw17 h1,.hiw17 h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.045em}
+.hiw17 h1{font-size:clamp(3.4rem,8vw,7.8rem);line-height:.86;margin:0 0 28px}
+.hiw17 h2{font-size:clamp(2.5rem,5.5vw,5.2rem);line-height:.93;margin:0 0 22px}
+.hiw17 h3{font:700 1rem/1.3 Arial,sans-serif}
+.hiw17 p{line-height:1.72}
+.hiw17 .lead{font:1.16rem/1.7 Georgia,serif;max-width:760px}
+.hiw17 .muted{color:var(--w-muted);max-width:760px}
+.hiw17 .dark{background:var(--w-navy);color:#fff}.hiw17 .dark .muted{color:rgba(255,255,255,.68)}.hiw17 .dark .ey{color:#ead3a1}
 
-.workflow-anchor {
-    position: relative;
+.hiw17 .hero{background:var(--w-paper);padding:clamp(78px,10vw,145px) 0 80px;border-bottom:1px solid var(--w-line)}
+.hiw17 .hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:70px;align-items:end}
+.hiw17 .hero-note{border-left:3px solid var(--w-gold);padding:20px 0 20px 25px}
+.hiw17 .hero-note strong{font:500 1.35rem/1.35 Georgia,serif}.hiw17 .hero-note p{margin:9px 0 0;color:var(--w-muted);font-size:.9rem}
+.hiw17 .mini-flow{display:grid;gap:8px}
+.hiw17 .mini-flow div{display:flex;align-items:center;gap:12px;padding:13px 15px;border:1px solid var(--w-line);background:#fff;border-radius:9px;font:800 .7rem Arial,sans-serif;letter-spacing:.1em}
+.hiw17 .mini-flow span{color:var(--w-gold);min-width:22px}
+
+.hiw17 .section{padding:clamp(72px,9vw,125px) 0}
+.hiw17 .intro{text-align:center}.hiw17 .intro .lead{margin:0 auto}
+
+.hiw17 .journey{margin-top:60px;border-top:1px solid var(--w-line)}
+.hiw17 .stage{display:grid;grid-template-columns:100px minmax(220px,.7fr) 1fr;gap:28px;align-items:start;padding:35px 0;border-bottom:1px solid var(--w-line)}
+.hiw17 .num{font:800 .72rem Arial,sans-serif;letter-spacing:.15em;color:var(--w-gold)}
+.hiw17 .stage h3{font:500 clamp(1.65rem,2.7vw,2.4rem) Georgia,serif;margin:0}
+.hiw17 .stage p{margin:0;color:var(--w-muted);max-width:600px}
+.hiw17 .stage:nth-child(odd){background:linear-gradient(90deg,rgba(245,242,233,.55),transparent);margin-inline:-20px;padding-inline:20px}
+
+.hiw17 .operational{background:var(--w-paper)}
+.hiw17 .op-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:50px;border-top:1px solid var(--w-line);border-left:1px solid var(--w-line)}
+.hiw17 .op{min-height:190px;padding:25px 20px;border-right:1px solid var(--w-line);border-bottom:1px solid var(--w-line);background:rgba(255,255,255,.48)}
+.hiw17 .op span{font:800 .65rem Arial,sans-serif;letter-spacing:.15em;color:var(--w-gold)}
+.hiw17 .op h3{margin:32px 0 8px}.hiw17 .op p{margin:0;color:var(--w-muted);font-size:.87rem}
+.hiw17 .op small{display:block;margin-top:16px;color:var(--w-blue);font:700 .68rem Arial,sans-serif}
+
+.hiw17 .decision{padding:0}
+.hiw17 .decision-grid{display:grid;grid-template-columns:1fr 1fr}
+.hiw17 .decision-panel{padding:clamp(55px,7vw,90px) clamp(25px,5vw,70px)}
+.hiw17 .decision-panel:first-child{background:#fff}.hiw17 .decision-panel:last-child{background:var(--w-navy);color:#fff}
+.hiw17 .decision-panel:last-child .ey{color:#ead3a1}
+.hiw17 .decision-panel:last-child p{color:rgba(255,255,255,.7)}
+.hiw17 .decision-list{margin-top:30px;border-top:1px solid var(--w-line)}
+.hiw17 .decision-panel:last-child .decision-list{border-color:var(--w-darkline)}
+.hiw17 .decision-item{display:grid;grid-template-columns:28px 1fr;gap:14px;padding:17px 0;border-bottom:1px solid var(--w-line);font-size:.9rem}
+.hiw17 .decision-panel:last-child .decision-item{border-color:var(--w-darkline)}
+.hiw17 .decision-item b{color:var(--w-gold)}
+
+.hiw17 .example{background:var(--w-paper)}
+.hiw17 .case{margin-top:48px;background:#fff;border:1px solid var(--w-line);border-radius:16px;overflow:hidden}
+.hiw17 .case-head{padding:25px 30px;background:var(--w-navy);color:#fff}
+.hiw17 .case-head strong{font:800 .68rem Arial,sans-serif;letter-spacing:.15em}
+.hiw17 .case-head h3{font:500 1.65rem Georgia,serif;margin:10px 0 0}
+.hiw17 .case-body{display:grid;grid-template-columns:repeat(3,1fr)}
+.hiw17 .case-step{padding:28px;border-right:1px solid var(--w-line);border-bottom:1px solid var(--w-line)}
+.hiw17 .case-step:nth-child(3n){border-right:0}.hiw17 .case-step span{font:800 .64rem Arial,sans-serif;color:var(--w-gold)}
+.hiw17 .case-step h3{margin:15px 0 8px}.hiw17 .case-step p{margin:0;color:var(--w-muted);font-size:.87rem}
+
+.hiw17 .truth{background:#fff}
+.hiw17 .truth-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.hiw17 .truth-card{padding:28px;border:1px solid var(--w-line);border-radius:14px;background:var(--w-paper)}
+.hiw17 .truth-card strong{display:block;font:800 .68rem Arial,sans-serif;letter-spacing:.14em}.hiw17 .truth-card h3{margin:15px 0 8px}.hiw17 .truth-card p{margin:0;color:var(--w-muted);font-size:.88rem}
+.hiw17 .truth-card.verified{border-top:3px solid var(--w-blue)}.hiw17 .truth-card.assist{border-top:3px solid var(--w-gold)}.hiw17 .truth-card.uncertain{border-top:3px solid #8b969b}
+
+.hiw17 .bound{background:var(--w-navy);color:#fff}
+.hiw17 .bound-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.hiw17 .bound-list{border-top:1px solid var(--w-darkline)}
+.hiw17 .bound-item{padding:18px 0;border-bottom:1px solid var(--w-darkline);display:flex;gap:16px}
+.hiw17 .bound-item b{color:var(--w-gold);font:800 .72rem Arial,sans-serif}
+.hiw17 .bound-item span{color:rgba(255,255,255,.75);font-size:.9rem}
+
+.hiw17 .cta{text-align:center;background:linear-gradient(145deg,#071d30,#0e3855);color:#fff}
+.hiw17 .cta h2{max-width:900px;margin-inline:auto;color:#fff}
+.hiw17 .cta .muted{margin-inline:auto;color:rgba(255,255,255,.68)}
+.hiw17 .actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hiw17 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 21px;border-radius:999px;text-decoration:none;font:800 .78rem Arial,sans-serif}
+.hiw17 .gold{background:var(--w-gold);color:#091a28}.hiw17 .light{background:#fff;color:#091a28}.hiw17 .outline{border:1px solid rgba(255,255,255,.45);color:#fff}
+
+@media(max-width:900px){
+ .hiw17 .hero-grid,.hiw17 .bound-grid,.hiw17 .decision-grid{grid-template-columns:1fr}
+ .hiw17 .op-grid{grid-template-columns:repeat(2,1fr)}
+ .hiw17 .truth-grid{grid-template-columns:1fr}
+ .hiw17 .stage{grid-template-columns:65px 1fr}.hiw17 .stage p{grid-column:2}
+ .hiw17 .case-body{grid-template-columns:1fr 1fr}.hiw17 .case-step:nth-child(3n){border-right:1px solid var(--w-line)}
+ .hiw17 .case-step:nth-child(2n){border-right:0}
 }
-
-.workflow-anchor::before {
-    content: "";
-    display: block;
-    width: 56px;
-    height: 4px;
-    margin: 0 auto 1.5rem;
-    background: var(--jv-gold, #d9a441);
-    border-radius: 999px;
+@media(max-width:620px){
+ .hiw17 .ww{width:calc(100% - 30px)}
+ .hiw17 .op-grid,.hiw17 .case-body{grid-template-columns:1fr}
+ .hiw17 .op{min-height:auto}.hiw17 .case-step,.hiw17 .case-step:nth-child(n){border-right:0}
+ .hiw17 .stage{grid-template-columns:48px 1fr;gap:15px}.hiw17 .stage p{grid-column:2}
+ .hiw17 .actions{flex-direction:column}.hiw17 .btn{width:100%}
 }
-
-.workflow-anchor .steps-container {
-    margin-top: 3rem;
-}
-
-.workflow-anchor .step {
-    transition:
-        transform 180ms ease,
-        box-shadow 180ms ease;
-}
-
-.workflow-anchor .step:hover {
-    transform: translateY(-4px);
-}
-
-.howitworks-section .section-subtitle,
-.solution-section .section-subtitle {
-    max-width: 760px;
-    margin-inline: auto;
-}
-
-@media (max-width: 768px) {
-
-    .workflow-anchor .steps-container {
-        margin-top: 2rem;
-    }
-
-    .workflow-anchor .step:hover {
-        transform: none;
-    }
-}
-
 </style>
 </head>
 
 <body>
+<a class="jv-skip-link" href="#main-content">Skip to content</a>
 
-    <!-- LANGUAGE TRANSLATION -->
-
-    <div class="gtranslate_wrapper"></div>
-
-
-    <!-- NAVIGATION -->
-
-    <nav class="navbar">
-
-        <div class="container">
-
-            <div class="logo">
-                <a href="index.html" aria-label="Janavani home">
-                    <img
-                        src="assets/JanaVani Profile Pictures.png"
-                        alt="Janavani"
-                        class="jv-logo-image"
-                        width="64"
-                        height="64">
-                </a>
-            </div>
-
-            <ul class="nav-links">
-
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-
-                <li>
-                    <a href="how-it-works.html" class="active">
-                        How It Works
-                    </a>
-                </li>
-
-                <li>
-                    <a href="resources.html">
-                        Resources
-                    </a>
-                </li>
-
-                <li>
-                    <a href="vision.html">
-                        Vision
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html">
-                        Get Involved
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
+<header class="jv-site-header">
+  <div class="jv-header-inner jv-container">
+    <a class="jv-brand" href="index.html" aria-label="Janavani home">
+      <img src="assets/brand/logos/JanaVani Profile Pictures re-size.png" alt="Janavani" width="56" height="56">
+    </a>
+    <button class="jv-menu-toggle" type="button" aria-expanded="false" aria-controls="jv-navigation" aria-label="Open navigation">
+      <span aria-hidden="true">â˜°</span>
+    </button>
+    <nav id="jv-navigation" class="jv-navigation" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="how-it-works.html" aria-current="page">How It Works</a>
+      <a href="resources.html">Resources</a>
+      <a href="vision.html">Vision</a>
+      <a href="contact.html">Get Involved</a>
     </nav>
-
-
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="container">
-
-            <h1 class="page-hero-title">How Janavani Works</h1>
-
-            <p>
-                Janavani is being built to help citizens move from
-                a government-related problem to informed, documented
-                and lawful civic action.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- BASIC IDEA -->
-
-    <section class="solution-section">
-
-        <div class="container">
-
-            <h2>The Basic Idea</h2>
-
-            <p class="section-subtitle">
-                Citizens should describe their problem.
-                Janavani should carry the complexity.
-            </p>
-
-            <p>
-                A citizen may know what happened without knowing which
-                department, office, form or procedure is responsible.
-            </p>
-
-            <p>
-                Janavani is designed to progressively help structure
-                that problem, identify possible pathways and prepare
-                useful civic documents.
-            </p>
-
-            <p>
-                The objective is not to make citizens dependent on
-                Janavani. The objective is to increase citizen
-                understanding, agency and ability to act.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- CURRENT WORKFLOW -->
-
-    <section class="features-section">
-
-        <div class="container">
-
-            <h2>Current Janavani Workflow</h2>
-
-            <p class="section-subtitle">
-                The current MVP journey is designed around a simple
-                citizen-to-document workflow.
-            </p>
-
-            <div class="steps-container">
-
-                <div class="step">
-
-                    <div class="step-number">1</div>
-
-                    <h3>Describe</h3>
-
-                    <p>
-                        Describe what happened in your own words.
-                        You do not need to understand the entire
-                        government structure first.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">2</div>
-
-                    <h3>Select the Purpose</h3>
-
-                    <p>
-                        Identify the type of document or civic action
-                        that may be appropriate for the situation.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">3</div>
-
-                    <h3>Provide Location</h3>
-
-                    <p>
-                        Provide the relevant district or location so
-                        Janavani can work toward identifying the
-                        appropriate government office.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">4</div>
-
-                    <h3>Identify the Office</h3>
-
-                    <p>
-                        Search for the relevant government office
-                        using the available office information.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">5</div>
-
-                    <h3>Choose Identity Mode</h3>
-
-                    <p>
-                        Provide the information required for the
-                        selected document and review what will be
-                        included.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">6</div>
-
-                    <h3>Review & Generate</h3>
-
-                    <p>
-                        Review the prepared document before generating
-                        the final document for use.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">7</div>
-
-                    <h3>Receive the Document</h3>
-
-                    <p>
-                        Generate and receive the document in the
-                        currently supported format.
-                    </p>
-
-                </div>
-
-
-                <div class="step">
-
-                    <div class="step-number">8</div>
-
-                    <h3>Take Action</h3>
-
-                    <p>
-                        The citizen decides how and where to submit
-                        the document using the appropriate official
-                        channel.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-<!-- =========================================================
-     JANAVANI CIVIC TOOLS
-     ========================================================= -->
-
-<section class="civic-tools-section">
-
-    <div class="container">
-
-        <h2>Janavani Civic Tools</h2>
-
-        <p class="section-subtitle">
-            Tools being developed to make civic participation
-            easier, more understandable and more accessible to citizens.
-        </p>
-
-
-
-        <!-- CIVIC TOOLS VISUAL -->
-
-        <div class="civic-tools-visual">
-
-            <img
-                src="assets/JanaVani banner - svg.svg"
-                alt="Janavani — citizen governance platform"
-                class="civic-tools-banner">
-
-        </div>
-
-
-        <div class="civic-tools-grid">
-
-
-            <!-- TELEGRAM BOT -->
-
-            <div class="civic-tool-card">
-
-                <div class="civic-tool-icon" aria-hidden="true">
-
-                    <svg viewBox="0 0 64 64"
-                         xmlns="http://www.w3.org/2000/svg">
-
-                        <circle cx="32"
-                                cy="32"
-                                r="28"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="3"/>
-
-                        <path d="M18 31.5
-                                 L45 20
-                                 L39 45
-                                 L31 37
-                                 L25 43
-                                 L26 34
-                                 Z"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="3"
-                              stroke-linejoin="round"/>
-
-                        <path d="M26 34
-                                 L39 25
-                                 L31 37"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="3"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"/>
-
-                    </svg>
-
-                </div>
-
-
-                <div class="civic-tool-content">
-
-                    <span class="civic-tool-status available">
-                        AVAILABLE
-                    </span>
-
-                    <h3>JanaVaniBot — Telegram</h3>
-
-                    <p>
-                        A citizen-facing tool for describing a
-                        government-related problem and moving through
-                        a structured civic workflow.
-                    </p>
-
-                        <div class="civic-tool-use">
-
-                            <strong>Example use:</strong>
-
-                            <p>
-                                A citizen notices a government service problem,
-                                describes the issue through JanaVaniBot, organises
-                                the relevant information and is guided toward
-                                a possible civic or government-facing pathway.
-                            </p>
-
-                        </div>
-
-                    <p>
-                        Citizens can explain a concern, provide relevant
-                        information, identify a possible pathway and work
-                        toward an appropriate government-facing document.
-                    </p>
-
-                        <div class="civic-tool-qr">
-
-                            <img
-                                src="assets/Janavani Bot QR.png"
-                                alt="QR code to open JanaVaniBot on Telegram">
-
-                            <span>
-                                Scan to open JanaVaniBot
-                            </span>
-
-                        </div>
-
-                        <a class="button primary"
-                        href="https://t.me/JanaVaniBot"
-                       target="_blank"
-                       rel="noopener noreferrer">
-                        Open JanaVaniBot →
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- WEB APP -->
-
-            <div class="civic-tool-card">
-
-                <div class="civic-tool-icon" aria-hidden="true">
-
-                    <svg viewBox="0 0 64 64"
-                         xmlns="http://www.w3.org/2000/svg">
-
-                        <rect x="10"
-                              y="12"
-                              width="44"
-                              height="34"
-                              rx="4"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="3"/>
-
-                        <path d="M18 22
-                                 H46
-                                 M18 29
-                                 H40
-                                 M18 36
-                                 H34"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="3"
-                              stroke-linecap="round"/>
-
-                        <path d="M24 46
-                                 V52
-                                 M40 46
-                                 V52
-                                 M20 52
-                                 H44"
-                              fill="none"
-                              stroke="currentColor"
-                              stroke-width="3"
-                              stroke-linecap="round"/>
-
-                    </svg>
-
-                </div>
-
-
-                <div class="civic-tool-content">
-
-                    <span class="civic-tool-status coming-soon">
-                        COMING SOON
-                    </span>
-
-                    <h3>Janavani Web App</h3>
-
-                    <p>
-                        A broader civic interface being developed to
-                        help citizens document public problems, understand
-                        government processes and participate more effectively.
-                    </p>
-
-                    <p>
-                        The planned direction includes structured issue
-                        reporting, evidence organisation, government-office
-                        identification, document preparation and future
-                        follow-up capabilities.
-                    </p>
-
-                    <span class="button secondary civic-disabled">
-                        Web App — Coming Soon
-                    </span>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <!-- CITIZEN USE FLOW -->
-
-        <div class="civic-use-case">
-
-            <h3>How Citizens Can Use Janavani</h3>
-
-            <div class="civic-use-flow">
-
-                <div class="civic-use-step">
-
-                    <span>1</span>
-
-                    <strong>Describe</strong>
-
-                    <p>
-                        Explain the problem in your own words.
-                    </p>
-
-                </div>
-
-
-                <div class="civic-use-step">
-
-                    <span>2</span>
-
-                    <strong>Understand</strong>
-
-                    <p>
-                        Identify the issue, authority and possible pathway.
-                    </p>
-
-                </div>
-
-
-                <div class="civic-use-step">
-
-                    <span>3</span>
-
-                    <strong>Document</strong>
-
-                    <p>
-                        Organise relevant facts and prepare a suitable document.
-                    </p>
-
-                </div>
-
-
-                <div class="civic-use-step">
-
-                    <span>4</span>
-
-                    <strong>Participate</strong>
-
-                    <p>
-                        Use an appropriate lawful channel and retain your records.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <p class="civic-tools-note">
-
-                Janavani is intended to help citizens participate in
-                governance. It does not replace government authorities,
-                legal professionals or official procedures.
-
-            </p>
-
-        </div>
-
+    <div class="gtranslate_wrapper" aria-label="Language selection"></div>
+  </div>
+</header>
+
+<main id="main-content" class="hiw17">
+
+<section class="hero">
+  <div class="ww hero-grid">
+    <div>
+      <p class="ey">How Janavani Works Â· The citizen journey</p>
+      <h1>From citizen voice to informed civic action.</h1>
+      <p class="lead">Janavani is designed to reduce the practical complexity between a citizen's concern and the next appropriate civic step.</p>
     </div>
-
+    <div class="hero-note">
+      <strong>JANAVANI ASSISTS. THE CITIZEN DECIDES.</strong>
+      <p>The system can organise information and reduce procedural friction; it does not become the authority that decides what a citizen must do.</p>
+      <div class="mini-flow" aria-label="Core Janavani principle">
+        <div><span>01</span> ASSIST</div>
+        <div><span>02</span> REVIEW</div>
+        <div><span>03</span> DECIDE</div>
+        <div><span>04</span> ACT</div>
+      </div>
+    </div>
+  </div>
 </section>
 
+<section class="section intro" aria-labelledby="journey-title">
+  <div class="ww">
+    <p class="ey">01 Â· The six-stage journey</p>
+    <h2 id="journey-title">A concern becomes a structured civic pathway.</h2>
+    <p class="lead">The citizen begins with an ordinary-language concern. Janavani helps make the institutional path easier to understand, while the citizen remains responsible for reviewing and choosing the action.</p>
 
+    <div class="journey">
+      <article class="stage"><div class="num">01</div><h3>Describe</h3><p>Explain the concern in your own words. What happened? What is affecting you or your community?</p></article>
+      <article class="stage"><div class="num">02</div><h3>Understand</h3><p>Clarify what kind of public-system issue may be involved and what information is relevant to understanding it.</p></article>
+      <article class="stage"><div class="num">03</div><h3>Identify</h3><p>Work toward identifying the relevant authority, office, jurisdiction, procedure, or possible civic pathway where reliable information is available.</p></article>
+      <article class="stage"><div class="num">04</div><h3>Prepare</h3><p>Organise the necessary information and prepare an appropriate document, representation, or other civic material for review.</p></article>
+      <article class="stage"><div class="num">05</div><h3>Act</h3><p>Review the result and take the appropriate action through the relevant official or civic channel. Janavani does not make that decision for you.</p></article>
+      <article class="stage"><div class="num">06</div><h3>Follow</h3><p>Keep records, understand responses, observe outcomes, and continue lawful civic participation where appropriate.</p></article>
+    </div>
+  </div>
+</section>
 
+<section class="section operational" aria-labelledby="operational-title">
+  <div class="ww">
+    <p class="ey">02 Â· Current operational example</p>
+    <h2 id="operational-title">A practical workflow behind the journey.</h2>
+    <p class="muted">The conceptual six-stage journey is broader than any single interface. The demonstrated Telegram-based complaint workflow currently guides a citizen through a more detailed sequence before a document is generated.</p>
 
-    <!-- EXAMPLE -->
+    <div class="op-grid" aria-label="Detailed complaint-generation workflow">
+      <article class="op"><span>01</span><h3>Describe the issue</h3><p>The citizen starts by explaining the problem.</p><small>INPUT</small></article>
+      <article class="op"><span>02</span><h3>Classify / select purpose</h3><p>The workflow helps determine the relevant document or civic purpose.</p><small>STRUCTURE</small></article>
+      <article class="op"><span>03</span><h3>Provide location</h3><p>Location or district information can help establish the relevant jurisdiction.</p><small>CONTEXT</small></article>
+      <article class="op"><span>04</span><h3>Identify office</h3><p>The system searches for the responsible office where structured information is available, with a fallback when it is not.</p><small>ROUTING</small></article>
+      <article class="op"><span>05</span><h3>Choose identity mode</h3><p>The citizen provides the identity information appropriate to the workflow.</p><small>IDENTITY</small></article>
+      <article class="op"><span>06</span><h3>Review</h3><p>The citizen reviews the prepared information before proceeding.</p><small>CONTROL</small></article>
+      <article class="op"><span>07</span><h3>Select format</h3><p>The appropriate output format is selected where supported.</p><small>OUTPUT</small></article>
+      <article class="op"><span>08</span><h3>Generate document</h3><p>The workflow generates the supported document for the citizen to receive and use.</p><small>DELIVERY</small></article>
+    </div>
+  </div>
+</section>
 
-    <section class="solution-section">
+<section class="decision" aria-labelledby="decision-title">
+  <div class="decision-grid">
+    <div class="decision-panel">
+      <p class="ey">03 Â· What Janavani assists with</p>
+      <h2 id="decision-title">Carry complexity without taking control.</h2>
+      <p class="muted">Janavani's assistance layer is intended to make difficult public systems easier to navigate.</p>
+      <div class="decision-list">
+        <div class="decision-item"><b>01</b><span>Structure a concern expressed in ordinary language.</span></div>
+        <div class="decision-item"><b>02</b><span>Clarify the kind of issue or civic pathway involved.</span></div>
+        <div class="decision-item"><b>03</b><span>Work toward identifying relevant authority, office, jurisdiction, or procedure.</span></div>
+        <div class="decision-item"><b>04</b><span>Organise information and support preparation of civic documents.</span></div>
+        <div class="decision-item"><b>05</b><span>Make uncertainty visible instead of presenting an inference as an official fact.</span></div>
+      </div>
+    </div>
+    <div class="decision-panel">
+      <p class="ey">04 Â· What remains with the citizen</p>
+      <h2>The citizen stays in the loop.</h2>
+      <p>Janavani does not become the citizen's authority, representative, court, department, or autonomous decision-maker.</p>
+      <div class="decision-list">
+        <div class="decision-item"><b>01</b><span>Review the information.</span></div>
+        <div class="decision-item"><b>02</b><span>Check whether the proposed pathway fits the actual situation.</span></div>
+        <div class="decision-item"><b>03</b><span>Approve or reject a prepared output.</span></div>
+        <div class="decision-item"><b>04</b><span>Choose whether and how to act.</span></div>
+        <div class="decision-item"><b>05</b><span>Remain responsible for the civic action taken.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="container">
+<section class="section example" aria-labelledby="example-title">
+  <div class="ww">
+    <p class="ey">05 Â· Illustrative journey</p>
+    <h2 id="example-title">One concern. One pathway. Clearer next steps.</h2>
+    <p class="muted">This is a conceptual example of how the journey can reduce uncertainty. It does not guarantee an outcome or imply that every issue follows the same institutional path.</p>
+    <div class="case">
+      <div class="case-head"><strong>ILLUSTRATIVE CITIZEN CONCERN</strong><h3>â€œI have a public-service problem, but I do not know which office should receive it.â€</h3></div>
+      <div class="case-body">
+        <article class="case-step"><span>01 Â· DESCRIBE</span><h3>State the concern</h3><p>The citizen explains what happened and what outcome is sought.</p></article>
+        <article class="case-step"><span>02 Â· UNDERSTAND</span><h3>Clarify the issue</h3><p>The system helps organise the concern into a clearer public-system question.</p></article>
+        <article class="case-step"><span>03 Â· IDENTIFY</span><h3>Find the pathway</h3><p>Available structured information is used to work toward the relevant office or procedure.</p></article>
+        <article class="case-step"><span>04 Â· PREPARE</span><h3>Prepare the material</h3><p>Relevant information can be organised into a document or representation for review.</p></article>
+        <article class="case-step"><span>05 Â· REVIEW</span><h3>Citizen checks it</h3><p>The citizen reviews the content, context, and intended recipient before acting.</p></article>
+        <article class="case-step"><span>06 Â· ACT &amp; FOLLOW</span><h3>Continue participation</h3><p>The citizen uses the appropriate channel, keeps records, and follows the response where supported.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
 
-            <h2>Example: A Government Service Problem</h2>
+<section class="section truth" aria-labelledby="truth-title">
+  <div class="ww">
+    <p class="ey">06 Â· Information discipline</p>
+    <h2 id="truth-title">Not every answer has the same status.</h2>
+    <p class="muted">A trustworthy civic system should distinguish verified information, citizen-provided information, assistance, and uncertainty.</p>
+    <div class="truth-grid">
+      <article class="truth-card verified"><strong>VERIFIED</strong><h3>Known from reliable information</h3><p>Structured sources or implementation evidence support the claim. Verification status should remain visible where it matters.</p></article>
+      <article class="truth-card assist"><strong>ASSISTANCE</strong><h3>AI or system interpretation</h3><p>Generated or interpreted material can help organise a problem, but it is not automatically an official determination.</p></article>
+      <article class="truth-card uncertain"><strong>UNCERTAIN</strong><h3>Information needs confirmation</h3><p>When reliable information is unavailable or ambiguous, Janavani should expose the uncertainty and provide an appropriate manual path.</p></article>
+    </div>
+  </div>
+</section>
 
-            <p class="section-subtitle">
-                A simplified example of the intended Janavani experience.
-            </p>
+<section class="section bound" aria-labelledby="bound-title">
+  <div class="ww bound-grid">
+    <div>
+      <p class="ey">07 Â· Trust boundary</p>
+      <h2 id="bound-title">Assistance is not authority.</h2>
+      <p class="muted">The workflow exists to improve citizen understanding and agency. It should never silently turn automation into institutional authority.</p>
+    </div>
+    <div class="bound-list">
+      <div class="bound-item"><b>NOT</b><span>A government department or official decision-maker.</span></div>
+      <div class="bound-item"><b>NOT</b><span>A court, legal authority, or substitute for qualified professional advice.</span></div>
+      <div class="bound-item"><b>NOT</b><span>An AI oracle that decides what a citizen must do.</span></div>
+      <div class="bound-item"><b>NOT</b><span>A guarantee that an office will respond or that a problem will be resolved.</span></div>
+      <div class="bound-item"><b>YES</b><span>A civic assistance layer designed to make public pathways easier to understand and navigate.</span></div>
+    </div>
+  </div>
+</section>
 
-            <div class="features-grid">
+<section class="section cta" aria-labelledby="cta-title">
+  <div class="ww">
+    <p class="ey">The Janavani handoff</p>
+    <h2 id="cta-title">Understand the pathway. Review the information. Decide the action.</h2>
+    <p class="muted">The technology supports the citizen; it does not replace the citizen.</p>
+    <div class="actions">
+      <a class="btn gold" href="resources.html">Explore Resources</a>
+      <a class="btn light" href="about.html">About Janavani</a>
+      <a class="btn outline" href="contact.html">Get Involved</a>
+    </div>
+  </div>
+</section>
 
-                <div class="feature-card">
+</main>
 
-                    <h3>1. The Problem</h3>
-
-                    <p>
-                        A citizen has submitted an application for a
-                        government service but has not received the
-                        expected response.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>2. Describe</h3>
-
-                    <p>
-                        The citizen explains what happened without
-                        needing to know the exact department or
-                        administrative hierarchy.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>3. Understand</h3>
-
-                    <p>
-                        Janavani helps structure the issue and work
-                        toward identifying the appropriate authority
-                        and civic pathway.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>4. Prepare</h3>
-
-                    <p>
-                        A structured representation or complaint can
-                        be prepared for the citizen to review.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>5. Act</h3>
-
-                    <p>
-                        The citizen reviews the document and submits
-                        it through the appropriate official channel.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>6. Follow Up</h3>
-
-                    <p>
-                        Future Janavani capabilities may help the
-                        citizen record responses and determine
-                        appropriate follow-up.
-                    </p>
-
-                </div>
-
-            </div>
-
+<footer class="jv-site-footer">
+  <div class="jv-footer-inner jv-container">
+    <div class="jv-footer-grid">
+      <div>
+        <strong>Janavani</strong>
+        <p>Citizen voice for accountable public systems.</p>
+        <div class="jv-social-links" aria-label="Janavani community links">
+          <a class="jv-social-link" href="https://t.me/JanaVaniBot" target="_blank" rel="noopener noreferrer">Telegram</a>
+          <a class="jv-social-link" href="https://github.com/netzen-abm/janavani" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
-
-    </section>
-
-
-    <!-- DEMOCRATIC OPTIONS -->
-
-    <section class="problem-section">
-
-        <div class="container">
-
-            <h2>Action Does Not Mean Only Protest</h2>
-
-            <p>
-                Democracy and republican government provide citizens
-                with many lawful ways to express disagreement,
-                request accountability and participate in public affairs.
-            </p>
-
-            <p>
-                Depending on the situation, a citizen may use a
-                representation, complaint, request for information,
-                objection, petition, legal notice or another available
-                administrative or legal pathway.
-            </p>
-
-            <p>
-                Where legally permitted, citizens may also explore
-                <strong>party-in-person</strong> procedures and represent
-                themselves in appropriate proceedings.
-            </p>
-
-            <p>
-                Janavani does not tell citizens which method they must
-                use. It aims to help them understand available options
-                so they can make informed decisions.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- PARTY IN PERSON -->
-
-    <section class="solution-section">
-
-        <div class="container">
-
-            <h2>Party-in-Person & Community Support</h2>
-
-            <p>
-                Some citizens may choose to pursue matters personally
-                through available legal procedures instead of relying
-                entirely on professional representation.
-            </p>
-
-            <p>
-                The availability and procedure for party-in-person
-                representation depends on the relevant court,
-                authority, jurisdiction and type of proceeding.
-            </p>
-
-            <p>
-                Citizens should independently verify the applicable
-                rules before proceeding.
-            </p>
-
-            <p>
-                Civil-society organisations, legal-aid initiatives and
-                community groups may also provide assistance in some
-                circumstances.
-            </p>
-
-            <p>
-                Janavani may provide references to such resources for
-                informational purposes. Listing an organisation does
-                not constitute endorsement by Janavani.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- CURRENT VS FUTURE -->
-
-    <section class="features-section">
-
-        <div class="container">
-
-            <h2>Current Capability vs Future Direction</h2>
-
-            <p class="section-subtitle">
-                Janavani's public website should never confuse planned
-                capabilities with features that are already available.
-            </p>
-
-            <div class="features-grid">
-
-                <div class="feature-card">
-
-                    <h3>Available / Current</h3>
-
-                    <p>
-                        The current platform includes the core
-                        conversation, workflow, office-selection,
-                        document-generation and PDF-delivery pathway
-                        being developed for the MVP.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Being Developed</h3>
-
-                    <p>
-                        Web-based citizen workflows, improved testing,
-                        reliability, privacy controls and broader
-                        document capabilities are part of the
-                        development roadmap.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Future</h3>
-
-                    <p>
-                        Tracking, evidence management, follow-up,
-                        escalation support, citizen feedback and
-                        broader governance intelligence are longer-term
-                        directions.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- FUTURE GOVERNANCE -->
-
-    <section class="solution-section">
-
-        <div class="container">
-
-            <h2>From Documents to Governance Intelligence</h2>
-
-            <p class="section-subtitle">
-                The document is not necessarily the end of the journey.
-            </p>
-
-            <div class="features-grid">
-
-                <div class="feature-card">
-
-                    <h3>Evidence</h3>
-
-                    <p>
-                        Future workflows may help citizens organise
-                        photographs, records, documents and other
-                        relevant evidence.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Tracking</h3>
-
-                    <p>
-                        Future capabilities may help citizens record
-                        submissions, responses and important dates.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Follow-Up</h3>
-
-                    <p>
-                        Citizens may eventually receive structured
-                        guidance about possible next steps based on
-                        the response received.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Accountability</h3>
-
-                    <p>
-                        Aggregated and responsibly verified information
-                        could eventually help identify patterns in
-                        public-service delivery.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Public Learning</h3>
-
-                    <p>
-                        Reliable civic information can help communities
-                        understand recurring governance problems and
-                        possible solutions.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Participatory Governance</h3>
-
-                    <p>
-                        The long-term objective is to strengthen the
-                        ability of citizens to participate meaningfully
-                        in governance.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PRIVACY -->
-
-    <section class="problem-section">
-
-        <div class="container">
-
-            <h2>Privacy Is Part of the Design</h2>
-
-            <p>
-                Janavani is designed around privacy, security,
-                data minimisation and citizen control.
-            </p>
-
-            <p>
-                Citizens should not have to provide unnecessary personal
-                information simply to understand a government process
-                or explore a civic pathway.
-            </p>
-
-            <p>
-                The platform architecture is intended to keep citizen
-                capabilities independent from any particular interface
-                such as Telegram or the Web.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- HOW TO CONTRIBUTE -->
-
-    <section class="cta-section">
-
-        <div class="container">
-
-            <h2>Help Build Janavani</h2>
-
-            <p>
-                Janavani is an open project and contributions are welcome
-                from citizens, developers, designers, researchers,
-                legal professionals, governance experts, journalists,
-                students, civil-society organisations and volunteers.
-            </p>
-
-            <div class="features-grid">
-
-                <div class="feature-card">
-
-                    <h3>Code</h3>
-
-                    <p>
-                        Improve software, testing, architecture,
-                        accessibility and security.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Research</h3>
-
-                    <p>
-                        Contribute research on law, governance,
-                        public administration, privacy and technology.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Legal Knowledge</h3>
-
-                    <p>
-                        Help improve procedural information,
-                        document structures and legal references.
-                    </p>
-
-                </div>
-
-
-                <div class="feature-card">
-
-                    <h3>Citizen Experience</h3>
-
-                    <p>
-                        Share real-world problems and experiences
-                        that can help improve civic workflows.
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="cta-buttons">
-
-                <a href="https://github.com/netzen-abm/janavani"
-                   class="btn btn-primary"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Contribute on GitHub
-                </a>
-
-                <a href="contact.html"
-                   class="btn btn-secondary">
-                    Get Involved
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- IMPORTANT NOTICE -->
-
-    <section class="problem-section">
-
-        <div class="container">
-
-            <h2>Important Notice</h2>
-
-            <p>
-                Janavani is a civic-technology initiative.
-                Information provided through the project is intended
-                to support citizen understanding and participation.
-            </p>
-
-            <p>
-                Janavani does not replace a lawyer, court, government
-                authority or other competent professional.
-            </p>
-
-            <p>
-                Laws, procedures, deadlines and official requirements
-                should be independently verified before taking legal
-                or administrative action.
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
-
-    <footer class="footer">
-
-        <div class="container">
-
-            <h3>Janavani</h3>
-
-            <p>
-                A privacy-first citizen governance platform.
-            </p>
-
-            <p>
-                From citizen voice to informed civic participation.
-            </p>
-
-            <p>
-                <a href="index.html">Home</a> |
-                <a href="about.html">About</a> |
-                <a href="how-it-works.html">How It Works</a> |
-                <a href="resources.html">Resources</a> |
-                <a href="vision.html">Vision</a> |
-                <a href="contact.html">Get Involved</a>
-            </p>
-
-            <p>
-                <a href="mailto:janavani@atomicmail.io">Email</a> |
-                <a href="https://github.com/netzen-abm/janavani"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    GitHub
-                </a> |
-                <a href="https://www.instagram.com/janavani700"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Instagram
-                </a> |
-                <a href="https://www.facebook.com/janavani700/"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Facebook
-                </a>
-            </p>
-
-            <p>
-                <a href="https://bsky.app/profile/janavani.bsky.social"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Bluesky
-                </a> |
-                <a href="https://primal.net/p/nprofile1qqsf02lveuv8h34awnk5n5jh9jcfqfz45ul8mnphhnh4cp8d5zgrkgsuzu7jh"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Primal
-                </a> |
-                <a href="https://njump.me/janavani@zaps.lol"
-                   target="_blank"
-                   rel="noopener noreferrer">Njump.Me
-                </a> |
-                <a href="https://nostria.app/invite/nprofile1qyg8wumn8ghj7mn0wd68ytnddakj7qg4waehxw309aex2mrp0yhxgctdw4eju6t09uq3zamnwvaz7tmwdaehgu3wwa5kuef0qqsf02lveuv8h34awnk5n5jh9jcfqfz45ul8mnphhnh4cp8d5zgrkgsx4kxau"
-                   target="_blank"
-                   rel="noopener noreferrer">
-                    Nostria
-                </a>
-            </p>
-
-            <p>
-                Â© 2026 Janavani
-            </p>
-
-        </div>
-
-    </footer>
-
-
-    <!-- TRANSLATION -->
-
-    <script src="gtranslation.js"></script>
-
-<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
-
+      </div>
+      <div><strong>Explore</strong><nav class="jv-footer-navigation" aria-label="Footer navigation">
+        <a href="index.html">Home</a><a href="about.html">About</a><a href="resources.html">Resources</a><a href="vision.html">Vision</a>
+      </nav></div>
+      <div><strong>Janavani</strong><nav class="jv-footer-navigation" aria-label="Footer secondary navigation">
+        <a href="how-it-works.html" aria-current="page">How It Works</a><a href="contact.html">Get Involved</a>
+      </nav></div>
+    </div>
+    <div class="jv-footer-bottom"><span>Citizen voice for accountable public systems.</span><span>Â© <span data-current-year></span> Janavani.</span></div>
+  </div>
+</footer>
+
+<button class="jv-scroll-top" type="button" aria-label="Back to top" title="Back to top" hidden>â†‘</button>
+<script src="gtranslation-new.js"></script>
+<script src="script-rebuild.js"></script>
 </body>
-
 </html>
