@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Janavani resources for understanding public systems, preparing civic action, checking information, and building practical citizen capacity.">
+<meta name="robots" content="index,follow">
+<title>Janavani Resources — Understand, Prepare, Participate</title>
+<link rel="icon" href="assets/brand/favicon/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles-rebuild.css">
+
+<style>
+/* JANAVANI RESOURCES — PAGE-SPECIFIC VISUAL LAYER
+   Step 4A-18. Shared infrastructure remains untouched. */
+.jvr18{--navy:#071d30;--blue:#174666;--paper:#f5f2e9;--paper2:#ebe7dc;--ink:#142938;--muted:#65747d;--gold:#d6a34a;--line:rgba(20,41,56,.14);background:#fffdf8;color:var(--ink)}
+.jvr18 *{box-sizing:border-box}.jvr18 .wrap{width:min(1180px,calc(100% - 48px));margin:auto}
+.jvr18 .eyebrow{font:800 .66rem/1.2 Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin:0 0 15px}
+.jvr18 h1,.jvr18 h2,.jvr18 h3{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.04em}
+.jvr18 h1{font-size:clamp(3.5rem,8vw,7.8rem);line-height:.86;margin:0 0 25px}
+.jvr18 h2{font-size:clamp(2.4rem,5.5vw,5rem);line-height:.94;margin:0 0 20px}
+.jvr18 h3{font-size:1.45rem;line-height:1.05;margin:0 0 10px}.jvr18 p{line-height:1.7}
+.jvr18 .lead{font:1.15rem/1.65 Georgia,serif;max-width:760px}.jvr18 .muted{color:var(--muted);max-width:760px}
+.jvr18 .dark{background:var(--navy);color:#fff}.jvr18 .dark .muted{color:rgba(255,255,255,.68)}.jvr18 .dark .eyebrow{color:#ead3a1}
+
+.jvr18 .hero{background:var(--paper);padding:clamp(80px,10vw,145px) 0 85px;border-bottom:1px solid var(--line)}
+.jvr18 .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:75px;align-items:end}
+.jvr18 .hero-rule{border-left:3px solid var(--gold);padding:8px 0 8px 25px}
+.jvr18 .hero-rule strong{font:500 1.55rem/1.25 Georgia,serif}.jvr18 .hero-rule p{font-size:.88rem;color:var(--muted);margin:12px 0 0}
+
+.jvr18 .section{padding:clamp(75px,9vw,125px) 0}
+.jvr18 .section-head{display:flex;justify-content:space-between;gap:50px;align-items:end;margin-bottom:50px}
+.jvr18 .section-head>div:last-child{max-width:480px}
+.jvr18 .resource-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.jvr18 .resource{border:1px solid var(--line);padding:30px;background:#fff;border-radius:12px;min-height:270px;display:flex;flex-direction:column}
+.jvr18 .resource:nth-child(2n){background:var(--paper)}
+.jvr18 .resource .index{font:800 .66rem Arial,sans-serif;letter-spacing:.16em;color:var(--gold);margin-bottom:auto}
+.jvr18 .resource h3{margin-top:45px}.jvr18 .resource p{font-size:.9rem;color:var(--muted);margin:0 0 20px}
+.jvr18 .resource a{color:var(--blue);font:800 .7rem Arial,sans-serif;text-decoration:none;letter-spacing:.08em;text-transform:uppercase}
+
+.jvr18 .guide{background:var(--paper)}
+.jvr18 .guide-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:70px}
+.jvr18 .guide-list{border-top:1px solid var(--line)}
+.jvr18 .guide-item{display:grid;grid-template-columns:80px 1fr;gap:22px;padding:22px 0;border-bottom:1px solid var(--line)}
+.jvr18 .guide-item span{font:800 .65rem Arial,sans-serif;color:var(--gold);letter-spacing:.12em}.jvr18 .guide-item h3{font-size:1.5rem;margin-bottom:7px}.jvr18 .guide-item p{margin:0;color:var(--muted);font-size:.88rem}
+
+.jvr18 .check{background:#fff}
+.jvr18 .check-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:45px}
+.jvr18 .check-card{padding:28px;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+.jvr18 .check-card b{font:800 .65rem Arial,sans-serif;letter-spacing:.15em;color:var(--gold)}
+.jvr18 .check-card h3{margin-top:28px}.jvr18 .check-card ul{padding-left:18px;margin-bottom:0;color:var(--muted);font-size:.88rem;line-height:1.8}
+
+.jvr18 .principles{background:var(--navy);color:#fff}
+.jvr18 .principle-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:48px;border-top:1px solid rgba(255,255,255,.17);border-left:1px solid rgba(255,255,255,.17)}
+.jvr18 .principle{padding:27px 20px;min-height:220px;border-right:1px solid rgba(255,255,255,.17);border-bottom:1px solid rgba(255,255,255,.17)}
+.jvr18 .principle span{font:800 .65rem Arial,sans-serif;color:#ead3a1;letter-spacing:.15em}.jvr18 .principle h3{margin-top:48px;color:#fff}.jvr18 .principle p{font-size:.84rem;color:rgba(255,255,255,.66);margin:0}
+
+.jvr18 .source{background:var(--paper)}
+.jvr18 .source-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}
+.jvr18 .source-card{padding:30px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.jvr18 .source-card h3{font-size:1.55rem}.jvr18 .source-card p{font-size:.88rem;color:var(--muted)}
+.jvr18 .tag{display:inline-block;margin:8px 6px 0 0;padding:7px 10px;border:1px solid var(--line);border-radius:999px;font:700 .64rem Arial,sans-serif}
+
+.jvr18 .cta{text-align:center;background:linear-gradient(145deg,#071d30,#0e3855);color:#fff}
+.jvr18 .cta h2{max-width:850px;margin-inline:auto;color:#fff}.jvr18 .cta .muted{margin-inline:auto;color:rgba(255,255,255,.68)}
+.jvr18 .actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:30px}
+.jvr18 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 22px;border-radius:999px;text-decoration:none;font:800 .75rem Arial,sans-serif}
+.jvr18 .gold{background:var(--gold);color:#091a28}.jvr18 .light{background:#fff;color:#091a28}.jvr18 .outline{border:1px solid rgba(255,255,255,.45);color:#fff}
+
+@media(max-width:900px){
+ .jvr18 .hero-grid,.jvr18 .guide-grid{grid-template-columns:1fr}
+ .jvr18 .check-grid{grid-template-columns:1fr 1fr}.jvr18 .principle-grid{grid-template-columns:1fr 1fr}
+ .jvr18 .source-grid{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+ .jvr18 .wrap{width:calc(100% - 30px)}.jvr18 .section-head{display:block}
+ .jvr18 .resource-grid,.jvr18 .check-grid,.jvr18 .principle-grid{grid-template-columns:1fr}
+ .jvr18 .guide-item{grid-template-columns:50px 1fr}.jvr18 .actions{flex-direction:column}.jvr18 .btn{width:100%}
+}
+</style>
+</head>
+
+<body>
+<a class="jv-skip-link" href="#main-content">Skip to content</a>
+
+<header class="jv-site-header">
+  <div class="jv-header-inner jv-container">
+    <a class="jv-brand" href="index-new.html" aria-label="Janavani home">
+      <img src="assets/brand/logos/JanaVani Profile Pictures re-size.png" alt="Janavani" width="56" height="56">
+    </a>
+    <button class="jv-menu-toggle" type="button" aria-expanded="false" aria-controls="jv-navigation" aria-label="Open navigation">
+      <span aria-hidden="true">☰</span>
+    </button>
+    <nav id="jv-navigation" class="jv-navigation" aria-label="Primary navigation">
+      <a href="index-new.html">Home</a>
+      <a href="about-new.html">About</a>
+      <a href="how-it-works-new.html">How It Works</a>
+      <a href="resources-new.html" aria-current="page">Resources</a>
+      <a href="vision-new.html">Vision</a>
+      <a href="contact-new.html">Get Involved</a>
+    </nav>
+    <div class="gtranslate_wrapper" aria-label="Language selection"></div>
+  </div>
+</header>
+
+<main id="main-content" class="jvr18">
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">Janavani Resources · Civic understanding</p>
+      <h1>Know enough to act well.</h1>
+      <p class="lead">Public systems become less intimidating when citizens can find the right information, understand the pathway, prepare carefully, and keep the distinction between assistance and authority clear.</p>
+    </div>
+    <div class="hero-rule">
+      <strong>Resources are for citizen capacity — not dependency.</strong>
+      <p>Use them to understand a system, check a claim, prepare for action, and continue participating.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="resource-title">
+  <div class="wrap">
+    <div class="section-head">
+      <div><p class="eyebrow">01 · Resource library</p><h2 id="resource-title">Four kinds of help.</h2></div>
+      <div><p class="muted">Janavani's resource layer should help a citizen move from a vague concern toward a clearer, evidence-aware civic action without pretending that every situation has one universal answer.</p></div>
+    </div>
+    <div class="resource-grid">
+      <article class="resource"><div class="index">01 · UNDERSTAND</div><h3>Understand the public system</h3><p>Learn the language, institutions, responsibilities, processes, and practical distinctions that make a public issue easier to navigate.</p><a href="#understand">View guidance →</a></article>
+      <article class="resource"><div class="index">02 · PREPARE</div><h3>Prepare before you approach</h3><p>Organise facts, dates, documents, identity information, jurisdiction, and the outcome you are seeking before taking action.</p><a href="#prepare">View guidance →</a></article>
+      <article class="resource"><div class="index">03 · CHECK</div><h3>Check information and claims</h3><p>Separate official information, structured records, citizen-provided information, interpretation, and unresolved uncertainty.</p><a href="#check">View guidance →</a></article>
+      <article class="resource"><div class="index">04 · PARTICIPATE</div><h3>Continue after the first action</h3><p>Keep records, understand responses, follow the appropriate channel, and treat participation as an ongoing civic practice.</p><a href="#participate">View guidance →</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="section guide" id="understand" aria-labelledby="guide-title">
+  <div class="wrap guide-grid">
+    <div><p class="eyebrow">02 · Understand</p><h2 id="guide-title">Start with the question, not the form.</h2><p class="muted">Before choosing a document or office, understand what the actual civic problem is. A good resource helps the citizen ask a better question.</p></div>
+    <div class="guide-list">
+      <article class="guide-item"><span>01</span><div><h3>What happened?</h3><p>Record the observable facts without assuming the institutional explanation.</p></div></article>
+      <article class="guide-item"><span>02</span><div><h3>Who or what is affected?</h3><p>Identify the person, group, service, place, or public function involved.</p></div></article>
+      <article class="guide-item"><span>03</span><div><h3>Which public system is involved?</h3><p>Determine whether the issue concerns a department, local body, public service, procedure, record, or another civic pathway.</p></div></article>
+      <article class="guide-item"><span>04</span><div><h3>What outcome is sought?</h3><p>Define the practical remedy, clarification, record, service, response, or accountability sought by the citizen.</p></div></article>
+      <article class="guide-item"><span>05</span><div><h3>What remains uncertain?</h3><p>Mark gaps rather than converting assumptions into facts. Uncertainty is useful information when it is made visible.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="prepare" aria-labelledby="prepare-title">
+  <div class="wrap">
+    <p class="eyebrow">03 · Prepare</p>
+    <h2 id="prepare-title">A stronger civic action begins with better preparation.</h2>
+    <p class="muted">The exact requirements vary by issue and institution. These are practical preparation categories, not a substitute for the official requirements of a particular authority.</p>
+    <div class="check-grid">
+      <article class="check-card"><b>FACTS</b><h3>Build a factual record.</h3><ul><li>What happened</li><li>When and where</li><li>Relevant people or offices</li><li>What has already been attempted</li></ul></article>
+      <article class="check-card"><b>DOCUMENTS</b><h3>Collect supporting material.</h3><ul><li>Relevant notices or records</li><li>Reference numbers</li><li>Receipts or acknowledgements</li><li>Other material the official process requires</li></ul></article>
+      <article class="check-card"><b>OBJECTIVE</b><h3>Define the requested action.</h3><ul><li>Clarification</li><li>Service or correction</li><li>Review or response</li><li>Other lawful civic remedy</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section class="section principles" aria-labelledby="principles-title">
+  <div class="wrap">
+    <p class="eyebrow">04 · Resource discipline</p>
+    <h2 id="principles-title">Useful information must remain accountable.</h2>
+    <p class="muted">A civic resource is stronger when it tells the citizen what it knows, how it knows it, and where human or official confirmation is still necessary.</p>
+    <div class="principle-grid">
+      <article class="principle"><span>01 · SOURCE</span><h3>Show where it came from.</h3><p>Prefer traceable official or otherwise reliable sources where the claim depends on them.</p></article>
+      <article class="principle"><span>02 · STATUS</span><h3>Show what is verified.</h3><p>Do not blur an official fact with generated interpretation or citizen-provided information.</p></article>
+      <article class="principle"><span>03 · LIMIT</span><h3>Show the boundary.</h3><p>Explain when a resource cannot determine jurisdiction, legal status, outcome, or institutional responsibility.</p></article>
+      <article class="principle"><span>04 · NEXT</span><h3>Show the next responsible step.</h3><p>When automation cannot safely resolve the question, direct the citizen toward an appropriate official pathway.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section check" id="check" aria-labelledby="check-title">
+  <div class="wrap">
+    <p class="eyebrow">05 · Check</p>
+    <h2 id="check-title">Before acting on an answer, ask three questions.</h2>
+    <p class="muted">These checks are deliberately simple. Their purpose is to preserve citizen judgment when information is incomplete, changing, or interpreted by technology.</p>
+    <div class="check-grid">
+      <article class="check-card"><b>01 · AUTHORITY</b><h3>Who says this?</h3><p>Is the information coming from an official source, a structured record, a citizen, an interpretation, or an unknown source?</p></article>
+      <article class="check-card"><b>02 · CONTEXT</b><h3>Does it fit this situation?</h3><p>Check location, jurisdiction, date, service, document type, and other conditions that can change the correct pathway.</p></article>
+      <article class="check-card"><b>03 · CONSEQUENCE</b><h3>What happens if it is wrong?</h3><p>The higher the consequence, the stronger the need for official confirmation or qualified human review.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section source" id="participate" aria-labelledby="participate-title">
+  <div class="wrap">
+    <p class="eyebrow">06 · Participate</p>
+    <h2 id="participate-title">Filing something is not the end of participation.</h2>
+    <p class="muted">A complaint, representation, request, or application creates a civic record and a possible pathway for follow-up. Keep the thread intact.</p>
+    <div class="source-grid">
+      <article class="source-card"><h3>Keep your record.</h3><p>Save copies of submissions, reference numbers, acknowledgements, dates, responses, and other relevant correspondence.</p><span class="tag">DATE</span><span class="tag">REFERENCE</span><span class="tag">RESPONSE</span><span class="tag">FOLLOW-UP</span></article>
+      <article class="source-card"><h3>Read the response.</h3><p>Distinguish an acknowledgement from a substantive decision, a request for more information, a transfer, a rejection, or another institutional outcome.</p><span class="tag">UNDERSTAND</span><span class="tag">VERIFY</span><span class="tag">DECIDE</span></article>
+    </div>
+  </div>
+</section>
+
+<section class="section cta" aria-labelledby="cta-title">
+  <div class="wrap">
+    <p class="eyebrow">The resource principle</p>
+    <h2 id="cta-title">Information should leave the citizen more capable than before.</h2>
+    <p class="muted">Use Janavani to understand public pathways, prepare carefully, review information, and continue lawful participation.</p>
+    <div class="actions">
+      <a class="btn gold" href="how-it-works-new.html">How It Works</a>
+      <a class="btn light" href="vision-new.html">Explore the Vision</a>
+      <a class="btn outline" href="contact-new.html">Get Involved</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="jv-site-footer">
+  <div class="jv-footer-inner jv-container">
+    <div class="jv-footer-grid">
+      <div><strong>Janavani</strong><p>Citizen voice for accountable public systems.</p><div class="jv-social-links" aria-label="Janavani community links"><a class="jv-social-link" href="https://t.me/JanaVaniBot" target="_blank" rel="noopener noreferrer">Telegram</a><a class="jv-social-link" href="https://github.com/netzen-abm/janavani" target="_blank" rel="noopener noreferrer">GitHub</a></div></div>
+      <div><strong>Explore</strong><nav class="jv-footer-navigation" aria-label="Footer navigation"><a href="index-new.html">Home</a><a href="about-new.html">About</a><a href="how-it-works-new.html">How It Works</a><a href="resources-new.html" aria-current="page">Resources</a></nav></div>
+      <div><strong>Janavani</strong><nav class="jv-footer-navigation" aria-label="Footer secondary navigation"><a href="vision-new.html">Vision</a><a href="contact-new.html">Get Involved</a></nav></div>
+    </div>
+    <div class="jv-footer-bottom"><span>Citizen voice for accountable public systems.</span><span>© <span data-current-year></span> Janavani.</span></div>
+  </div>
+</footer>
+
+<button class="jv-scroll-top" type="button" aria-label="Back to top" title="Back to top" hidden>↑</button>
+<script src="gtranslation-new.js"></script>
+<script src="script-rebuild.js"></script>
+</body>
+</html>

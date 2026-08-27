@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="About Janavani: why it exists, what it is founded on, its mission, values, citizen-agency principles, boundaries, and development direction.">
+<meta name="robots" content="index,follow">
+<title>About Janavani — Citizen Voice, Agency & Civic Participation</title>
+<link rel="icon" href="assets/brand/favicon/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles-rebuild.css">
+
+<style>
+/* JANAVANI ABOUT — PAGE-SPECIFIC VISUAL LAYER
+   Step 4A-16. Shared CSS/JS standardization happens only after
+   all six new HTML pages are individually settled. */
+
+:root{
+  --a-navy:#071d30;--a-blue:#123e5d;--a-paper:#f5f2e9;--a-paper2:#ebe6d9;
+  --a-ink:#132534;--a-muted:#65747d;--a-gold:#d6a34a;--a-white:#fffdf8;
+  --a-line:rgba(19,37,52,.14);--a-wline:rgba(255,255,255,.16)
+}
+.about16{color:var(--a-ink);background:var(--a-white)}
+.about16 *{box-sizing:border-box}
+.about16 .aw{width:min(1200px,calc(100% - 48px));margin:auto}
+.about16 .ey{font:800 .69rem/1.2 Arial,sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--a-gold);margin:0 0 15px}
+.about16 h1,.about16 h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.045em}
+.about16 h1{font-size:clamp(3.5rem,8vw,8rem);line-height:.86;margin:0 0 26px}
+.about16 h2{font-size:clamp(2.7rem,5.5vw,5.6rem);line-height:.94;margin:0 0 22px}
+.about16 h3{font:700 1rem/1.35 Arial,sans-serif}
+.about16 p{line-height:1.78}
+.about16 .lead{max-width:760px;font:1.12rem/1.75 Georgia,"Times New Roman",serif}
+.about16 .muted{color:var(--a-muted);max-width:760px}
+.about16 .dark{background:var(--a-navy);color:#fff}.about16 .dark .muted{color:rgba(255,255,255,.7)}
+.about16 .dark .ey{color:#ead3a1}
+
+.about16 .hero{background:var(--a-paper);border-bottom:1px solid var(--a-line)}
+.about16 .hero-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:80px;align-items:center;padding:clamp(80px,10vw,145px) 0}
+.about16 .hero h1 span{display:block}
+.about16 .seal{min-height:390px;border:1px solid rgba(18,62,93,.2);border-radius:50%;display:grid;place-items:center;position:relative;background:radial-gradient(circle,#fff 0 27%,transparent 28% 49%,rgba(18,62,93,.045) 50% 70%,transparent 71%)}
+.about16 .seal:before,.about16 .seal:after{content:"";position:absolute;border:1px solid rgba(18,62,93,.16);border-radius:50%}
+.about16 .seal:before{inset:12%}.about16 .seal:after{inset:25%}
+.about16 .seal-core{text-align:center;z-index:2}.about16 .seal-core strong{display:block;font:500 2rem Georgia,serif}.about16 .seal-core small{display:block;margin-top:8px;font:800 .62rem Arial,sans-serif;letter-spacing:.16em;color:var(--a-blue)}
+.about16 .seal-word{position:absolute;bottom:9%;padding:8px 13px;border:1px solid var(--a-line);border-radius:999px;background:var(--a-white);font:800 .62rem Arial,sans-serif;letter-spacing:.13em}
+
+.about16 .section{padding:clamp(75px,9vw,125px) 0}
+.about16 .two{display:grid;grid-template-columns:minmax(0,1fr) minmax(300px,.72fr);gap:clamp(45px,8vw,105px);align-items:center}
+.about16 .two.reverse{grid-template-columns:minmax(300px,.72fr) minmax(0,1fr)}
+.about16 .quote{margin-top:30px;padding:22px 0 22px 25px;border-left:3px solid var(--a-gold);font:500 1.18rem/1.65 Georgia,serif}
+.about16 .flow{margin-top:35px;border-top:1px solid var(--a-line);border-bottom:1px solid var(--a-line)}
+.about16 .flow-row{display:grid;grid-template-columns:55px 1fr 25px;gap:15px;align-items:center;padding:17px 0;border-bottom:1px solid var(--a-line)}
+.about16 .flow-row:last-child{border-bottom:0}.about16 .flow-no{font:800 .65rem Arial,sans-serif;color:var(--a-gold)}
+.about16 .flow-row strong{font:700 .93rem Arial,sans-serif}.about16 .arrow{color:var(--a-gold)}
+
+.about16 .definition{padding:34px;border:1px solid var(--a-line);background:#fff;border-radius:16px}
+.about16 .definition strong{font:500 1.7rem/1.15 Georgia,serif}.about16 .definition p{color:var(--a-muted);font-size:.94rem}
+
+.about16 .mission{background:var(--a-paper)}
+.about16 .mission-line{display:grid;grid-template-columns:repeat(5,1fr);margin-top:52px;border-top:1px solid var(--a-line);border-bottom:1px solid var(--a-line)}
+.about16 .mission-step{min-height:150px;padding:24px 18px;border-right:1px solid var(--a-line)}
+.about16 .mission-step:last-child{border-right:0}.about16 .mission-step span{font:800 .66rem Arial,sans-serif;color:var(--a-gold)}
+.about16 .mission-step strong{display:block;margin-top:38px;font:700 .95rem Arial,sans-serif}
+
+.about16 .values{display:grid;grid-template-columns:1fr 1fr;margin-top:45px;border-top:1px solid var(--a-line)}
+.about16 .value{display:grid;grid-template-columns:45px 1fr;gap:18px;padding:25px 0;border-bottom:1px solid var(--a-line)}
+.about16 .value:nth-child(odd){padding-right:40px;border-right:1px solid var(--a-line)}.about16 .value:nth-child(even){padding-left:40px}
+.about16 .vno{width:34px;height:34px;border:1px solid rgba(18,62,93,.25);border-radius:50%;display:grid;place-items:center;font:800 .62rem Arial,sans-serif}
+.about16 .value h3{margin:0 0 6px}.about16 .value p{margin:0;color:var(--a-muted);font-size:.9rem}
+
+.about16 .principle{background:var(--a-navy);text-align:center}
+.about16 .principle h2{max-width:920px;margin-inline:auto;color:#fff}
+.about16 .principle-statement{max-width:920px;margin:35px auto 0;padding:28px;border:1px solid var(--a-wline);font:500 clamp(1.35rem,2.6vw,2.1rem)/1.35 Georgia,serif;color:#ead3a1}
+.about16 .agency-flow{display:grid;grid-template-columns:repeat(4,1fr);margin-top:35px;border-top:1px solid var(--a-wline);border-bottom:1px solid var(--a-wline)}
+.about16 .agency-step{padding:25px 16px;border-right:1px solid var(--a-wline)}.about16 .agency-step:last-child{border-right:0}
+.about16 .agency-step strong{display:block;font:800 .72rem Arial,sans-serif;letter-spacing:.12em}.about16 .agency-step span{display:block;margin-top:12px;color:rgba(255,255,255,.68);font-size:.86rem}
+
+.about16 .boundaries{background:var(--a-paper)}
+.about16 .boundary-list{margin-top:45px;border-top:1px solid var(--a-line)}
+.about16 .boundary{display:grid;grid-template-columns:280px 1fr;gap:35px;padding:28px 0;border-bottom:1px solid var(--a-line)}
+.about16 .boundary h3{margin:0}.about16 .boundary p{margin:0;color:var(--a-muted);max-width:760px}
+
+.about16 .status{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px}
+.about16 .status article{padding:30px;border:1px solid var(--a-line);border-radius:15px;background:#fff}
+.about16 .status b{font:800 .66rem Arial,sans-serif;letter-spacing:.15em}.about16 .status h3{margin:13px 0 8px}.about16 .status p{margin:0;color:var(--a-muted);font-size:.9rem}
+.about16 .now{border-top:3px solid var(--a-blue)!important}.about16 .building{border-top:3px solid var(--a-gold)!important}.about16 .future{border-top:3px solid #82919a!important}
+
+.about16 .participate{background:var(--a-navy);color:#fff}
+.about16 .people{display:grid;grid-template-columns:repeat(4,1fr);margin-top:45px;border-top:1px solid var(--a-wline);border-bottom:1px solid var(--a-wline)}
+.about16 .person{padding:25px 18px;border-right:1px solid var(--a-wline)}.about16 .person:last-child{border-right:0}
+.about16 .person strong{font:700 .95rem Arial,sans-serif}.about16 .person p{margin:9px 0 0;color:rgba(255,255,255,.65);font-size:.84rem}
+
+.about16 .cta{text-align:center;background:linear-gradient(145deg,#071d30,#0e3855);color:#fff}
+.about16 .cta h2{color:#fff;max-width:900px;margin-inline:auto}.about16 .cta .muted{margin-inline:auto;color:rgba(255,255,255,.7)}
+.about16 .actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:30px}
+.about16 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:12px 21px;border-radius:999px;text-decoration:none;font:800 .8rem Arial,sans-serif}
+.about16 .gold{background:var(--a-gold);color:#091a28}.about16 .light{background:#fff;color:#091a28}.about16 .outline{border:1px solid rgba(255,255,255,.45);color:#fff}
+
+@media(max-width:900px){
+ .about16 .hero-grid,.about16 .two,.about16 .two.reverse{grid-template-columns:1fr}
+ .about16 .seal{min-height:300px;width:min(330px,90vw);margin:auto}
+ .about16 .mission-line{grid-template-columns:repeat(2,1fr)}
+ .about16 .mission-step:nth-child(2n){border-right:0}.about16 .mission-step:nth-child(-n+4){border-bottom:1px solid var(--a-line)}
+ .about16 .values{grid-template-columns:1fr}.about16 .value:nth-child(odd){padding-right:0;border-right:0}.about16 .value:nth-child(even){padding-left:0}
+ .about16 .status,.about16 .people{grid-template-columns:1fr}
+ .about16 .person{border-right:0;border-bottom:1px solid var(--a-wline)}
+ .about16 .agency-flow{grid-template-columns:repeat(2,1fr)}.about16 .agency-step:nth-child(2){border-right:0}.about16 .agency-step:nth-child(-n+2){border-bottom:1px solid var(--a-wline)}
+}
+@media(max-width:620px){
+ .about16 .aw{width:calc(100% - 30px)}.about16 .mission-line,.about16 .agency-flow{grid-template-columns:1fr}
+ .about16 .mission-step,.about16 .agency-step{border-right:0!important;border-bottom:1px solid var(--a-line)}
+ .about16 .agency-step{border-bottom-color:var(--a-wline)}.about16 .mission-step:last-child,.about16 .agency-step:last-child{border-bottom:0}
+ .about16 .boundary{grid-template-columns:1fr;gap:8px}.about16 .actions{flex-direction:column}.about16 .btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){.about16 *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+</style>
+</head>
+
+<body>
+<a class="jv-skip-link" href="#main-content">Skip to content</a>
+
+<header class="jv-site-header">
+  <div class="jv-header-inner jv-container">
+    <a class="jv-brand" href="index-new.html" aria-label="Janavani home">
+      <img src="assets/brand/logos/JanaVani Profile Pictures re-size.png" alt="Janavani" width="56" height="56">
+    </a>
+    <button class="jv-menu-toggle" type="button" aria-expanded="false" aria-controls="jv-navigation" aria-label="Open navigation">
+      <span aria-hidden="true">☰</span>
+    </button>
+    <nav id="jv-navigation" class="jv-navigation" aria-label="Primary navigation">
+      <a href="index-new.html">Home</a>
+      <a href="about-new.html" aria-current="page">About</a>
+      <a href="how-it-works-new.html">How It Works</a>
+      <a href="resources-new.html">Resources</a>
+      <a href="vision-new.html">Vision</a>
+      <a href="contact-new.html">Get Involved</a>
+    </nav>
+    <div class="gtranslate_wrapper" aria-label="Language selection"></div>
+  </div>
+</header>
+
+<main id="main-content" class="about16">
+
+<section class="hero" aria-labelledby="about-title">
+  <div class="aw hero-grid">
+    <div>
+      <p class="ey">About Janavani · Founded on citizen agency</p>
+      <h1 id="about-title"><span>Why</span><span>Janavani</span></h1>
+      <p class="lead">Citizens already possess political agency. What they often lack is accessible infrastructure through which that agency can be effectively exercised.</p>
+      <p class="muted">Janavani exists to reduce the practical distance between a citizen's concern and meaningful, informed civic participation.</p>
+    </div>
+    <div class="seal" aria-hidden="true">
+      <div class="seal-core"><strong>JANA</strong><strong>VANI</strong><small>Voice · Action · Citizen</small></div>
+      <span class="seal-word">THE PEOPLE · THE REPUBLIC</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="origin-title">
+  <div class="aw two">
+    <div>
+      <p class="ey">01 · Origin</p>
+      <h2 id="origin-title">The distance between knowing and acting.</h2>
+      <p class="muted">A citizen may know that something is wrong and still face difficulty because public systems can be complex, fragmented, difficult to navigate, or unclear about the appropriate authority or procedure.</p>
+      <div class="quote">Janavani is concerned not merely with providing information, but with strengthening the citizen's practical capacity to understand and participate.</div>
+    </div>
+    <div class="flow" aria-label="Janavani civic pathway">
+      <div class="flow-row"><span class="flow-no">01</span><strong>Citizen concern</strong><span class="arrow">↓</span></div>
+      <div class="flow-row"><span class="flow-no">02</span><strong>Understanding</strong><span class="arrow">↓</span></div>
+      <div class="flow-row"><span class="flow-no">03</span><strong>Appropriate civic pathway</strong><span class="arrow">↓</span></div>
+      <div class="flow-row"><span class="flow-no">04</span><strong>Prepared action</strong><span class="arrow">↓</span></div>
+      <div class="flow-row"><span class="flow-no">05</span><strong>Participation</strong><span class="arrow">↓</span></div>
+      <div class="flow-row"><span class="flow-no">06</span><strong>Accountability</strong><span class="arrow"></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section mission" aria-labelledby="what-title">
+  <div class="aw two reverse">
+    <div class="definition">
+      <p class="ey">What is Janavani?</p>
+      <strong>The Infrastructure of Citizen Voice</strong>
+      <p>Janavani is a citizen-centered civic technology initiative designed to help people navigate public problems and participate more effectively in accountable governance.</p>
+      <p>Janavani assists citizens. It does not become the citizen's authority.</p>
+    </div>
+    <div>
+      <p class="ey">02 · Identity</p>
+      <h2 id="what-title">A civic layer between citizens and public systems.</h2>
+      <p class="muted">The website is a public-facing brochure, showcase, and discovery layer. It is not the Janavani application itself.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section mission" aria-labelledby="mission-title">
+  <div class="aw">
+    <p class="ey">03 · Mission</p>
+    <h2 id="mission-title">Make civic participation easier, clearer, and more accessible.</h2>
+    <p class="muted">Janavani helps citizens understand government systems, identify appropriate pathways, prepare for action, and retain control over their own civic voice.</p>
+    <div class="mission-line" aria-label="Janavani mission sequence">
+      <div class="mission-step"><span>01</span><strong>UNDERSTAND</strong></div>
+      <div class="mission-step"><span>02</span><strong>IDENTIFY</strong></div>
+      <div class="mission-step"><span>03</span><strong>PREPARE</strong></div>
+      <div class="mission-step"><span>04</span><strong>PARTICIPATE</strong></div>
+      <div class="mission-step"><span>05</span><strong>FOLLOW UP</strong></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="values-title">
+  <div class="aw">
+    <p class="ey">04 · Core values</p>
+    <h2 id="values-title">How Janavani thinks and behaves.</h2>
+    <div class="values">
+      <article class="value"><div class="vno">01</div><div><h3>Citizen Agency</h3><p>The citizen remains the decision-maker. Assistance must strengthen rather than replace human judgment.</p></div></article>
+      <article class="value"><div class="vno">02</div><div><h3>Constitutionalism</h3><p>Civic participation is grounded in the constitutional role of citizens within the Republic.</p></div></article>
+      <article class="value"><div class="vno">03</div><div><h3>Evidence</h3><p>Assertions should be supported by appropriate and transparent sources.</p></div></article>
+      <article class="value"><div class="vno">04</div><div><h3>Privacy</h3><p>Information should be handled with minimisation, proportionality, and clear boundaries.</p></div></article>
+      <article class="value"><div class="vno">05</div><div><h3>Transparency</h3><p>People should be able to understand what information is being provided and where appropriate claims come from.</p></div></article>
+      <article class="value"><div class="vno">06</div><div><h3>Political Neutrality</h3><p>Janavani is not a political party and should not become an instrument for partisan advocacy.</p></div></article>
+      <article class="value"><div class="vno">07</div><div><h3>Inclusion</h3><p>Civic infrastructure should be understandable and usable across different levels of technical and institutional familiarity.</p></div></article>
+      <article class="value"><div class="vno">08</div><div><h3>Open Development</h3><p>Where appropriate, knowledge, research, design, and software can be improved through transparent collaboration.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section principle" aria-labelledby="agency-title">
+  <div class="aw">
+    <p class="ey">05 · Governing principle</p>
+    <h2 id="agency-title">Janavani must increase citizen agency — never replace it.</h2>
+    <div class="principle-statement">ASSIST → CITIZEN REVIEW → CITIZEN APPROVAL → CITIZEN ACTION</div>
+    <div class="agency-flow">
+      <div class="agency-step"><strong>ASSIST</strong><span>Help explain complexity and surface relevant pathways.</span></div>
+      <div class="agency-step"><strong>CITIZEN REVIEW</strong><span>The person examines information and context.</span></div>
+      <div class="agency-step"><strong>CITIZEN APPROVAL</strong><span>The person decides whether information or a prepared action is appropriate.</span></div>
+      <div class="agency-step"><strong>CITIZEN ACTION</strong><span>The person remains responsible for the civic action taken.</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section boundaries" aria-labelledby="not-title">
+  <div class="aw">
+    <p class="ey">06 · Boundaries</p>
+    <h2 id="not-title">What Janavani is not.</h2>
+    <p class="muted">Clear boundaries are part of trustworthy civic infrastructure.</p>
+    <div class="boundary-list">
+      <article class="boundary"><h3>Not a government department</h3><p>Janavani does not make governmental decisions, issue official determinations, or represent itself as a government authority.</p></article>
+      <article class="boundary"><h3>Not a political party</h3><p>Janavani is a civic technology initiative, not an organisation seeking political power through party activity.</p></article>
+      <article class="boundary"><h3>Not a court or legal authority</h3><p>Information provided by Janavani does not replace lawful institutional procedures or qualified professional advice.</p></article>
+      <article class="boundary"><h3>Not merely a Telegram bot</h3><p>Telegram is an interface. It does not define the full identity, architecture, or long-term purpose of Janavani.</p></article>
+      <article class="boundary"><h3>Not an AI authority</h3><p>AI assistance must remain reviewable and bounded. Generated material must not be treated as unquestionable truth or official determination.</p></article>
+      <article class="boundary"><h3>Not a guarantee of outcomes</h3><p>Janavani must not guarantee government response, legal correctness, successful communication, institutional action, or resolution of every civic problem.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="trust-title">
+  <div class="aw two">
+    <div>
+      <p class="ey">07 · Trust</p>
+      <h2 id="trust-title">Evidence, privacy, and human review are part of the design.</h2>
+      <p class="muted">Privacy and AI claims must remain proportional to the controls and capabilities actually implemented. Planning material is not proof of deployment.</p>
+    </div>
+    <div class="flow" aria-label="Trust principles">
+      <div class="flow-row"><span class="flow-no">01</span><strong>Minimise unnecessary information</strong><span></span></div>
+      <div class="flow-row"><span class="flow-no">02</span><strong>Identify sources and uncertainty</strong><span></span></div>
+      <div class="flow-row"><span class="flow-no">03</span><strong>Keep citizen review visible</strong><span></span></div>
+      <div class="flow-row"><span class="flow-no">04</span><strong>Separate current from future</strong><span></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section mission" aria-labelledby="status-title">
+  <div class="aw">
+    <p class="ey">08 · Development direction</p>
+    <h2 id="status-title">Be ambitious without pretending maturity.</h2>
+    <p class="muted">Janavani distinguishes what exists today from what is being developed and what remains a longer-term possibility.</p>
+    <div class="status">
+      <article class="now"><b>NOW</b><h3>Verified current capability</h3><p>Only capabilities that are actually implemented and verified should be presented as current.</p></article>
+      <article class="building"><b>BUILDING</b><h3>Actively developing</h3><p>Work under construction should be identified honestly without presenting it as finished functionality.</p></article>
+      <article class="future"><b>FUTURE</b><h3>Longer-term possibility</h3><p>Research and ambitious infrastructure concepts belong to the future unless implementation is verified.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section participate" aria-labelledby="participate-title">
+  <div class="aw">
+    <p class="ey">09 · Who can participate</p>
+    <h2 id="participate-title">Janavani can be built by many kinds of people.</h2>
+    <p class="muted">Participation is broader than software development. Different forms of knowledge and experience can strengthen civic infrastructure.</p>
+    <div class="people">
+      <article class="person"><strong>Citizens</strong><p>Bring real civic questions, experiences, feedback, and needs.</p></article>
+      <article class="person"><strong>Researchers</strong><p>Help investigate public systems, evidence, policy, and civic knowledge.</p></article>
+      <article class="person"><strong>Designers &amp; Developers</strong><p>Build accessible interfaces, tools, workflows, and infrastructure.</p></article>
+      <article class="person"><strong>Students &amp; Organisations</strong><p>Contribute learning, experimentation, outreach, documentation, and collaboration.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section cta" aria-labelledby="cta-title">
+  <div class="aw">
+    <p class="ey">The Janavani principle</p>
+    <h2 id="cta-title">Strengthen the citizen's capacity to understand, participate, communicate, and act.</h2>
+    <p class="muted">Without becoming the citizen's authority.</p>
+    <div class="actions">
+      <a class="btn gold" href="how-it-works-new.html">See How It Works</a>
+      <a class="btn light" href="vision-new.html">Explore the Vision</a>
+      <a class="btn outline" href="contact-new.html">Get Involved</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="jv-site-footer">
+  <div class="jv-footer-inner jv-container">
+    <div class="jv-footer-grid">
+      <div>
+        <strong>Janavani</strong>
+        <p>Citizen voice for accountable public systems.</p>
+        <div class="jv-social-links" aria-label="Janavani community links">
+          <a class="jv-social-link" href="https://t.me/JanaVaniBot" target="_blank" rel="noopener noreferrer">Telegram</a>
+          <a class="jv-social-link" href="https://github.com/netzen-abm/janavani" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <div><strong>Explore</strong><nav class="jv-footer-navigation" aria-label="Footer navigation">
+        <a href="index-new.html">Home</a><a href="how-it-works-new.html">How It Works</a><a href="resources-new.html">Resources</a><a href="vision-new.html">Vision</a>
+      </nav></div>
+      <div><strong>Janavani</strong><nav class="jv-footer-navigation" aria-label="Footer secondary navigation">
+        <a href="about-new.html" aria-current="page">About</a><a href="contact-new.html">Get Involved</a>
+      </nav></div>
+    </div>
+    <div class="jv-footer-bottom"><span>Citizen voice for accountable public systems.</span><span>© <span data-current-year></span> Janavani.</span></div>
+  </div>
+</footer>
+
+<button class="jv-scroll-top" type="button" aria-label="Back to top" title="Back to top" hidden>↑</button>
+<script src="gtranslation-new.js"></script>
+<script src="script-rebuild.js"></script>
+</body>
+</html>
