@@ -1,0 +1,742 @@
+<main id="main-content">
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <h1>
+                    Citizen Governance Resources
+                </h1>
+
+                <p>
+                    A practical introduction to understanding government,
+                    exercising civic rights, preparing documents and
+                    participating in public affairs.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHAT THIS PAGE IS -->
+
+        <section class="solution-section">
+
+            <div class="container">
+
+                <h2>
+                    What Is This Resource Page?
+                </h2>
+
+                <p>
+                    Janavani is being developed as a citizen-governance
+                    platform. This website acts as a public brochure and
+                    knowledge resource for understanding the project's
+                    purpose, principles and possible applications.
+                </p>
+
+                <p>
+                    The main Janavani platform will progressively provide
+                    interactive workflows through appropriate interfaces.
+                </p>
+
+                <p>
+                    This website should therefore be understood as an
+                    information, education and project-showcase layer
+                    rather than the complete Janavani platform.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CITIZEN ACTION -->
+
+        <section class="features-section">
+
+            <div class="container">
+
+                <h2>
+                    Citizens Have More Than One Path
+                </h2>
+
+                <p class="section-subtitle">
+                    Democracy is more than voting or protesting.
+                </p>
+
+                <div class="features-grid">
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Written Representation
+                        </h3>
+
+                        <p>
+                            Citizens can communicate a problem, request,
+                            objection or concern to the appropriate authority
+                            through a structured written representation.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            RTI
+                        </h3>
+
+                        <p>
+                            Where appropriate, citizens can use the Right to
+                            Information framework to seek information and
+                            understand available response and appeal pathways.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Petition
+                        </h3>
+
+                        <p>
+                            Citizens may use appropriate petition and
+                            representation mechanisms to place public concerns
+                            before competent authorities or institutions.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Legal Notice
+                        </h3>
+
+                        <p>
+                            Where appropriate, a citizen may communicate a
+                            legal concern formally before considering further
+                            legal action.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Party-in-Person
+                        </h3>
+
+                        <p>
+                            Depending on the applicable forum and procedure,
+                            citizens may be able to pursue certain matters
+                            personally without relying on a lawyer for every
+                            stage.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Community &amp; Legal Support
+                        </h3>
+
+                        <p>
+                            Citizens may also seek assistance from legal-aid
+                            services, civil-society organisations, researchers
+                            and community initiatives.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXAMPLE -->
+
+        <section class="howitworks-section">
+
+            <div class="container">
+
+                <h2>
+                    Example: From Problem to Action
+                </h2>
+
+                <div class="steps-container">
+
+
+                    <div class="step">
+
+                        <div class="step-number"
+                             aria-hidden="true">
+                            1
+                        </div>
+
+                        <h3>
+                            Problem
+                        </h3>
+
+                        <p>
+                            A citizen experiences a government service
+                            problem and does not know which authority
+                            is responsible.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number"
+                             aria-hidden="true">
+                            2
+                        </div>
+
+                        <h3>
+                            Understand
+                        </h3>
+
+                        <p>
+                            The issue is structured and the relevant
+                            department, office or procedure is identified.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number"
+                             aria-hidden="true">
+                            3
+                        </div>
+
+                        <h3>
+                            Document
+                        </h3>
+
+                        <p>
+                            The citizen prepares an appropriate
+                            representation, complaint, RTI request
+                            or other document.
+                        </p>
+
+                    </div>
+
+
+                    <div class="step">
+
+                        <div class="step-number"
+                             aria-hidden="true">
+                            4
+                        </div>
+
+                        <h3>
+                            Act
+                        </h3>
+
+                        <p>
+                            The citizen reviews the document and submits it
+                            through the appropriate lawful channel.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+                <p style="margin-top:30px;">
+                    Future Janavani workflows may additionally support
+                    evidence, tracking, follow-up and appropriate escalation.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- DEMOCRATIC PARTICIPATION -->
+
+        <section class="problem-section">
+
+            <div class="container">
+
+                <h2>
+                    Democracy Is More Than Protest
+                </h2>
+
+                <p>
+                    Protest is one legitimate form of democratic participation.
+                    It is not the only way citizens can express disagreement
+                    or demand accountability.
+                </p>
+
+                <p>
+                    In a constitutional democracy and republic, citizens can
+                    also use reasoned writing, representations, petitions,
+                    requests for information, objections, complaints and
+                    other lawful mechanisms.
+                </p>
+
+                <p>
+                    A properly structured legal or administrative communication
+                    can sometimes be a more precise and constructive way to
+                    place a concern on record.
+                </p>
+
+                <p>
+                    Janavani aims to help citizens understand these possibilities
+                    without prescribing one particular form of civic action
+                    for every situation.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- PARTY IN PERSON -->
+
+        <section class="solution-section">
+
+            <div class="container">
+
+                <h2>
+                    Party-in-Person &amp; Direct Legal Participation
+                </h2>
+
+                <p>
+                    Legal systems in India provide certain procedures through
+                    which individuals may represent themselves, depending on
+                    the court, tribunal, authority, matter and applicable rules.
+                </p>
+
+                <p>
+                    Citizens exploring party-in-person proceedings should
+                    independently verify the applicable procedure, filing
+                    requirements, jurisdiction, deadlines and other conditions.
+                </p>
+
+                <p>
+                    Janavani's long-term objective is to make procedural
+                    information easier to understand while avoiding the
+                    representation that technology can replace legal judgment.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXTERNAL SUPPORT -->
+
+        <section class="features-section">
+
+            <div class="container">
+
+                <h2>
+                    Civil Society &amp; Legal Support
+                </h2>
+
+                <p class="section-subtitle">
+                    External resources may help citizens explore available
+                    civic or legal pathways.
+                </p>
+
+                <p>
+                    Janavani may provide links to organisations, researchers,
+                    civil-society groups or legal-aid resources that may be
+                    relevant to particular civic issues.
+                </p>
+
+                <p>
+                    Listing an organisation does not constitute endorsement,
+                    partnership, recommendation or verification of its views,
+                    claims, services or activities.
+                </p>
+
+
+                <div class="features-grid">
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            TNRM
+                        </h3>
+
+                        <p>
+                            External reference for citizens exploring
+                            civic and legal support resources.
+                        </p>
+
+                        <p>
+                            <a href="https://tnrm.in/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Visit TNRM
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Awaken India Movement
+                        </h3>
+
+                        <p>
+                            External reference relating to constitutional
+                            and public-interest legal matters, including
+                            material concerning health policy and government
+                            action.
+                        </p>
+
+                        <p>
+                            <a href="https://awakenindiamovement.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Visit Awaken India Movement
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <p style="margin-top:30px;">
+                    Citizens should independently evaluate any external
+                    organisation before relying on its information,
+                    services or legal approach.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECHNOLOGY & PRIVACY REFERENCE -->
+
+        <section class="solution-section">
+
+            <div class="container">
+
+                <h2>
+                    Technology &amp; Privacy Reference
+                </h2>
+
+                <p>
+                    Janavani is exploring how privacy-preserving,
+                    decentralised and user-controlled technologies may
+                    inform future civic infrastructure.
+                </p>
+
+                <p>
+                    The technologies below are provided as research and
+                    reference points. They are not current Janavani
+                    production features unless explicitly identified
+                    elsewhere on this website.
+                </p>
+
+
+                <div class="features-grid">
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Nostr
+                        </h3>
+
+                        <p>
+                            Nostr is an open protocol designed for
+                            decentralised, user-controlled communication
+                            using cryptographically signed events and
+                            independently operated relays.
+                        </p>
+
+                        <p>
+                            It is relevant to research into citizen-owned
+                            communication, identity portability and
+                            reducing dependence on a single platform.
+                        </p>
+
+                        <p>
+                            <a href="https://nostr.com/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Explore Nostr
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Nym
+                        </h3>
+
+                        <p>
+                            Nym develops privacy infrastructure based on
+                            mixnet technology designed to reduce the
+                            ability to infer communication patterns from
+                            network metadata.
+                        </p>
+
+                        <p>
+                            This makes Nym relevant to research into
+                            privacy-preserving communication and metadata
+                            protection.
+                        </p>
+
+                        <p>
+                            <a href="https://nym.com/mixnet"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Explore Nym Mixnet
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Freenet
+                        </h3>
+
+                        <p>
+                            Freenet is a peer-to-peer platform for building
+                            decentralised applications without relying on
+                            a single central service provider.
+                        </p>
+
+                        <p>
+                            It is relevant to research into citizen-owned
+                            digital infrastructure, decentralised services
+                            and resilient information systems.
+                        </p>
+
+                        <p>
+                            <a href="https://freenet.org/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Explore Freenet
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Reticulum
+                        </h3>
+
+                        <p>
+                            Reticulum is a cryptography-based networking
+                            stack designed for local and wide-area networks,
+                            including environments with high latency and
+                            very low bandwidth.
+                        </p>
+
+                        <p>
+                            Its approach is relevant to research into
+                            resilient, decentralised and community-operated
+                            communication infrastructure.
+                        </p>
+
+                        <p>
+                            <a href="https://reticulum.network/"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Explore Reticulum
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <h3>
+                            Zero-Knowledge Proofs
+                        </h3>
+
+                        <p>
+                            Zero-knowledge proofs are cryptographic
+                            techniques that can allow a person or system
+                            to prove that a statement is true without
+                            revealing the underlying information.
+                        </p>
+
+                        <p>
+                            This concept is relevant to future research
+                            into selective disclosure, privacy-preserving
+                            credentials and citizen verification.
+                        </p>
+
+                        <p>
+                            <a href="https://ethereum.org/zero-knowledge-proofs"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Learn About Zero-Knowledge Proofs
+                            </a>
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+                <p style="margin-top:30px;">
+                    Janavani does not currently claim integration with
+                    these technologies. Their inclusion represents areas
+                    for research, architectural exploration and future
+                    evaluation.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- PRIVACY -->
+
+        <section class="problem-section">
+
+            <div class="container">
+
+                <h2>
+                    Privacy &amp; Citizen Control
+                </h2>
+
+                <p>
+                    Civic participation should not require unnecessary
+                    surrender of personal information.
+                </p>
+
+                <p>
+                    Janavani is being designed around privacy, security,
+                    data minimisation and citizen control.
+                </p>
+
+                <p>
+                    Future research may explore stronger privacy-preserving
+                    technologies, decentralised infrastructure and secure
+                    citizen-controlled records.
+                </p>
+
+                <p>
+                    Advanced capabilities should not be interpreted as
+                    current production features unless explicitly identified
+                    as available.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- OPEN SOURCE -->
+
+        <section class="solution-section">
+
+            <div class="container">
+
+                <h2>
+                    Open Source &amp; Participation
+                </h2>
+
+                <p>
+                    Janavani is being developed openly so that its architecture,
+                    code and ideas can be inspected, discussed and improved.
+                </p>
+
+                <p>
+                    Developers, researchers, designers, legal professionals,
+                    governance experts, citizens and civil-society participants
+                    can contribute in different ways.
+                </p>
+
+
+                <div class="cta-buttons">
+
+                    <a href="https://github.com/netzen-abm/janavani"
+                       class="btn btn-primary"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View Janavani GitHub
+                    </a>
+
+                    <a href="contact.html"
+                       class="btn btn-secondary">
+                        Get Involved
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMPORTANT NOTICE -->
+
+        <section class="problem-section">
+
+            <div class="container">
+
+                <h2>
+                    Important Notice
+                </h2>
+
+                <p>
+                    Janavani is a civic-technology initiative.
+                    Information published through this website is intended
+                    to support citizen understanding and participation.
+                </p>
+
+                <p>
+                    Janavani does not replace a lawyer, court, government
+                    authority or other competent professional.
+                </p>
+
+                <p>
+                    Citizens should independently verify applicable laws,
+                    procedures, jurisdiction, deadlines and official
+                    requirements before taking legal or administrative action.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>

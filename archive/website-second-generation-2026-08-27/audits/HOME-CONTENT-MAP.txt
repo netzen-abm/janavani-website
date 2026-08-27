@@ -1,0 +1,170 @@
+﻿JANAVANI — HOME CONTENT MAP
+STEP 5C-11C
+
+PURPOSE
+-------
+Upgrade the Home page without unnecessarily deleting existing substantive content.
+
+CORE RULE
+---------
+Existing content must be verified, retained where useful, consolidated where repetitive,
+and moved to a more appropriate page where necessary.
+
+HOME OPENING
+------------
+The first substantive Home-page message must begin with:
+
+WE, THE PEOPLE OF INDIA
+
+having solemnly resolved to constitute India into a
+
+SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC
+
+This constitutional opening establishes the foundation for Janavani.
+
+HOME PAGE ORDER
+---------------
+
+1. Constitutional Opening
+   WE, THE PEOPLE OF INDIA
+   SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC
+
+2. Janavani
+   The Infrastructure of Citizen Voice
+
+3. What is Janavani?
+   Direct explanation of Janavani and its civic purpose.
+
+4. The Problem Citizens Face
+   Difficulty understanding systems, identifying responsibility,
+   finding pathways, preparing information and taking informed action.
+
+5. How Janavani Helps
+   Translate civic problems into understandable pathways and practical next steps.
+
+6. The Citizen Journey
+   DESCRIBE
+   UNDERSTAND
+   IDENTIFY
+   PREPARE
+   ACT
+   PARTICIPATE
+
+7. What Janavani Provides Today
+   Only verified/current capabilities should be presented as available now.
+
+8. NOW / BUILDING / FUTURE
+   NOW:
+   Verified/current capability.
+
+   BUILDING:
+   Capabilities actively being developed.
+
+   FUTURE:
+   Long-term Janavani infrastructure possibilities.
+
+9. Privacy & Citizen Agency
+   Privacy, data minimisation, citizen control and responsible civic technology.
+
+10. What Janavani Is Not
+    Not a government department.
+    Not a political party.
+    Not a legal authority.
+    Not a replacement for official government channels.
+    Not a promise that every grievance will automatically be resolved.
+
+11. Larger Civic Infrastructure
+    Future ecosystem, interfaces, integrations and institutional possibilities.
+
+12. Participation / Final CTA
+    Explore Janavani.
+    Learn how it works.
+    Explore resources.
+    Participate in building the infrastructure of citizen voice.
+
+CONTENT MOVEMENT
+----------------
+Detailed operational/process material:
+MOVE OR CROSS-LINK TO HOW-IT-WORKS.
+
+Deeper origin, constitutional rationale and philosophy:
+MOVE OR CROSS-LINK TO ABOUT.
+
+Long-term ecosystem and institutional architecture:
+MOVE OR CROSS-LINK TO VISION.
+
+Guides, templates, references and educational material:
+MOVE OR CROSS-LINK TO RESOURCES.
+
+Contact, feedback and participation mechanics:
+MOVE OR CROSS-LINK TO CONTACT.
+
+NON-DESTRUCTIVE EDITING RULE
+----------------------------
+Do not delete substantive existing content merely to shorten the page.
+
+If content is duplicated:
+- retain the strongest version;
+- consolidate duplicates;
+- move supporting detail to the appropriate page.
+
+If content is useful but misplaced:
+- relocate it;
+- do not discard it.
+
+If content is outdated:
+- verify before modifying;
+- preserve the original in the backup.
+
+STATUS LANGUAGE
+---------------
+Do not present future functionality as currently operational.
+
+Use explicit labels:
+NOW
+BUILDING
+FUTURE
+
+TELEGRAM / WEB APP
+------------------
+Do not claim operational availability unless verified.
+
+If not yet operational, use appropriate wording such as:
+Coming Soon
+In Development
+Planned
+
+HOME CONTENT TARGET
+-------------------
+Target approximately 900–1,200 useful words after consolidation.
+
+The goal is not maximum length.
+
+The goal is:
+constitutional grounding
++
+clear proposition
++
+citizen problem
++
+citizen journey
++
+verified capability
++
+future direction
++
+trust
++
+clear next action.
+
+NO CSS CHANGES
+--------------
+This content upgrade does not modify styles.css.
+
+NO SCRIPT CHANGES
+-----------------
+This content upgrade does not modify script.js.
+
+NO DEPLOYMENT
+-------------
+Do not stage, commit or deploy until structural and visual verification is complete.

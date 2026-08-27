@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Janavani — the infrastructure of citizen voice, helping citizens understand public systems, navigate civic pathways, and participate in accountable governance.">
+<meta name="robots" content="index, follow">
+<title>Janavani — The Infrastructure of Citizen Voice</title>
+<link rel="stylesheet" href="styles.css">
+
+<style>
+/* ============================================================
+   JANAVANI HOME — ISOLATED TEST PRESENTATION
+   Does not modify styles.css / script.js / gtranslation.js
+   ============================================================ */
+
+.jv-test {
+    --ink:#17232d;
+    --muted:#61707b;
+    --paper:#f5f3ee;
+    --line:rgba(23,35,45,.12);
+    --accent:#9b6d32;
+    --dark:#101a23;
+    color:var(--ink);
+    background:#fff;
+}
+
+.jv-test section { overflow:hidden; }
+
+.jv-wrap {
+    width:min(1180px,calc(100% - 40px));
+    margin:auto;
+    padding:clamp(70px,9vw,130px) 0;
+}
+
+.jv-eyebrow {
+    margin:0 0 16px;
+    color:var(--accent);
+    font-size:.75rem;
+    font-weight:800;
+    letter-spacing:.17em;
+    text-transform:uppercase;
+}
+
+.jv-lead {
+    max-width:760px;
+    color:var(--muted);
+    font-size:clamp(1.05rem,1.45vw,1.24rem);
+    line-height:1.75;
+}
+
+.jv-test h1,
+.jv-test h2,
+.jv-test h3 { text-wrap:balance; }
+
+.jv-constitution {
+    background:var(--paper);
+    border-bottom:1px solid var(--line);
+}
+
+.jv-constitution h1 {
+    margin:0 0 22px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(2.4rem,6vw,5.5rem);
+    line-height:1;
+    letter-spacing:-.045em;
+}
+
+.jv-preamble {
+    max-width:900px;
+    margin:0 0 22px;
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:clamp(1.2rem,2.1vw,1.75rem);
+    line-height:1.65;
+}
+
+.jv-hero {
+    color:#fff;
+    background:var(--dark);
+}
+
+.jv-grid {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(320px,.9fr);
+    gap:clamp(40px,7vw,90px);
+    align-items:center;
+}
+
+.jv-hero h2 {
+    margin:0 0 24px;
+    max-width:780px;
+    font-size:clamp(2.8rem,6.2vw,6rem);
+    line-height:.96;
+    letter-spacing:-.055em;
+}
+
+.jv-hero .jv-lead { color:rgba(255,255,255,.76); }
+
+.jv-image {
+    overflow:hidden;
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.12);
+    box-shadow:0 30px 90px rgba(0,0,0,.28);
+}
+
+.jv-image img {
+    display:block;
+    width:100%;
+    height:auto;
+}
+
+.jv-actions {
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:30px;
+}
+
+.jv-actions a {
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:48px;
+    padding:12px 20px;
+    border:1px solid currentColor;
+    border-radius:999px;
+    text-decoration:none;
+    font-weight:750;
+}
+
+.jv-hero .jv-primary {
+    color:var(--dark);
+    background:#fff;
+    border-color:#fff;
+}
+
+.jv-hero .jv-secondary { color:#fff; }
+
+.jv-paper { background:#fff; }
+.jv-soft { background:var(--paper); }
+
+.jv-two {
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(320px,.85fr);
+    gap:clamp(40px,8vw,110px);
+    align-items:center;
+}
+
+.jv-two.reverse { grid-template-columns:minmax(320px,.85fr) minmax(0,1fr); }
+
+.jv-cards {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    margin-top:48px;
+    border-top:1px solid var(--line);
+    border-bottom:1px solid var(--line);
+}
+
+.jv-card {
+    padding:28px 22px;
+    border-right:1px solid var(--line);
+}
+
+.jv-card:last-child { border-right:0; }
+
+.jv-card small {
+    color:var(--accent);
+    font-weight:800;
+    letter-spacing:.12em;
+}
+
+.jv-card h3 { margin:16px 0 8px; }
+.jv-card p { margin:0; color:var(--muted); line-height:1.6; }
+
+.jv-journey {
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:12px;
+    margin-top:45px;
+}
+
+.jv-stage {
+    min-height:180px;
+    padding:22px 17px;
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:12px;
+}
+
+.jv-stage small {
+    color:var(--accent);
+    font-weight:800;
+    letter-spacing:.12em;
+}
+
+.jv-stage h3 { margin:30px 0 10px; }
+.jv-stage p { margin:0; color:var(--muted); font-size:.92rem; line-height:1.55; }
+
+.jv-status {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+    margin-top:45px;
+}
+
+.jv-status article {
+    padding:30px;
+    background:#fff;
+    border-radius:10px;
+    border-top:3px solid var(--ink);
+    box-shadow:0 12px 36px rgba(23,35,45,.06);
+}
+
+.jv-status article p { color:var(--muted); line-height:1.65; }
+
+.jv-dark {
+    color:#fff;
+    background:var(--dark);
+}
+
+.jv-dark .jv-lead,
+.jv-dark li { color:rgba(255,255,255,.76); }
+
+.jv-dark ul {
+    margin:28px 0 0;
+    padding-left:1.2rem;
+    display:grid;
+    gap:12px;
+}
+
+.jv-center { text-align:center; }
+.jv-center .jv-wrap { display:grid; justify-items:center; }
+
+@media(max-width:900px) {
+    .jv-grid,.jv-two,.jv-two.reverse { grid-template-columns:1fr; }
+    .jv-cards { grid-template-columns:repeat(2,1fr); }
+    .jv-card:nth-child(2) { border-right:0; }
+    .jv-journey { grid-template-columns:repeat(2,1fr); }
+    .jv-status { grid-template-columns:1fr; }
+}
+
+@media(max-width:600px) {
+    .jv-wrap { width:min(100% - 28px,1180px); padding:64px 0; }
+    .jv-cards,.jv-journey { grid-template-columns:1fr; }
+    .jv-card { border-right:0; border-bottom:1px solid var(--line); }
+    .jv-card:last-child { border-bottom:0; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="site-header-inner">
+        <a class="site-logo" href="index.html" aria-label="Janavani Home">Janavani</a>
+        <button class="site-menu-toggle" type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="site-navigation">Menu</button>
+        <nav class="site-navigation" id="site-navigation" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="resources.html">Resources</a>
+            <a href="vision.html">Vision</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main id="main-content" class="jv-test">
+
+<!-- =========================================================
+     SESSION 1 — CONSTITUTIONAL FOUNDATION
+     ========================================================= -->
+<section class="jv-constitution" id="constitutional-premise">
+<div class="jv-wrap">
+    <p class="jv-eyebrow">The Republic Begins With the People</p>
+    <h1>WE, THE PEOPLE OF INDIA</h1>
+    <p class="jv-preamble">
+        having solemnly resolved to constitute India into a
+        <strong>SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC</strong>
+    </p>
+    <p class="jv-lead">
+        Janavani begins from this constitutional premise: citizens are not
+        spectators of governance. They are participants in the Republic.
+    </p>
+</div>
+</section>
+
+<!-- =========================================================
+     SESSION 2 — HERO
+     ========================================================= -->
+<section class="jv-hero" id="janavani-heading">
+<div class="jv-wrap jv-grid">
+    <div>
+        <p class="jv-eyebrow">Janavani</p>
+        <h2>The Infrastructure of Citizen Voice</h2>
+        <p class="jv-lead">
+            Janavani helps citizens understand public systems, navigate civic
+            pathways, and participate more effectively in accountable governance.
+        </p>
+        <div class="jv-actions">
+            <a class="jv-primary" href="how-it-works.html">See How It Works</a>
+            <a class="jv-secondary" href="resources.html">Explore Resources</a>
+        </div>
+    </div>
+    <div class="jv-image">
+        <img src="assets/images/janavani-home-hero-citizen-voice - webp.webp"
+             alt="Janavani helping move a citizen concern toward informed civic participation."
+             loading="eager">
+    </div>
+</div>
+</section>
+
+<!-- =========================================================
+     SESSION 3 — CITIZEN PROBLEM
+     ========================================================= -->
+<section class="jv-soft" id="citizen-problem">
+<div class="jv-wrap">
+    <div class="jv-two">
+        <div>
+            <p class="jv-eyebrow">The Citizen Problem</p>
+            <h2>What can a citizen do when a public problem is difficult to navigate?</h2>
+            <p class="jv-lead">
+                Citizens may know what is wrong but still struggle to identify
+                responsibility, understand the relevant process, or determine
+                what action should come next.
+            </p>
+        </div>
+        <div class="jv-image">
+            <img src="assets/images/janavani-home-citizen-problem - webp.webp"
+                 alt="Citizen navigating fragmented government systems and trying to find the correct civic pathway."
+                 loading="lazy">
+        </div>
+    </div>
+
+    <div class="jv-cards">
+        <article class="jv-card"><small>01</small><h3>Unclear Responsibility</h3><p>Which office, institution, or authority is responsible?</p></article>
+        <article class="jv-card"><small>02</small><h3>Complex Processes</h3><p>Which rule, document, procedure, or channel applies?</p></article>
+        <article class="jv-card"><small>03</small><h3>Weak Feedback Loops</h3><p>Was the issue received, acted upon, or resolved?</p></article>
+        <article class="jv-card"><small>04</small><h3>Procedural Friction</h3><p>What is the next practical step a citizen can take?</p></article>
+    </div>
+</div>
+</section>
+
+<!-- =========================================================
+     SESSION 4 — WHAT JANAVANI IS
+     ========================================================= -->
+<section class="jv-paper" id="what-is-janavani">
+<div class="jv-wrap jv-two reverse">
+    <div class="jv-image">
+        <img src="assets/images/janavani-home-how-janavani-helps - webp.webp"
+             alt="Visual representation of Janavani helping a citizen understand and navigate a public-system pathway."
+             loading="lazy">
+    </div>
+    <div>
+        <p class="jv-eyebrow">What Is Janavani?</p>
+        <h2>A civic intelligence layer between citizens and public systems.</h2>
+        <p class="jv-lead">
+            Citizens should describe the problem. Janavani should carry the
+            complexity of understanding systems, pathways, and relevant
+            information.
+        </p>
+        <p>
+            The citizen remains the decision-maker. Janavani is designed to
+            reduce procedural friction while preserving citizen agency.
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- =========================================================
+     SESSION 5 — CITIZEN JOURNEY
+     ========================================================= -->
+<section class="jv-soft" id="citizen-journey">
+<div class="jv-wrap">
+    <p class="jv-eyebrow">The Janavani Pathway</p>
+    <h2>From citizen voice to a structured civic pathway.</h2>
+    <p class="jv-lead">
+        Home introduces the journey; How It Works explains the operational flow.
+    </p>
+
+    <div class="jv-image" style="margin-top:42px;">
+        <img src="assets/images/janavani-home-citizen-journey - webp.webp"
+             alt="Visual representation of the civic pathway through which Janavani helps translate a citizen concern into informed action."
+             loading="lazy">
+    </div>
+
+    <div class="jv-journey">
+        <article class="jv-stage"><small>01</small><h3>Describe</h3><p>Describe the concern in ordinary language.</p></article>
+        <article class="jv-stage"><small>02</small><h3>Understand</h3><p>Understand what kind of public-system issue is involved.</p></article>
+        <article class="jv-stage"><small>03</small><h3>Identify</h3><p>Identify the relevant authority or pathway where possible.</p></article>
+        <article class="jv-stage"><small>04</small><h3>Prepare</h3><p>Prepare the information or document appropriate to the pathway.</p></article>
+        <article class="jv-stage"><small>05</small><h3>Act</h3><p>Review the information and take appropriate civic action.</p></article>
+        <article class="jv-stage"><small>06</small><h3>Follow</h3><p>Keep records, observe outcomes, and remain engaged.</p></article>
+    </div>
+
+    <div class="jv-actions">
+        <a href="how-it-works.html">Explore the Complete Workflow</a>
+    </div>
+</div>
+</section>
+
+<!-- =========================================================
+     SESSION 6 — CURRENT CAPABILITY
+     ========================================================= -->
+<section id="current-capability">
+<div class="jv-wrap">
+    <p class="jv-eyebrow">Current Capability</p>
+    <h2>What Janavani is designed to help citizens do.</h2>
+    <div class="jv-status">
+        <article><h3>Understand</h3><p>Make public systems, responsibilities, processes, and civic pathways easier to understand.</p></article>
+        <article><h3>Identify</h3><p>Work toward identifying relevant offices, authorities, procedures, and next steps using verified information where available.</p></article>
+        <article><h3>Prepare</h3><p>Support structured civic information and documents that citizens can review before acting.</p></article>
+        <article><h3>Participate</h3><p>Support informed civic participation while keeping decisions and agency with the citizen.</p></article>
+        <article><h3>Document</h3><p>Help create clearer records of concerns, pathways, responses, and outcomes.</p></article>
+        <article><h3>Learn</h3><p>Turn individual interactions into opportunities for civic understanding and system learning.</p></article>
+    </div>
+</div>
+</section>
+
+<!-- =========================================================
+     SESSION 7 — PRODUCT MATURITY
+     ========================================================= -->
+<section class="jv-soft" id="janavani-status">
+<div class="jv-wrap jv-two">
+    <div>
+        <p class="jv-eyebrow">Now · Building · Future</p>
+        <h2>What exists, what is developing, and what may become possible.</h2>
+        <p class="jv-lead">
+            Janavani clearly distinguishes current capability from active
+            development and longer-term infrastructure possibilities.
+        </p>
+    </div>
+    <div class="jv-image">
+        <img src="assets/images/janavani-home-product-maturity - webp.webp"
+             alt="Illustration representing Janavani's progression from current capability through development toward future civic infrastructure."
+             loading="lazy">
+    </div>
+</div>
+</section>
+
+<!-- =========================================================
+     SESSION 8 — TECHNOLOGY & AGENCY
+     ========================================================= -->
+<section id="technology-agency">
+<div class="jv-wrap jv-two reverse">
+    <div class="jv-image">
+        <img src="assets/images/janavani-home-technology-citizen-agency - webp.webp"
+             alt="Technology supporting citizen agency rather than replacing citizen judgment."
+             loading="lazy">
+    </div>
+    <div>
+        <p class="jv-eyebrow">Technology &amp; Citizen Agency</p>
+        <h2>Technology should support the citizen.</h2>
+        <p class="jv-lead">
+            Technology can reduce complexity, but it should not replace citizen
+            judgment, responsibility, or lawful decision-making.
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- =========================================================
+     SESSION 9 — BOUNDARY
+     ========================================================= -->
+<section class="jv-dark" id="janavani-boundary">
+<div class="jv-wrap">
+    <p class="jv-eyebrow">Trust &amp; Boundaries</p>
+    <h2>What Janavani is not.</h2>
+    <p class="jv-lead">Clear boundaries are part of trustworthy civic infrastructure.</p>
+    <ul>
+        <li>Not a Government Authority.</li>
+        <li>Not a replacement for qualified professionals or official decisions.</li>
+        <li>Not an AI authority that decides what a citizen must do.</li>
+        <li>Not merely a Telegram bot; the project is developing as broader civic infrastructure.</li>
+    </ul>
+</div>
+</section>
+
+<!-- =========================================================
+     SESSION 10 — VIGILANCE
+     ========================================================= -->
+<section class="jv-soft" id="citizen-vigilance">
+<div class="jv-wrap jv-two">
+    <div>
+        <p class="jv-eyebrow">Citizen Vigilance</p>
+        <h2>Observe. Document. Verify. Question. Participate.</h2>
+        <p class="jv-lead">
+            Better civic participation depends on attention, evidence,
+            follow-through, and feedback.
+        </p>
+    </div>
+    <div class="jv-image">
+        <img src="assets/images/janavani-home-citizen-vigilance - webp.webp"
+             alt="Citizen vigilance through observing, documenting, verifying, questioning and participating."
+             loading="lazy">
+    </div>
+</div>
+</section>
+
+<!-- =========================================================
+     SESSION 11 — LARGER INFRASTRUCTURE
+     ========================================================= -->
+<section id="larger-infrastructure">
+<div class="jv-wrap jv-two reverse">
+    <div class="jv-image">
+        <img src="assets/images/janavani-home-larger-vision - webp.webp"
+             alt="Illustration representing Janavani's longer-term direction toward civic infrastructure."
+             loading="lazy">
+    </div>
+    <div>
+        <p class="jv-eyebrow">The Larger Infrastructure</p>
+        <h2>From citizen voice to civic infrastructure.</h2>
+        <p class="jv-lead">
+            The long-term direction is larger than solving one issue at a time:
+            build clearer pathways for knowledge, participation, accountability,
+            and community capability.
+        </p>
+        <div class="jv-actions"><a href="vision.html">Explore the Vision</a></div>
+    </div>
+</div>
+</section>
+
+<!-- =========================================================
+     SESSION 12 — PARTICIPATE
+     ========================================================= -->
+<section class="jv-soft jv-center" id="participate">
+<div class="jv-wrap">
+    <p class="jv-eyebrow">Participation</p>
+    <h2>Help build the infrastructure of citizen voice.</h2>
+    <p class="jv-lead">
+        Explore how Janavani works, use the available civic resources,
+        or contribute to the wider project.
+    </p>
+    <div class="jv-actions">
+        <a href="how-it-works.html">See How It Works</a>
+        <a href="contact.html">Get Involved</a>
+    </div>
+</div>
+</section>
+
+<!-- SESSION 13 — FINAL PRINCIPLE -->
+<section id="janavani-final-principle">
+<div class="jv-wrap jv-center">
+    <p class="jv-eyebrow">The Janavani Principle</p>
+    <h2>From citizen voice to informed civic participation.</h2>
+    <p class="jv-lead">
+        A stronger Republic depends on citizens who can understand,
+        question, participate, and help improve the systems around them.
+    </p>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="site-footer-brand"><a href="index.html">Janavani</a></div>
+    <nav class="site-footer-navigation" aria-label="Footer navigation">
+        <a href="index.html">Home</a>
+        <a href="how-it-works.html">How It Works</a>
+        <a href="resources.html">Resources</a>
+        <a href="vision.html">Vision</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <p class="site-footer-note">Citizen voice for accountable public systems.</p>
+    <p class="site-footer-copyright">&copy; Janavani. All rights reserved.</p>
+</footer>
+
+<button class="jv-scroll-top" type="button" aria-label="Back to top" title="Back to top">
+    <span aria-hidden="true">↑</span>
+</button>
+
+<script src="gtranslation.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

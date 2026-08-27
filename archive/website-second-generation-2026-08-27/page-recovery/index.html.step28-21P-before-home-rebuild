@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Janavani — a citizen-centered platform for understanding public systems, raising civic issues, and participating in accountable governance."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <title>Janavani — Citizen Voice, Public Systems, Accountable Governance</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- ======================================================
+         SHARED SITE HEADER
+         ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="site-header-inner">
+
+            <a
+                class="site-logo"
+                href="index.html"
+                aria-label="Janavani Home"
+            >
+                Janavani
+            </a>
+
+            <button
+                class="site-menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="site-navigation"
+            >
+                Menu
+            </button>
+
+            <nav
+                class="site-navigation"
+                id="site-navigation"
+                aria-label="Primary navigation"
+            >
+
+                <a href="index.html">Home</a>
+                <a href="how-it-works.html">How It Works</a>
+                <a href="resources.html">Resources</a>
+                <a href="vision.html">Vision</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ======================================================
+         MAIN CONTENT
+         ====================================================== -->
+
+    <main id="main-content">
+
+
+        <!-- ==================================================
+             H3.1 — HOME HERO
+             ================================================== -->
+
+        <section
+            id="home-hero"
+            aria-labelledby="home-hero-title"
+        >
+
+            <div class="container">
+
+                <div>
+
+                    <p>
+                        Citizen Voice. Public Systems. Accountable Governance.
+                    </p>
+
+                    <h1 id="home-hero-title">
+                        Making public systems easier to understand,
+                        navigate, and improve.
+                    </h1>
+
+                    <p>
+                        Janavani helps citizens understand where a public
+                        problem belongs, what can be done about it, and how
+                        citizen participation can strengthen accountability.
+                    </p>
+
+                    <div>
+
+                        <a href="how-it-works.html">
+                            How Janavani Works
+                        </a>
+
+                        <a href="resources.html">
+                            Explore Resources
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             H3.2 — THE CITIZEN PROBLEM
+             ================================================== -->
+
+        <section
+            id="citizen-problem"
+            aria-labelledby="citizen-problem-title"
+        >
+
+            <div class="container">
+
+                <p>THE CITIZEN PROBLEM</p>
+
+                <h2 id="citizen-problem-title">
+                    Public systems are often difficult to navigate.
+                </h2>
+
+                <p>
+                    Citizens may know what is wrong but still struggle to
+                    identify the responsible institution, understand the
+                    relevant process, or determine what action should come
+                    next.
+                </p>
+
+                <div>
+
+                    <article>
+                        <h3>Unclear Responsibility</h3>
+                        <p>
+                            It can be difficult to identify which office,
+                            institution, or authority is responsible.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Complex Processes</h3>
+                        <p>
+                            Rules, procedures, documents, and administrative
+                            pathways can be difficult to understand.
+                        </p>
+                    </article>
+
+                    <article>
+                        <h3>Weak Feedback Loops</h3>
+                        <p>
+                            Citizens may not know whether an issue was
+                            received, acted upon, or resolved.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             H3.3 — WHAT JANAVANI IS
+             ================================================== -->
+
+        <section
+            id="what-is-janavani"
+            aria-labelledby="what-is-janavani-title"
+        >
+
+            <div class="container">
+
+                <p>WHAT IS JANAVANI?</p>
+
+                <h2 id="what-is-janavani-title">
+                    A civic intelligence layer between citizens
+                    and public systems.
+                </h2>
+
+                <p>
+                    Janavani is designed to help transform a citizen's
+                    experience from confusion into a structured pathway:
+                    understand the issue, identify the relevant system,
+                    navigate the process, and participate in accountability.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             H3.4 — CITIZEN PATHWAY
+             ================================================== -->
+
+        <section
+            id="citizen-pathway"
+            aria-labelledby="citizen-pathway-title"
+        >
+
+            <div class="container">
+
+                <p>THE JANAVANI PATHWAY</p>
+
+                <h2 id="citizen-pathway-title">
+                    From a citizen's concern to a structured civic pathway.
+                </h2>
+
+                <div>
+
+                    <article>
+                        <span>01</span>
+                        <h3>Describe</h3>
+                        <p>
+                            Describe the public problem in ordinary language.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span>02</span>
+                        <h3>Understand</h3>
+                        <p>
+                            Understand the relevant system, responsibility,
+                            and available pathway.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span>03</span>
+                        <h3>Navigate</h3>
+                        <p>
+                            Identify the appropriate office, process,
+                            documents, or next action.
+                        </p>
+                    </article>
+
+                    <article>
+                        <span>04</span>
+                        <h3>Participate</h3>
+                        <p>
+                            Participate in improving public systems through
+                            informed civic action.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             H3.5 — VIGILANCE & ACCOUNTABILITY
+             ================================================== -->
+
+        <section
+            id="vigilance-accountability"
+            aria-labelledby="vigilance-title"
+        >
+
+            <div class="container">
+
+                <p>VIGILANCE &amp; ACCOUNTABILITY</p>
+
+                <h2 id="vigilance-title">
+                    Better information creates stronger accountability.
+                </h2>
+
+                <p>
+                    Janavani aims to make public-system interactions more
+                    transparent by helping citizens understand responsibility,
+                    process, status, and the institutional pathways available
+                    to them.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             H3.6 — CITIZEN PARTICIPATION
+             ================================================== -->
+
+        <section
+            id="citizen-participation"
+            aria-labelledby="participation-title"
+        >
+
+            <div class="container">
+
+                <p>CITIZEN PARTICIPATION</p>
+
+                <h2 id="participation-title">
+                    Governance improves when citizens can participate
+                    meaningfully.
+                </h2>
+
+                <p>
+                    Janavani is intended not only to help citizens resolve
+                    individual problems, but also to create pathways for
+                    learning, feedback, participation, and systemic
+                    improvement.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             H3.7 — HELP / NEXT ACTION
+             ================================================== -->
+
+        <section
+            id="janavani-help"
+            aria-labelledby="help-title"
+        >
+
+            <div class="container">
+
+                <p>START WITH YOUR ISSUE</p>
+
+                <h2 id="help-title">
+                    Understand the system. Find the pathway.
+                </h2>
+
+                <p>
+                    Explore how Janavani works or use the available resources
+                    to better understand public systems and civic action.
+                </p>
+
+                <div>
+
+                    <a href="how-it-works.html">
+                        See How It Works
+                    </a>
+
+                    <a href="resources.html">
+                        Browse Resources
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ======================================================
+         SHARED SITE FOOTER
+         ====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="site-footer-brand">
+            <a href="index.html">Janavani</a>
+        </div>
+
+        <nav
+            class="site-footer-navigation"
+            aria-label="Footer navigation"
+        >
+            <a href="index.html">Home</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="resources.html">Resources</a>
+            <a href="vision.html">Vision</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <p class="site-footer-note">
+            Citizen voice for accountable public systems.
+        </p>
+
+        <p class="site-footer-copyright">
+            &copy; Janavani. All rights reserved.
+        </p>
+
+    </footer>
+    <!-- ======================================================
+         SHARED BACK-TO-TOP CONTROL
+         ====================================================== -->
+
+    <button
+        class="jv-scroll-top"
+        type="button"
+        aria-label="Back to top"
+        title="Back to top"
+    >
+        <span aria-hidden="true">↑</span>
+    </button>
+
+    <!-- ======================================================
+         SHARED JAVASCRIPT
+         ====================================================== -->
+
+    <script src="gtranslation.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

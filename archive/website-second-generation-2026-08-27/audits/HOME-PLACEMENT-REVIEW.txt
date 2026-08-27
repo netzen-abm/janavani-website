@@ -1,0 +1,70 @@
+﻿JANAVANI — HOME CONTENT PLACEMENT REVIEW
+STEP 5C-11D
+
+SOURCE
+------
+Current index.html
+
+TARGET HOME STRUCTURE
+---------------------
+
+01. Constitutional Opening
+02. Janavani — The Infrastructure of Citizen Voice
+03. What is Janavani?
+04. The Problem Citizens Face
+05. How Janavani Helps
+06. The Citizen Journey
+07. What Janavani Provides Today
+08. NOW / BUILDING / FUTURE
+09. Privacy & Citizen Agency
+10. What Janavani Is Not
+11. Larger Civic Infrastructure
+12. Participation / Final CTA
+
+PLACEMENT RULES
+---------------
+
+KEEP
+----
+Strong existing substantive content that directly supports the target
+Home-page proposition.
+
+STRENGTHEN
+----------
+Existing content that is useful but needs clearer wording, hierarchy,
+or alignment with the constitutional foundation.
+
+CONSOLIDATE
+-----------
+Repeated explanations of the same Janavani proposition.
+
+MOVE
+----
+Detailed operational material -> how-it-works.html
+Origin, constitutional rationale and philosophy -> about.html
+Long-term ecosystem architecture -> vision.html
+Guides, templates and educational material -> resources.html
+Contact and participation mechanics -> contact.html
+
+STATUS CONTROL
+--------------
+NOW       = verified/current capability
+BUILDING  = actively being developed
+FUTURE    = longer-term possibility
+
+IMPORTANT
+---------
+Do not claim Telegram, Web App or any other functionality as operational
+unless independently verified.
+
+NON-DESTRUCTIVE RULE
+--------------------
+No substantive content is to be discarded merely for shortening.
+
+Backups already exist.
+
+NO CSS CHANGE
+NO SCRIPT CHANGE
+NO STAGING
+NO COMMIT
+NO DEPLOYMENT

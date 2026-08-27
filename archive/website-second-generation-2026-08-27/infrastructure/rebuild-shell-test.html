@@ -1,0 +1,822 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Janavani — The Infrastructure of Citizen Voice."
+    >
+
+    <title>Janavani — Shared Infrastructure Test</title>
+
+    <!-- NEW REBUILD CSS — TEST ONLY -->
+    <link
+        rel="stylesheet"
+        href="styles-rebuild.css?v=20260825-2d2afix"
+    >
+
+    <!-- SHARED JANAVANI TRANSLATION INFRASTRUCTURE -->
+    <style id="jv-rebuild-header-fix">
+
+        /* ============================================================
+           JANAVANI — REBUILD HEADER
+           STEP 2D-4B
+           Premium persistent navigation
+           ============================================================ */
+
+        .jv-site-header {
+            position: sticky !important;
+            top: 0 !important;
+            z-index: 1000 !important;
+
+            width: 100%;
+
+            background: rgba(255, 255, 255, 0.96);
+
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid rgba(12, 35, 52, 0.08);
+
+            box-shadow:
+                0 4px 18px rgba(12, 35, 52, 0.06);
+        }
+
+        .jv-site-header .jv-header-inner {
+            position: relative;
+            z-index: 1001;
+        }
+
+        /* Navigation remains visible on desktop */
+
+        .jv-navigation {
+            display: flex !important;
+            align-items: center;
+            visibility: visible !important;
+            opacity: 1 !important;
+        }
+
+        /* Translator */
+
+        .gtranslate_wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            min-height: 32px;
+
+            margin-left: 0.75rem;
+
+            position: relative;
+            z-index: 1002;
+        }
+
+        /* Keep translation UI from expanding the header */
+
+        .gtranslate_wrapper select,
+        .gtranslate_wrapper .gt_switcher,
+        .gtranslate_wrapper .gt_float_switcher {
+            max-width: 180px;
+        }
+
+        /* Mobile */
+
+        @media (max-width: 900px) {
+
+            .jv-site-header {
+                position: sticky !important;
+                top: 0 !important;
+            }
+
+            .jv-navigation {
+                display: none !important;
+            }
+
+            .jv-navigation.is-open {
+                display: flex !important;
+            }
+
+            .gtranslate_wrapper {
+                margin-left: auto;
+                margin-right: 0.5rem;
+            }
+        }
+
+    </style>
+
+<style id="janavani-gtranslate-no-flag">
+.gtranslate_wrapper .gt_float_switcher img {
+    display: none !important;
+}
+
+.gtranslate_wrapper .gt_float_switcher .gt-selected {
+    gap: 0 !important;
+}
+
+.gtranslate_wrapper .gt_float_switcher {
+    min-width: auto !important;
+}
+</style>
+    <script src="gtranslation.js"></script>
+
+</head>
+
+
+<body>
+
+    <!-- ======================================================
+         ACCESSIBILITY
+         ====================================================== -->
+
+    <a
+        class="skip-link"
+        href="#main-content"
+    >
+        Skip to main content
+    </a>
+
+
+    <!-- ======================================================
+         SHARED HEADER
+         ====================================================== -->
+
+    <header class="jv-site-header">
+
+        <div class="jv-header-inner">
+
+            <a
+                class="jv-logo"
+                href="rebuild-shell-test.html"
+                aria-label="Janavani Home"
+            >
+
+                <img
+                    src="assets/JanaVani Profile Pictures re-size.png"
+                    alt="Janavani"
+                >
+
+                <span class="jv-logo-wordmark">
+                    Janavani
+                </span>
+
+            </a>
+
+
+            <button
+                class="jv-menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="jv-navigation"
+            >
+                Menu
+            </button>
+
+
+            <nav
+                class="jv-navigation"
+                id="jv-navigation"
+                aria-label="Primary navigation"
+            >
+
+                <a
+                    href="index.html"
+                    aria-current="page"
+                >
+                    Home
+                </a>
+
+                <a href="how-it-works.html">
+                    How It Works
+                </a>
+
+                <a href="resources.html">
+                    Resources
+                </a>
+
+                <a href="vision.html">
+                    Vision
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Shared translation placeholder -->
+            <div
+                class="jv-language"
+                aria-label="Language selection"
+            >
+
+<div
+    class="gtranslate_wrapper"
+    aria-label="Language selection"
+></div>
+
+                
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ======================================================
+         TEST MAIN
+         ====================================================== -->
+
+    <main id="main-content">
+
+
+        <!-- ==================================================
+             HERO TEST
+             ================================================== -->
+
+        <section
+            class="jv-hero jv-hero--image"
+            aria-labelledby="test-hero-title"
+        >
+
+            <div class="jv-hero-inner">
+
+                <div class="jv-hero-copy">
+
+                    <p class="jv-eyebrow">
+                        THE INFRASTRUCTURE OF CITIZEN VOICE
+                    </p>
+
+                    <h1
+                        class="jv-display"
+                        id="test-hero-title"
+                    >
+                        Citizens should not need
+                        to understand the entire
+                        system before they can act.
+                    </h1>
+
+                    <p class="jv-lead">
+                        Janavani helps citizens understand
+                        public systems, find the appropriate
+                        pathway, and participate meaningfully
+                        in accountable governance.
+                    </p>
+
+
+                    <div class="jv-actions">
+
+                        <a
+                            class="jv-button jv-button--primary"
+                            href="how-it-works.html"
+                        >
+                            How Janavani Works
+                        </a>
+
+                        <a
+                            class="jv-button jv-button--secondary"
+                            href="vision.html"
+                        >
+                            Explore the Vision
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             INFRASTRUCTURE TEST
+             ================================================== -->
+
+        <section class="jv-section jv-section--white">
+
+            <div class="jv-container">
+
+                <div class="jv-section-heading">
+
+                    <p class="jv-eyebrow">
+                        SHARED SYSTEM
+                    </p>
+
+                    <h2 class="jv-title">
+                        One coherent infrastructure
+                        across the Janavani website.
+                    </h2>
+
+                    <p class="jv-lead">
+                        This test verifies the shared visual
+                        and interaction layer before the six
+                        pages are rebuilt.
+                    </p>
+
+                </div>
+
+
+                <div class="jv-card-grid">
+
+                    <article class="jv-card">
+
+                        <h3>
+                            Citizen-first
+                        </h3>
+
+                        <p>
+                            Information architecture begins
+                            with the citizen's problem rather
+                            than institutional complexity.
+                        </p>
+
+                    </article>
+
+
+                    <article class="jv-card">
+
+                        <h3>
+                            Evidence-aware
+                        </h3>
+
+                        <p>
+                            The platform distinguishes what
+                            exists now, what is developing,
+                            and what may become possible.
+                        </p>
+
+                    </article>
+
+
+                    <article class="jv-card">
+
+                        <h3>
+                            Human agency
+                        </h3>
+
+                        <p>
+                            Technology supports understanding
+                            and action without replacing human
+                            judgment or institutional authority.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             STATUS TEST
+             ================================================== -->
+
+        <section class="jv-section jv-section--soft">
+
+            <div class="jv-container">
+
+                <div class="jv-section-heading">
+
+                    <p class="jv-eyebrow">
+                        JANAVANI STATUS
+                    </p>
+
+                    <h2 class="jv-title">
+                        From foundation to civic infrastructure.
+                    </h2>
+
+                </div>
+
+
+                <div class="jv-status-grid">
+
+
+                    <article
+                        class="jv-status jv-status--now"
+                    >
+
+                        <span class="jv-status-label">
+                            NOW
+                        </span>
+
+                        <h3>
+                            Foundation
+                        </h3>
+
+                        <p>
+                            Core citizen pathways,
+                            information architecture,
+                            public-system navigation,
+                            and the initial platform
+                            foundation.
+                        </p>
+
+                    </article>
+
+
+                    <article
+                        class="jv-status jv-status--building"
+                    >
+
+                        <span class="jv-status-label">
+                            BUILDING
+                        </span>
+
+                        <h3>
+                            Expanding platform
+                        </h3>
+
+                        <p>
+                            Structured workflows,
+                            better institutional mapping,
+                            feedback systems,
+                            and stronger civic tools.
+                        </p>
+
+                    </article>
+
+
+                    <article
+                        class="jv-status jv-status--future"
+                    >
+
+                        <span class="jv-status-label">
+                            FUTURE
+                        </span>
+
+                        <h3>
+                            Civic infrastructure
+                        </h3>
+
+                        <p>
+                            A broader public infrastructure
+                            connecting citizen voice,
+                            evidence, participation,
+                            and institutional learning.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             PRINCIPLE TEST
+             ================================================== -->
+
+        <section class="jv-section">
+
+            <div class="jv-container">
+
+                <div class="jv-principle">
+
+                    <p>
+                        Janavani should make the system
+                        easier for citizens to understand —
+                        not make citizens adapt themselves
+                        to the complexity of the system.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ======================================================
+         SHARED FOOTER
+         ====================================================== -->
+
+    <footer class="jv-site-footer">
+
+        <div class="jv-footer-inner">
+
+            <div class="jv-footer-grid">
+
+
+                <div>
+
+                    <div class="jv-footer-brand">
+                        Janavani
+                    </div>
+
+                    <p>
+                        The Infrastructure of Citizen Voice.
+                    </p>
+
+                    <div
+                        class="jv-social-links"
+                        aria-label="Janavani social and community links"
+                    >
+
+                        <a
+                            class="jv-social-link"
+                            href="https://t.me/JanaVaniBot"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Janavani on Telegram"
+                        >
+                            <img
+                                src="assets/Social Media Icon/Telegram_logo.svg.webp"
+                                alt=""
+                                aria-hidden="true"
+                            >
+                            <span>Telegram</span>
+                        </a>
+
+
+                        <a
+                            class="jv-social-link"
+                            href="https://github.com/netzen-abm/janavani"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Janavani on GitHub"
+                        >
+                            <img
+                                src="assets/Social Media Icon/Github icon.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+                            <span>GitHub</span>
+                        </a>
+
+
+                        <a
+                            class="jv-social-link"
+                            href="https://www.instagram.com/janavani700"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Janavani on Instagram"
+                        >
+                            <img
+                                src="assets/Social Media Icon/Instagram_icon.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+                            <span>Instagram</span>
+                        </a>
+
+
+                        <a
+                            class="jv-social-link"
+                            href="https://www.facebook.com/janavani700/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Janavani on Facebook"
+                        >
+                            <img
+                                src="assets/Social Media Icon/2023_Facebook_icon.svg.webp"
+                                alt=""
+                                aria-hidden="true"
+                            >
+                            <span>Facebook</span>
+                        </a>
+
+
+                        <a
+                            class="jv-social-link"
+                            href="https://bsky.app/profile/janavani.bsky.social"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Janavani on Bluesky"
+                        >
+                            <img
+                                src="assets/Social Media Icon/Bluesky_Logo.svg.webp"
+                                alt=""
+                                aria-hidden="true"
+                            >
+                            <span>Bluesky</span>
+                        </a>
+
+
+                        <a
+                            class="jv-social-link"
+                            href="https://primal.net/p/nprofile1qqsf02lveuv8h34awnk5n5jh9jcfqfz45ul8mnphhnh4cp8d5zgrkgsuzu7jh"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Janavani on Primal"
+                        >
+                            <img
+                                src="assets/Social Media Icon/Primal Web icon.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+                            <span>Primal</span>
+                        </a>
+
+
+                        <a
+                            class="jv-social-link"
+                            href="https://nostria.app/invite/nprofile1qyg8wumn8ghj7mn0wd68ytnddakj7qg4waehxw309aex2mrp0yhxgctdw4eju6t09uq3zamnwvaz7tmwdaehgu3wwa5kuef0qqsf02lveuv8h34awnk5n5jh9jcfqfz45ul8mnphhnh4cp8d5zgrkgsx4kxau"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Janavani on Nostr via Nostria"
+                        >
+                            <img
+                                src="assets/Social Media Icon/Nostr icon.png"
+                                alt=""
+                                aria-hidden="true"
+                            >
+                            <span>Nostr</span>
+                        </a>
+
+
+                        <a
+                            class="jv-social-link jv-social-link--text"
+                            href="https://ditto.pub/follow/npub1j747encc00rt6a8df8f9wt9sjqj9tfe70hxr0080tszwmgys8v3qaejqgg"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Janavani on Ditto"
+                        >
+                            <span
+                                class="jv-social-monogram"
+                                aria-hidden="true"
+                            >
+                                D
+                            </span>
+                            <span>Ditto</span>
+                        </a>
+
+
+                        <a
+                            class="jv-social-link jv-social-link--text"
+                            href="https://njump.me/janavani@zaps.lol"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Janavani on Njump.Me"
+                        >
+                            <span
+                                class="jv-social-monogram"
+                                aria-hidden="true"
+                            >
+                                N
+                            </span>
+                            <span>Njump.Me</span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="jv-contact-meta">
+
+                        <a
+                            href="mailto:janavani@atomicmail.io"
+                            class="jv-contact-email"
+                        >
+                            janavani@atomicmail.io
+                        </a>
+
+                        <span
+                            class="jv-contact-separator"
+                            aria-hidden="true"
+                        >
+                            ·
+                        </span>
+
+                        <a
+                            href="https://t.me/JanaVaniBot"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="jv-contact-telegram"
+                        >
+                            @JanaVaniBot
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Explore
+                    </strong>
+
+                    <nav
+                        class="jv-footer-navigation"
+                        aria-label="Footer navigation"
+                    >
+
+                        <a href="index.html">
+                            Home
+                        </a>
+
+                        <a href="how-it-works.html">
+                            How It Works
+                        </a>
+
+                        <a href="resources.html">
+                            Resources
+                        </a>
+
+                        <a href="vision.html">
+                            Vision
+                        </a>
+
+                    </nav>
+
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Janavani
+                    </strong>
+
+                    <nav
+                        class="jv-footer-navigation"
+                        aria-label="Footer secondary navigation"
+                    >
+
+                        <a href="about.html">
+                            About
+                        </a>
+
+                        <a href="contact.html">
+                            Contact
+                        </a>
+
+                    </nav>
+
+                </div>
+
+            </div>
+
+
+            <div class="jv-footer-bottom">
+
+                <span>
+                    Citizen voice for accountable public systems.
+                </span>
+
+                <span>
+                    © <span data-current-year></span> Janavani.
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ======================================================
+         BACK TO TOP
+         ====================================================== -->
+
+    <button
+        class="jv-scroll-top"
+        type="button"
+        aria-label="Back to top"
+        title="Back to top"
+        hidden
+    >
+        ↑
+    </button>
+
+
+    <!-- ======================================================
+         NEW REBUILD JAVASCRIPT — TEST ONLY
+         ====================================================== -->
+
+    <script src="script-rebuild.js"></script>
+
+<!-- ============================================================
+     JANAVANI — CANONICAL GTRANSLATE TEST
+     ============================================================ -->
+
+
+
+</body>
+
+</html>
+
+
+
+
