@@ -96,8 +96,18 @@
     }
 
     function initFooterSocialLinks() {
-        const containers = document.querySelectorAll(".jv-social-links");
-        if (!containers.length) return;
+        let containers = document.querySelectorAll(".jv-social-links");
+
+        if (!containers.length) {
+            const footer = document.querySelector(".jv-site-footer, footer");
+            if (!footer) return;
+
+            const socialSection = document.createElement("div");
+            socialSection.className = "jv-social-links";
+            socialSection.setAttribute("aria-label", "Janavani social and contact links");
+            footer.appendChild(socialSection);
+            containers = document.querySelectorAll(".jv-social-links");
+        }
 
         const links = [
             ["Email", "mailto:janavani@atomicmail.io"],
