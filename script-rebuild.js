@@ -102,10 +102,17 @@
             const footer = document.querySelector(".jv-site-footer, footer");
             if (!footer) return;
 
+            const footerBrand = footer.querySelector(".jv-footer-grid > div:first-child");
             const socialSection = document.createElement("div");
             socialSection.className = "jv-social-links";
             socialSection.setAttribute("aria-label", "Janavani social and contact links");
-            footer.appendChild(socialSection);
+
+            if (footerBrand) {
+                footerBrand.appendChild(socialSection);
+            } else {
+                footer.appendChild(socialSection);
+            }
+
             containers = document.querySelectorAll(".jv-social-links");
         }
 
