@@ -149,6 +149,51 @@
         });
     }
 
+    function initVisibleEncodingCleanup() {
+        const replacements = [
+            ["â€”", "—"],
+            ["â€“", "–"],
+            ["â†’", "→"],
+            ["â†‘", "↑"],
+            ["â˜°", "☰"],
+            ["Â©", "©"],
+            ["Â·", "·"],
+            ["â€œ", "“"],
+            ["â€", "”"],
+            ["â€˜", "‘"],
+            ["â€™", "’"],
+            ["â€¦", "…"]
+        ];
+
+        const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+        const textNodes = [];
+        let node;
+
+        while ((node = walker.nextNode())) {
+            textNodes.push(node);
+        }
+
+        textNodes.forEach(function (textNode) {
+            let value = textNode.nodeValue;
+            replacements.forEach(function (pair) {
+                value = value.split(pair[0]).join(pair[1]);
+            });
+            textNode.nodeValue = value;
+        });
+
+        document.querySelectorAll("[aria-label], [title], [alt]").forEach(function (element) {
+            ["aria-label", "title", "alt"].forEach(function (attribute) {
+                if (!element.hasAttribute(attribute)) return;
+
+                let value = element.getAttribute(attribute);
+                replacements.forEach(function (pair) {
+                    value = value.split(pair[0]).join(pair[1]);
+                });
+                element.setAttribute(attribute, value);
+            });
+        });
+    }
+
     function initExternalLinks() {
         const links = document.querySelectorAll('a[href^="http://"], a[href^="https://"]');
 
@@ -172,6 +217,7 @@
         initEscapeHandling();
         initFooterYear();
         initFooterSocialLinks();
+        initVisibleEncodingCleanup();
         initExternalLinks();
         document.documentElement.classList.add("jv-js-ready");
     }
