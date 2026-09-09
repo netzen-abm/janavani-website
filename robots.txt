@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://netzen-abm.github.io/janavani-website/sitemap.xml
