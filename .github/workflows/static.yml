@@ -1,43 +1,89 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+# Janavani Website — Canonical GitHub Pages Deployment
+#
+# Purpose:
+#   Deploy the six-page static Janavani public website to GitHub Pages.
+#
+# Architecture:
+#   Static HTML + shared CSS + lightweight JavaScript.
+#   No Jekyll, Astro, Gatsby, Hugo, Next.js, Nuxt, mdBook, Docker,
+#   or application-framework build step is required for the website.
+#
+# Deployment policy:
+#   - Deploy only from main.
+#   - Keep the Pages artifact limited to the public website files.
+#   - Do not publish repository documentation, archives, workflows,
+#     audit material, or development-only files.
+#   - Preserve a single canonical Pages deployment workflow.
+
+name: Deploy Janavani Website to GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
-  group: "pages"
+  group: "github-pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
+    name: Deploy static website
+    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Setup Pages
+
+      - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
-      - name: Upload artifact
+
+      # The website is currently served from repository-root static files.
+      # Keep the artifact explicit so repository-only material is not
+      # accidentally published as part of the public site.
+      - name: Stage public website
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          rm -rf _site
+          mkdir -p _site
+
+          cp index.html _site/
+          cp about.html _site/
+          cp how-it-works.html _site/
+          cp resources.html _site/
+          cp vision.html _site/
+          cp contact.html _site/
+
+          cp styles-rebuild.css _site/
+          cp script-rebuild.js _site/
+          cp gtranslation-new.js _site/
+
+          if [ -d assets ]; then
+            cp -R assets _site/assets
+          fi
+
+          if [ -f robots.txt ]; then cp robots.txt _site/; fi
+          if [ -f sitemap.xml ]; then cp sitemap.xml _site/; fi
+          if [ -f manifest.json ]; then cp manifest.json _site/; fi
+          if [ -f site.webmanifest ]; then cp site.webmanifest _site/; fi
+
+          if [ -f CNAME ]; then cp CNAME _site/; fi
+
+      - name: Upload website artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: ./_site
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
