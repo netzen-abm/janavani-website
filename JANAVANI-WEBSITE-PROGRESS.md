@@ -1,206 +1,286 @@
-JANAVANI WEBSITE --- MASTER PROGRESS TRACKER
+# JANAVANI WEBSITE — MASTER PROGRESS TRACKER
 
-Date: 2026-08-14
-Current redesign identity: Janavani --- The Infrastructure of
-Citizen Voice
+**Status:** Active control document  
+**Last reconciled:** 2026-09-09  
+**Repository:** `netzen-abm/janavani-website`  
+**Branch under audit:** `audit/2026-09-09-website-reconciliation`  
+**Identity:** JANAVANI — The Infrastructure of Citizen Voice
 
-CURRENT STATUS
+---
+
+## 1. CURRENT VERIFIED STATE
 
-DONE
+The repository is in the second-generation six-page website rebuild.
 
-Git repository/state audit completed
+The current implementation uses the rebuild shared infrastructure:
 
-Existing website architecture reviewed
+- `styles-rebuild.css`
+- `script-rebuild.js`
+- `gtranslation-new.js`
 
-Existing content and new content reviewed
+The six primary HTML pages are present:
 
-C identity direction selected
+1. `index.html` — Home
+2. `how-it-works.html` — Citizen journey and operational explanation
+3. `resources.html` — Civic knowledge, references and FAQ
+4. `vision.html` — Future direction and civic infrastructure vision
+5. `about.html` — Identity, mission, principles and citizen agency
+6. `contact.html` — Get Involved / Contact
 
-Website ecosystem architecture defined
+The current public website remains protected until the final release gate is satisfied.
 
-NOW / BUILDING / FUTURE discipline defined
+---
 
-Telegram treated as an interface, not the identity
+## 2. COMPLETED / VERIFIED
 
-Web App identified as a major building direction
+### Project architecture
 
-Freenet included as future/research infrastructure
+- [x] Repository/state audit
+- [x] Six-page website architecture
+- [x] Website/application boundary
+- [x] Master website content map
+- [x] Developer guide
+- [x] Deployment/replacement protocol
+- [x] QA framework
+- [x] Whole-site visual architecture
+- [x] Existing-content preservation rule
+- [x] NOW / BUILDING / FUTURE discipline
+- [x] Citizen-agency boundary
 
-AI positioned as a capability, not the identity
+### Rebuild infrastructure
 
-SEO + AI-search architecture defined
+- [x] Rebuild stylesheet exists
+- [x] Rebuild JavaScript exists
+- [x] New translation configuration exists
+- [x] Shared shell pattern present across rebuilt pages
+- [x] Sticky/header interaction support implemented in rebuild JS
+- [x] Back-to-top interaction support implemented in rebuild JS
+- [x] Current-page navigation detection implemented in rebuild JS
+- [x] Reduced-motion handling present in page/rebuild styles where applicable
 
-Visual/infographic strategy defined
+### Page rebuilds
 
-Contact/social ecosystem direction defined
+- [x] Home rebuild present
+- [x] How It Works rebuild present
+- [x] About rebuild present
+- [x] Resources rebuild present
+- [x] Vision rebuild present
+- [x] Contact/Get Involved rebuild present
 
-Existing developer plan reviewed
+### Site documentation
 
-Need for permanent website archive identified
+- [x] Website knowledge-base directory established
+- [x] Six-page content architecture documentation
+- [x] Shared infrastructure documentation
+- [x] QA checklist
+- [x] Deployment/replacement protocol
+- [x] Changelog
+- [x] Page-specific content masters/reference material
 
-Need for permanent developer guide identified
+### Preservation
 
-Master content-map document created
+- [x] Historical/recovery archive retained
+- [x] Pre-change page recovery copies retained
+- [x] Existing legacy `styles.css` retained
+- [x] Existing legacy `script.js` retained
+- [x] Existing legacy translation infrastructure retained where applicable
 
-Developer guide document created
+---
 
-Progress tracker created
+## 3. CURRENTLY IN PROGRESS
 
-CURRENT TASK
+### A. Repository reconciliation
 
-STEP 4 --- MASTER CONTENT MAP + PROJECT DOCUMENTATION
+- [ ] Reconcile this tracker with all current implementation files
+- [ ] Identify obsolete framework/deployment workflows
+- [ ] Classify historical archive material
+- [ ] Confirm canonical production files
 
-Status: IN PROGRESS
+### B. Six-page final convergence
 
-Objective:
+- [ ] Final content verification against page masters
+- [ ] Cross-page navigation consistency
+- [ ] Cross-page footer consistency
+- [ ] Translation consistency
+- [ ] Internal/external link verification
+- [ ] Encoding verification
+- [ ] Responsive verification at required widths
+- [ ] Accessibility verification
+- [ ] SEO/AEO/GEO verification
+- [ ] Structured-data verification
 
-Create the definitive map for merging existing and new content into the
-redesigned six-page website, while preserving the current website and
-documenting future maintenance rules.
+### C. Shared rebuild stabilization
 
-ARCHIVE GATE
+- [ ] Consolidate repeated page-specific CSS into `styles-rebuild.css` where justified
+- [ ] Consolidate shared interaction behaviour into `script-rebuild.js`
+- [ ] Keep page-specific styling limited to genuine page needs
+- [ ] Confirm `gtranslation-new.js` is the intended translation configuration
 
-Before modifying the website implementation:
+---
 
-Verify current Git commit
+## 4. IMPORTANT REPOSITORY FINDING
 
-Create pre-redesign Git tag
+The repository currently contains many framework-specific GitHub Actions workflows, including workflows associated with Astro, Gatsby, Hugo, Jekyll, Next.js, Nuxt.js and static deployment, in addition to security/quality workflows.
 
-Create permanent archive copy
+This is excessive for the current six-page static website architecture.
 
-Record archive location
+**Decision:** Do not delete workflows during this reconciliation step. First classify them, identify the canonical deployment workflow, archive obsolete workflows where appropriate, and retain only the workflows justified by the final architecture.
 
-Verify archive is unchanged
+---
 
-Commit documentation
+## 5. CONTENT GOVERNANCE
 
-Recommended tag:
+### NOW
 
-website-pre-redesign-2026-08-14
+Implemented and verified as currently available.
 
-Recommended archive:
+### BUILDING
 
-archive/website-pre-redesign-2026-08-14/
+Actively being developed.
 
-CONTENT MAP GATE
+### FUTURE
 
-Home purpose defined
+Research, roadmap or long-term direction.
 
-About purpose defined
+Never present BUILDING or FUTURE capabilities as operational.
 
-How It Works purpose defined
+Telegram is an interface, not Janavani itself.
 
-Vision purpose defined
+The Web App is a major building direction unless verified as publicly deployed.
 
-Resources purpose defined
+AI is a capability, not Janavani's identity.
 
-Contact/Get Involved purpose defined
+Freenet and decentralised infrastructure remain future/research directions unless independently verified as implemented.
 
-Visual strategy defined
+---
 
-SEO/AI-search structure defined
+## 6. PAGE RESPONSIBILITIES
 
-Freenet placement defined
+| Page | Primary responsibility |
+|---|---|
+| Home | Constitutional premise, identity, purpose and orientation |
+| How It Works | Citizen journey and operational explanation |
+| Resources | Civic knowledge, references, practical material and FAQ |
+| Vision | Larger destination, future direction and possibilities |
+| About | Identity, mission, principles, privacy and citizen agency |
+| Get Involved | Communication, participation and contribution |
 
-Telegram/Web App status language defined
+FAQ is primarily a Resources responsibility and should not be duplicated on Home merely to satisfy a checklist.
 
-Final content wording approved
+---
 
-Page-by-page content drafted
+## 7. VISUAL GOVERNANCE
 
-NEXT 2 STEPS
+The website should feel:
 
-1. Archive current website
+- civic
+- premium
+- intelligent
+- trustworthy
+- human
+- restrained
+- editorial
+- citizen-centred
 
-Create the Git checkpoint and permanent pre-redesign archive before
-editing the six pages.
+Visuals must explain systems, not merely decorate.
 
-2. Approve/lock the Master Content Map
+Prefer:
 
-After approval, draft the six page contents one page at a time.
+- process diagrams
+- relationship diagrams
+- timelines
+- conceptual illustrations
+- meaningful infographics
+- editorial layouts
 
-FUTURE IMPLEMENTATION ORDER
+Do not invent statistics or use decorative charts without legitimate data.
 
-Archive current website
+Reduce unnecessary card/panel dependency.
 
-Lock master content map
+---
 
-Draft Home
+## 8. PROTECTED LEGACY FILES
 
-Draft How It Works
+The following legacy implementation files are retained as historical/reference infrastructure during the rebuild:
 
-Draft About
+- `styles.css`
+- `script.js`
+- legacy translation files as applicable
 
-Draft Vision
+Do not modify legacy files merely to make the rebuild easier.
 
-Draft Resources
+The canonical rebuild direction is:
 
-Redesign Contact/Get Involved
+```text
+HTML pages
+    ↓
+styles-rebuild.css
+    ↓
+script-rebuild.js
+    ↓
+gtranslation-new.js
+```
 
-Create/confirm visual assets
+---
 
-Rebuild shared CSS design system
+## 9. RELEASE GATE
 
-Apply page HTML one page at a time
+No production replacement until all required gates are satisfied:
 
-Verify translation
+- [ ] Content QA
+- [ ] Design QA
+- [ ] Accessibility QA
+- [ ] SEO QA
+- [ ] AEO/GEO QA
+- [ ] Functional QA
+- [ ] Technical QA
+- [ ] Integration QA
+- [ ] Multilingual QA
+- [ ] Privacy/security verification
+- [ ] Responsive verification
+- [ ] Repository-state verification
+- [ ] Deployment readiness
+- [ ] Rollback readiness
+- [ ] Production verification plan
 
-Verify navigation/internal links
+The deployment protocol explicitly requires a controlled release rather than treating a successful local build as sufficient proof of production readiness.
 
-Verify mobile/responsive behaviour
+---
 
-Verify accessibility
+## 10. EXECUTION ORDER
 
-Verify SEO/metadata
+1. Reconcile repository and tracker.
+2. Complete individual six-page content/HTML verification.
+3. Complete cross-page shell verification.
+4. Stabilize shared rebuild CSS/JS/translation infrastructure.
+5. Perform final responsive/accessibility/SEO/AEO/GEO/technical QA.
+6. Classify and clean obsolete deployment workflows.
+7. Prepare release candidate.
+8. Verify Git state and release evidence.
+9. Deploy only after release authorization.
+10. Perform live verification.
 
-Verify structured data
+---
 
-Final structural audit
+## 11. DO NOT REPEAT
 
-Remove temporary backups
+Do not restart:
 
-Git validation
-
-Commit
-
-Push
-
-Deploy
-
-Live verification
-
-DO NOT REPEAT
-
-Do not restart: - identity selection; - website architecture
-discussion; - NOW/BUILDING/FUTURE definition; - Freenet placement
-decision; - AI positioning decision; - general visual-system discussion;
+- Janavani identity selection
+- six-page architecture discussion
+- NOW / BUILDING / FUTURE definition
+- Telegram positioning
+- AI positioning
+- Freenet placement
+- general visual philosophy
 
 unless new evidence requires a documented change.
 
-CURRENT CHECKLIST SNAPSHOT
+---
 
-Area                   Status
+## 12. NEXT 2 STEPS
 
-Repository/state       DONE
-Architecture audit     DONE
-Content audit          DONE
-Identity               DONE
-Ecosystem blueprint    DONE
-Master content map     DONE --- awaiting lock
-Archive                NEXT
-Developer guide        DONE
-Home content           NOT STARTED
-How It Works content   NOT STARTED
-About content          NOT STARTED
-Vision content         NOT STARTED
-Resources content      NOT STARTED
-Contact content        NOT STARTED
-Visual assets          NOT STARTED
-CSS redesign           NOT STARTED
-Final QA               NOT STARTED
-Deploy                 NOT STARTED
+1. Complete the remaining four-page/content convergence audit and record exact defects.
+2. Audit and classify the GitHub Actions workflows before any deployment cleanup.
 
-RULE
-
-One task at a time. One controlled change at a time. Verify before
-moving forward.
+**Rule:** One controlled change at a time. Verify before moving forward.
