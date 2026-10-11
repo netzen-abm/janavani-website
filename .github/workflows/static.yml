@@ -1,44 +1,23 @@
-# Janavani Website — Canonical GitHub Pages Deployment
-#
-# Purpose:
-#   Deploy the six-page static Janavani public website to GitHub Pages.
-#
-# Architecture:
-#   Static HTML + shared CSS + lightweight JavaScript.
-#   No Jekyll, Astro, Gatsby, Hugo, Next.js, Nuxt, mdBook, Docker,
-#   or application-framework build step is required for the website.
-#
-# Deployment policy:
-#   - Deploy only from main.
-#   - Keep the Pages artifact limited to the public website files.
-#   - Do not publish repository documentation, archives, workflows,
-#     audit material, or development-only files.
-#   - Preserve a single canonical Pages deployment workflow.
-
+# Canonical deployment for the public Janavani brochure website.
+# Only the reviewed main branch can publish a public Pages artifact.
 name: Deploy Janavani Website to GitHub Pages
 
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "github-pages"
-  cancel-in-progress: false
 
 jobs:
-  deploy:
-    name: Deploy static website
+  build:
+    name: Stage and validate public website
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
+    permissions:
+      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -46,44 +25,50 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      # The website is currently served from repository-root static files.
-      # Keep the artifact explicit so repository-only material is not
-      # accidentally published as part of the public site.
-      - name: Stage public website
+      - name: Stage allowlisted public files
         shell: bash
         run: |
           set -euo pipefail
-
           rm -rf _site
-          mkdir -p _site
+          mkdir -p _site/assets/brand/favicon
+          mkdir -p _site/assets/brand/logos
+          mkdir -p _site/assets/images
 
-          cp index.html _site/
-          cp about.html _site/
-          cp how-it-works.html _site/
-          cp resources.html _site/
-          cp vision.html _site/
-          cp contact.html _site/
+          cp index.html about.html how-it-works.html resources.html vision.html contact.html 404.html _site/
+          cp styles-rebuild.css script-rebuild.js gtranslation-new.js _site/
+          cp robots.txt sitemap.xml site.webmanifest _site/
 
-          cp styles-rebuild.css _site/
-          cp script-rebuild.js _site/
-          cp gtranslation-new.js _site/
-
-          if [ -d assets ]; then
-            cp -R assets _site/assets
-          fi
-
-          if [ -f robots.txt ]; then cp robots.txt _site/; fi
-          if [ -f sitemap.xml ]; then cp sitemap.xml _site/; fi
-          if [ -f manifest.json ]; then cp manifest.json _site/; fi
-          if [ -f site.webmanifest ]; then cp site.webmanifest _site/; fi
+          # Copy only assets referenced by the production HTML/CSS/manifest.
+          cp assets/brand/favicon/janavani-mark.svg _site/assets/brand/favicon/
+          cp "assets/brand/logos/JanaVani Profile Pictures re-size svg.svg" _site/assets/brand/logos/
+          cp "assets/brand/logos/JanaVani Profile Pictures re-size.png" _site/assets/brand/logos/
+          cp "assets/images/janavani-home-hero-citizen-voice - webp.webp" _site/assets/images/
 
           if [ -f CNAME ]; then cp CNAME _site/; fi
 
-      - name: Upload website artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Validate metadata, encoding, links, and artifact allowlist
+        run: python scripts/validate_public_site.py --site-dir _site
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./_site
 
+  deploy:
+    name: Deploy verified artifact
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    concurrency:
+      group: github-pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5

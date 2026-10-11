@@ -1,0 +1,17 @@
+{
+  "name": "Janavani — The Infrastructure of Citizen Voice",
+  "short_name": "Janavani",
+  "description": "Civic infrastructure for meaningful citizen participation.",
+  "start_url": "/janavani-website/",
+  "scope": "/janavani-website/",
+  "display": "browser",
+  "background_color": "#f5f2e9",
+  "theme_color": "#071d30",
+  "icons": [
+    {
+      "src": "assets/brand/favicon/janavani-mark.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

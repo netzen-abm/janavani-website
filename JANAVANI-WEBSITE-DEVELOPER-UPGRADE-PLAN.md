@@ -23,11 +23,14 @@ Current pages:
 - vision.html — future governance/accountability direction
 - contact.html — contribution, collaboration and contact
 
-Shared assets:
-- styles.css — shared visual system and responsive layout
-- gtranslation.js — shared multilingual configuration
-- script.js — reserved for future website interactions
-- .github/workflows/ — GitHub automation/security workflows
+Shared assets used by the currently published six-page site:
+- `styles-rebuild.css` — shared design system; keep page-specific inline styles until each HTML page is individually settled
+- `script-rebuild.js` — active navigation and page interaction behavior
+- `gtranslation-new.js` — active shared translation configuration
+- `assets/brand/logos/` — approved Janavani logo variants
+- `assets/brand/favicon/janavani-mark.svg` — lightweight site icon
+- `.github/workflows/static.yml` — canonical GitHub Pages publisher
+- `scripts/validate_public_site.py` — pre-deployment validation for metadata, schema, local links, encoding, and artifact scope
 
 ## Locked principles
 
@@ -286,3 +289,10 @@ Use the master project checklist to record:
 This prevents duplicated work and uncontrolled scope growth.
 
 END
+
+
+## Verified Pages deployment — 2026-10-11
+
+The last successful Pages workflow reported https://netzen-abm.github.io/janavani-website/ as the environment URL. Keep this as the canonical public brochure-site URL. Do not use https://netzen-abm.github.io/janavani/ in canonical tags, sitemap entries, Open Graph metadata, or documentation unless a separate deployment for that path is deliberately created and verified.
+
+The Pages workflow stages an explicit allowlist. It must not publish the root archive, research notes, audit records, workflow examples, or backend source. The separate `janavani` repository contains the application/API and must be deployed to an application runtime; GitHub Pages does not run server-side Python.

@@ -8,6 +8,15 @@ This repository contains the **Janavani brochure / public information website**.
 
 It is separate from the main Janavani application and platform repository.
 
+
+## Live website and publishing
+
+Canonical public URL: **https://netzen-abm.github.io/janavani-website/**
+
+The GitHub Pages deployment belongs to this repository (`janavani-website`). The similarly named `/janavani/` path is not the URL emitted by this repository's successful Pages deployment; use the canonical URL above for links, metadata, and sitemap references.
+
+This repository is the public information/brochure layer. The interactive citizen application and API belong to the separate `netzen-abm/janavani` platform repository and must run on an application-capable service, not GitHub Pages. The Pages artifact is deliberately restricted to public HTML, CSS, JavaScript, icons, and referenced images.
+
 ---
 
 ## 1. What This Website Is

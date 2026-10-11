@@ -204,3 +204,20 @@ RULE
 
 One task at a time. One controlled change at a time. Verify before
 moving forward.
+
+
+LATEST EXECUTION UPDATE — 2026-10-11
+
+Verified source and publishing findings:
+- A successful Pages deployment reports the public URL as https://netzen-abm.github.io/janavani-website/.
+- The user-provided https://netzen-abm.github.io/janavani/ path is not the URL reported by this repository's canonical Pages deployment.
+- The six production HTML pages were snapshotted before remediation in archive/website-seo-baseline-2026-10-11/ at commit 5d8494ac574bc497b4a43014cae11f821de697b5.
+- The pre-remediation audit found missing canonical/OG/Twitter/structured-data metadata on five pages, a missing UTF-8 declaration on the homepage, and mojibake punctuation in the HTML.
+- The previous Pages workflow copied the full assets directory; staging is being narrowed to referenced assets and validated before deployment.
+- Shared CSS and JavaScript behavior files remain unchanged in this remediation. The current work focuses on page metadata, encoding, deploy artifact scope, and validation.
+
+Current phase: SEO/AI discoverability, lightweight asset staging, and Pages release verification.
+
+Next:
+1. Verify the public-site validation gate and Pages workflow on the new commit.
+2. Browser-check all six page routes, navigation, translation, and mobile behavior at https://netzen-abm.github.io/janavani-website/.
