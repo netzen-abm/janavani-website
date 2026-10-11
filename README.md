@@ -11,11 +11,11 @@ It is separate from the main Janavani application and platform repository.
 
 ## Live website and publishing
 
-Canonical public URL: **https://netzen-abm.github.io/janavani-website/**
+Brochure / showcase URL: **https://netzen-abm.github.io/janavani-website/**
 
-The GitHub Pages deployment belongs to this repository (`janavani-website`). The similarly named `/janavani/` path is not the URL emitted by this repository's successful Pages deployment; use the canonical URL above for links, metadata, and sitemap references.
+The primary public site for current use is **https://netzen-abm.github.io/janavani/**. This repository (`janavani-website`) is the brochure/showcase layer for Janavani's mission, vision, public resources and ways to contribute; it is not the primary product-facing site. Its own HTML canonicals, sitemap and internal links should continue to use the `/janavani-website/` URL.
 
-This repository is the public information/brochure layer. The interactive citizen application and API belong to the separate `netzen-abm/janavani` platform repository and must run on an application-capable service, not GitHub Pages. The Pages artifact is deliberately restricted to public HTML, CSS, JavaScript, icons, and referenced images.
+The interactive citizen drafting preview is currently at **https://janavani-bot.onrender.com/app**. It is an early drafting preview, not the complete production WebApp. Authenticated case lifecycle, durable evidence handling, formal submission, acknowledgements and tracking must not be implied until they are implemented and verified. GitHub Pages serves static public files only.
 
 ---
 
