@@ -15,7 +15,7 @@ Brochure / showcase URL: **https://netzen-abm.github.io/janavani-website/**
 
 The primary public site for current use is **https://netzen-abm.github.io/janavani/**. This repository (`janavani-website`) is the brochure/showcase layer for Janavani's mission, vision, public resources and ways to contribute; it is not the primary product-facing site. Its own HTML canonicals, sitemap and internal links should continue to use the `/janavani-website/` URL.
 
-The interactive citizen drafting preview is currently at **https://janavani-bot.onrender.com/app**. It is an early drafting preview, not the complete production WebApp. Authenticated case lifecycle, durable evidence handling, formal submission, acknowledgements and tracking must not be implied until they are implemented and verified. GitHub Pages serves static public files only.
+The dynamic citizen workspace is under development in the separate platform repository. Do not treat `https://janavani-bot.onrender.com/app` as available until the reviewed workspace route is merged, deployed and runtime-verified. It is an early drafting surface, not the complete production WebApp. Authenticated case lifecycle, durable evidence handling, formal submission, acknowledgements and tracking must not be implied until they are implemented and verified. GitHub Pages serves static public files only.
 
 ---
 
