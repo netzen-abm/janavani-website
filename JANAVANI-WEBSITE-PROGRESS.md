@@ -230,4 +230,4 @@ DEPLOYMENT VALIDATION RESULT — 2026-10-11
 - The uploaded site artifact is 1,033,625 bytes (about 1.03 MB), replacing the earlier full-assets copy that produced a much larger artifact.
 - The custom GitHub Pages deployment passed on `6c515eb73fd58c885068cfd742694e6caf61f0c1`.
 - The advanced CodeQL workflow that conflicted with GitHub's enabled default setup was archived at `archive/github-workflows/2026-10-11/codeql.yml`, verified, and then removed from the active workflow folder. GitHub's default CodeQL setup remains the scanning source.
-- Manual admin follow-up: verify the GitHub Pages publishing source is set to **GitHub Actions**, because the generated branch-publishing workflow still appeared in Actions history.
+- The generated `dynamic/pages/pages-build-deployment` run was reported with event `dynamic` and succeeded after the custom workflow; treat it as the Pages deployment stage, not proof of a second branch publisher. A repository admin can optionally verify Settings → Pages → Build and deployment → Source is **GitHub Actions**.
