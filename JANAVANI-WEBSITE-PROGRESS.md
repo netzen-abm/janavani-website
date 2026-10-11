@@ -216,11 +216,11 @@ Verified source and publishing findings:
 - The previous Pages workflow copied the full assets directory; staging is being narrowed to referenced assets and validated before deployment.
 - Shared CSS and JavaScript behavior files remain unchanged in this remediation. The current work focuses on page metadata, encoding, deploy artifact scope, and validation.
 
-Current phase: SEO/AI discoverability, lightweight asset staging, and Pages release verification.
+Current phase: SEO/AI discoverability and deployment automation are validated; manual browser QA and Pages source confirmation remain.
 
 Next:
-1. Verify the public-site validation gate and Pages workflow on the new commit.
-2. Browser-check all six page routes, navigation, translation, and mobile behavior at https://netzen-abm.github.io/janavani-website/.
+1. Browser-check the canonical site and all six routes, navigation, translation, mobile behavior, and the custom 404 page.
+2. Verify Settings → Pages → Build and deployment → Source is GitHub Actions, then confirm the environment URL.
 
 
 DEPLOYMENT VALIDATION RESULT — 2026-10-11
