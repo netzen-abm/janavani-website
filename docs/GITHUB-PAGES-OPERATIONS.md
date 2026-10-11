@@ -42,3 +42,11 @@ GitHub Pages deployment uses the workflow's `GITHUB_TOKEN` with `pages: write` a
 - Inspect the Pages deployment job and its environment URL.
 - Browser-check six page routes, mobile navigation, keyboard focus, translation, and the 404 route.
 - Ensure no secrets, citizen data, backend code, or archive files enter `_site`.
+
+
+## Findings from the 2026-10-11 Pages audit
+
+- The authoritative Pages URL reported by the successful deployment job is `https://netzen-abm.github.io/janavani-website/`. The similarly named `/janavani/` path is not reported by the current publisher.
+- The generated `pages build and deployment` run appeared alongside the repository's custom publisher. In GitHub Settings → Pages → Build and deployment, set the source to **GitHub Actions** and verify the published environment URL to prevent competing publication sources.
+- The active `.github/workflows/codeql.yml` produced a confirmed duplicate-configuration failure: `CodeQL analyses from advanced configurations cannot be processed when the default setup is enabled`. Its exact source is being archived before retiring the duplicate workflow. Keep GitHub's default CodeQL setup enabled as the single source of code-scanning results unless the repository deliberately switches configurations.
+- The Pages validation gate initially caught two real packaging problems: an apostrophe in the Vision description was not handled by the checker, and the optimized SVG header logo was copied but not referenced. Both are being corrected; the validation gate remains enabled.

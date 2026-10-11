@@ -166,7 +166,7 @@ def main() -> int:
             if not re.search(r"<meta\s+name=[\"']viewport[\"']", html, re.I):
                 errors.append(f"{filename}: missing viewport declaration")
             if not re.search(
-                r"<meta\s+name=[\"']description[\"']\s+content=[\"'][^\"']{40,170}[\"']",
+                r'<meta\s+name="description"\s+content="[^"]{40,170}"',
                 html, re.I,
             ):
                 errors.append(f"{filename}: missing or unsuitable meta description")
