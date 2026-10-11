@@ -231,3 +231,15 @@ DEPLOYMENT VALIDATION RESULT — 2026-10-11
 - The custom GitHub Pages deployment passed on `6c515eb73fd58c885068cfd742694e6caf61f0c1`.
 - The advanced CodeQL workflow that conflicted with GitHub's enabled default setup was archived at `archive/github-workflows/2026-10-11/codeql.yml`, verified, and then removed from the active workflow folder. GitHub's default CodeQL setup remains the scanning source.
 - The generated `dynamic/pages/pages-build-deployment` run was reported with event `dynamic` and succeeded after the custom workflow; treat it as the Pages deployment stage, not proof of a second branch publisher. A repository admin can optionally verify Settings → Pages → Build and deployment → Source is **GitHub Actions**.
+
+
+PUBLIC CONTENT POLISH — 2026-10-11
+
+- Replaced editorial/instructional wording in the homepage, About, Resources, and Contact pages with citizen-facing descriptions.
+- The homepage retains “WE, THE PEOPLE OF INDIA” and distinguishes public information from workflows still in development.
+- Resources explain source provenance, the difference between fact and interpretation, limits, and responsible next steps in plain language.
+- Contact now links directly to the verified `netzen-abm/janavani` repository. Telegram and authenticated WebApp availability are labelled as in development rather than presented as verified public services.
+- The public-site validator and custom Pages deployment passed after the copy changes (workflow run `38120646958`).
+- The six-page site has UTF-8, unique titles/descriptions, canonical URLs, Open Graph/Twitter metadata, WebSite/WebPage JSON-LD, sitemap, robots, manifest, lightweight favicon, and custom 404.
+- The staged artifact is about 1.03 MB versus the earlier full-assets artifact of about 13 MB. CSS and JavaScript behavior files were not modified.
+- Manual visual QA across desktop/mobile and a real Telegram launch smoke test remain outstanding.
