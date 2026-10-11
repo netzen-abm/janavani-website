@@ -48,5 +48,12 @@ GitHub Pages deployment uses the workflow's `GITHUB_TOKEN` with `pages: write` a
 
 - The authoritative Pages URL reported by the successful deployment job is `https://netzen-abm.github.io/janavani-website/`. The similarly named `/janavani/` path is not reported by the current publisher.
 - The generated `pages build and deployment` run appeared alongside the repository's custom publisher. In GitHub Settings → Pages → Build and deployment, set the source to **GitHub Actions** and verify the published environment URL to prevent competing publication sources.
-- The active `.github/workflows/codeql.yml` produced a confirmed duplicate-configuration failure: `CodeQL analyses from advanced configurations cannot be processed when the default setup is enabled`. Its exact source is being archived before retiring the duplicate workflow. Keep GitHub's default CodeQL setup enabled as the single source of code-scanning results unless the repository deliberately switches configurations.
+- The former `.github/workflows/codeql.yml` produced a confirmed duplicate-configuration failure: `CodeQL analyses from advanced configurations cannot be processed when the default setup is enabled`. Its exact contents are preserved at `archive/github-workflows/2026-10-11/codeql.yml`, and the duplicate workflow has been removed after verifying the archive. Keep GitHub's default CodeQL setup enabled as the single source of code-scanning results unless the repository deliberately switches configurations.
 - The Pages validation gate initially caught two real packaging problems: an apostrophe in the Vision description was not handled by the checker, and the optimized SVG header logo was copied but not referenced. Both are being corrected; the validation gate remains enabled.
+
+
+## Verified outcome
+
+On commit `52765b1481594f55a42e877cfd1e0fb0a69f1440`, the public-site validator passed: six public pages, 14 local files, required SEO/JSON-LD, internal references, sitemap, manifest, encoding, and the artifact allowlist. The uploaded Pages artifact was 1,033,625 bytes (about 1.03 MB). The custom Pages deployment also passed on commit `6c515eb73fd58c885068cfd742694e6caf61f0c1`.
+
+**Remaining repository-admin setting:** run history still contains GitHub's generated `pages build and deployment` workflow alongside the custom publisher. Verify Settings → Pages → Build and deployment → Source is set to **GitHub Actions**. The currently connected repository API is used here for repository files and workflow inspection; it does not expose the required Pages-settings write action. After changing the source, confirm only the custom workflow publishes and its environment URL remains `https://netzen-abm.github.io/janavani-website/`.
