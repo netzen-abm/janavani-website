@@ -898,3 +898,44 @@ It is to preserve **why the website is structured the way it is**, what was deli
 The goal is that a future Janavani website upgrade begins with understanding rather than reconstruction.
 
 **Technology is not the purpose of Janavani.**
+
+---
+
+## Change ID: WEBSITE-HOME-CTA-2026-10-26
+
+**Date:** 26 October 2026  
+**Status:** SOURCE UPDATED / CI VALIDATED / DEPLOYMENT PENDING  
+**Area:** Home-page messaging and navigation  
+**Affected page:** `index.html`  
+**Affected shared infrastructure:** None
+
+### Reason
+
+The home-page introduction needed a clearer explanation of Janavani's civic purpose and a more direct path to the citizen journey, without replacing the constitutional opening or duplicating application functionality on the public brochure site.
+
+### Decision and implementation
+
+- Preserved the existing “WE, THE PEOPLE OF INDIA” constitutional opening and visual treatment.
+- Replaced only the existing introductory paragraph and its action links.
+- Clarified the citizen journey: understand a public problem, identify a responsible authority, prepare for lawful action, and keep the citizen in control of review and decisions.
+- Made **Explore How It Works** the primary action, with **Explore Civic Resources** and **Help Build Janavani** as secondary actions.
+- Reused existing pages and anchors. No new file, page, JavaScript, CSS, library, form, data collection, or application/backend coupling was introduced.
+- Preserved the six-page information architecture and the existing NOW / BUILDING / FUTURE section.
+
+### Files and revision
+
+- `index.html`
+- Commit: `1b12e93a744e235262f92975670548ece0952a35`
+- Previous homepage blob: `b19f11250c17750ca9aa25809adaed38fff1de02`
+- New homepage blob: `79da1fa8e15b803b5089960a3b0debbfa2f1b3b0`
+
+### Verification
+
+- The staged-public-site validator completed successfully on the commit above.
+- The Page deployment workflow was still queued/running at the verification checkpoint.
+- Do not mark this change DEPLOYED until the Pages deployment succeeds and the public URL is verified.
+
+### Rollback
+
+Restore `index.html` to the prior content at blob `b19f11250c17750ca9aa25809adaed38fff1de02` through a reviewed Git change if a regression is detected. Do not alter shared styles/scripts to roll back this content-only change.
+
