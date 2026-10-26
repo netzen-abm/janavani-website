@@ -90,7 +90,7 @@ Developers and technical contributors interested in the open project.
 
 **### Design and content contribution**
 
-Designers, writers, accessibility contributors, researchers, and documentation contributors.
+Designers, civic-content creators, letter drafters, proofreaders, translators, accessibility contributors, researchers, source-verification contributors, and documentation contributors. Practical examples include source-backed civic guides, reusable complaint/representation/grievance/RTI templates, plain-language editing, and language review by competent speakers. Templates are informational and must not be presented as legal advice.
 
 **### Civic / legal research**
 
