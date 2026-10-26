@@ -939,3 +939,49 @@ The home-page introduction needed a clearer explanation of Janavani's civic purp
 
 Restore `index.html` to the prior content at blob `b19f11250c17750ca9aa25809adaed38fff1de02` through a reviewed Git change if a regression is detected. Do not alter shared styles/scripts to roll back this content-only change.
 
+---
+
+## Change ID: WEBSITE-CONTRIBUTION-CTA-2026-10-26
+
+**Date:** 26 October 2026  
+**Status:** SOURCE UPDATED / VALIDATED / DEPLOYED  
+**Area:** Get Involved / contribution content  
+**Affected page:** `contact.html`  
+**Affected content authority:** `JANAVANI-WEBSITE-DOCUMENTATION/08-CONTACT-CONTENT-MASTER.md`  
+**Affected shared infrastructure:** None
+
+### Reason
+
+The Get Involved page described general participation but did not give sufficiently concrete examples of the content and language contributions requested for Janavani. The page also needed a direct path from the existing open-development card to contribution tasks.
+
+### Decision and implementation
+
+- Expanded the existing knowledge-contribution card to mention plain-language civic guides, source-backed explanations, reusable templates, proofreading, language review, and documentation.
+- Expanded the existing build card to include coding, regression tests, design, accessibility review, performance, and usability feedback.
+- Refined the existing writers role to include letter drafting, proofreading, translation review, and the boundary that templates are informational rather than legal advice.
+- Added a direct link from the existing GitHub contribution card to the repository issues list. No new page or contribution subsystem was created.
+- Kept the statement that participation categories do not constitute a formal programme, employment opportunity, membership scheme, grant, or institutional partnership.
+- Updated the existing contact content master so future edits retain the expanded contribution categories.
+- Shortened the description repeated in meta, Open Graph, Twitter, and JSON-LD fields to satisfy the existing 40–170-character page-description gate. Detailed contribution wording remains in the body.
+
+### Files and revisions
+
+- `contact.html` — content commit `c571cd1dc6dac77136b70ab2b1341797da215170`; metadata correction commit `faaa6ac96977c413629957cdc96b4796632cd5d2`
+- `JANAVANI-WEBSITE-DOCUMENTATION/08-CONTACT-CONTENT-MASTER.md` — `5abc63db1b7110580b5bd037cb06761ffc7dac5e`
+- `JANAVANI-WEBSITE-DOCUMENTATION/19-CHANGELOG.md` — this entry follows the public-site verification checkpoint.
+
+### Verification and deployment
+
+- The first Get Involved build correctly failed because the expanded meta description exceeded the validator's maximum length.
+- The metadata was corrected; no validation rule was weakened.
+- On commit `faaa6ac96977c413629957cdc96b4796632cd5d2`, the GitHub Pages workflow `40328170514` passed:
+  - Stage and validate public website
+  - Validate metadata, encoding, links, and artifact allowlist
+  - Deploy verified artifact
+- The homepage introduction and primary CTA were separately deployed on commit `1b12e93a744e235262f92975670548ece0952a35` through workflow `40327809448`.
+- No shared CSS, JavaScript, translation code, assets, backend routes, or database tables were changed.
+
+### Rollback
+
+Revert the affected existing HTML and content-master files through a reviewed Git commit. Keep the validator unchanged; the metadata-length finding was a legitimate content regression.
+
