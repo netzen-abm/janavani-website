@@ -243,3 +243,33 @@ PUBLIC CONTENT POLISH — 2026-10-11
 - The six-page site has UTF-8, unique titles/descriptions, canonical URLs, Open Graph/Twitter metadata, WebSite/WebPage JSON-LD, sitemap, robots, manifest, lightweight favicon, and custom 404.
 - The staged artifact is about 1.03 MB versus the earlier full-assets artifact of about 13 MB. CSS and JavaScript behavior files were not modified.
 - Manual visual QA across desktop/mobile and a real Telegram launch smoke test remain outstanding.
+---
+
+LATEST EXECUTION REBASELINE — 2026-10-26
+
+This dated rebaseline supersedes the August checklist snapshot above; the earlier snapshot is preserved as historical progress context.
+
+Verified changes:
+- The existing six-page static public website was reviewed alongside its content map, six page content masters, shared-infrastructure specification, privacy/citizen-agency guide, SEO standards, accessibility standards, asset register, publishing workflow, and validator.
+- Kept the six-page information architecture, the constitutional homepage opening (“WE, THE PEOPLE OF INDIA”), the existing active shared files, and the NOW / BUILDING / FUTURE distinction.
+- Updated the existing homepage introduction and CTA links so “Explore How It Works” is the primary next step, “Explore Civic Resources” is secondary, and “Help Build Janavani” provides an established Get Involved path. No new files, assets, CSS, JavaScript, libraries, or backend coupling were introduced.
+- Expanded the existing Contact / Get Involved page and its content master to give concrete examples of coding, testing, civic content creation, letter drafting, proofreading, language review, accessibility, research, and documentation. Public contribution links and the rule against sharing real citizen data remain explicit.
+- Preserved the existing boundary that participation categories do not constitute a formal programme, job, membership, grant, or institutional partnership.
+- Updated this repo's existing changelog instead of creating another status document.
+
+Verification:
+- The content change at commit 1b12e93a744e235262f92975670548ece0952a35 passed the staged-public-site validator and GitHub Pages deployment workflow 40327809448.
+- The Get Involved content first failed validation because its expanded description exceeded the existing 170-character limit. The meta/OG/Twitter/JSON-LD description was shortened without weakening the validator or removing detailed body copy.
+- After correction, workflow 40328170514 passed both “Stage and validate public website” and “Deploy verified artifact” on commit faaa6ac96977c413629957cdc96b4796632cd5d2.
+- The changelog update is commit da424b08d1c7a44af74d3020268b7003f428c054; its Pages deployment workflow 40328301272 also succeeded.
+- The website tree still contains 167 files, including 52 Markdown files. Exact-blob audit found identical copies of several root planning documents under the designated CURRENT-REFERENCES folder and archived copies of some assets/scripts. These are reference/archive duplicates; do not bulk-delete them without checking the reference register, links, and retention intent.
+
+Still to verify:
+1. Browser QA on desktop/mobile for all six public routes, keyboard focus, translation widget behavior, links, and 404 behavior. GitHub Actions deployment passed, but independent live-page fetching was not available during this check.
+2. Confirm repository Settings → Pages → source and final environment URL if deployment settings have changed.
+3. Continue semantic duplicate/reference audit; exact hashes do not detect near-duplicate prose or code.
+4. The separate netzen-abm/janavani product repository still has nine physical branch refs. Eight are the sanctioned active roles; vercel/install-vercel-web-analytics-6417ji remains a retirement-only ref pending the archive-token prerequisite in product PR #225.
+
+Next two steps:
+1. Complete visual/browser QA on the deployed six-page site without changing the shared CSS/JavaScript unless a reproducible defect is found.
+2. Resolve the main product repository's guarded archive-token prerequisite and bring its physical branch inventory to exactly eight only after archive and dependency checks pass.
